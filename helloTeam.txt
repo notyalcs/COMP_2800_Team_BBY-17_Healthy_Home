@@ -1,5 +1,11 @@
 This is the first File!
 
+Steps of GIT on command line:
+git pull
+git add <file name OR "." for all files>
+git commit -m "<what you have changed>"
+git push
+
 Sean was here!
 Daniil was here!
 Chris was here!
