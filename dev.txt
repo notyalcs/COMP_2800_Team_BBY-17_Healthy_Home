@@ -1,0 +1,4 @@
+Branch all work off here.
+Try not to merge buggy code onto this branch.
+It will be integrated together here and only after it has been well integrated be merged back to master.
+Before merging to master, the group should be notified.
