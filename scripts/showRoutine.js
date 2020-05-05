@@ -3,8 +3,12 @@ let exercises = ['<img src="images/squats.jpg" alt="squats" class="routinePictur
 '1. Stand with your feet shoulder-width apart and turn your toes out slightly.<br> 2. Put your arms out in front of you and engage your' + 'abdominals while broadening your chest and gently pulling your shoulder blades together.<br>' + 
 '3. Bend your knees slowly while pushing your hips and glutes out behind you as if you are about to sit down.<br> 4. Lower until your' + 'knees and hips are parallel, then push back up through your heels to the start position.' +
 '</p>',
-                 '<img src="images/pike-press-up.jpg" alt="pikePressUp" class="routinePicture">' + '<p>' + 
-                 'This simple move is a particularly good glute-strengthener, but it also works your core, lower back and hips.<br><br> 1. ' + 'Start on all fours with your hands under your shoulders, and your knees and feet hip-width apart.<br> 2. Squeeze your ' + 'glutes and raise one leg behind you, keeping the knee bent at a 90° angle, until the sole of your foot faces the ' +  'ceiling, then bring it back down slowly.<br> 3. Make sure the rest of your body is completely still while you raise the leg' + '– letting your hips sag is a common mistake that reduces the move’s effectiveness.' + '</p>'
+'<img src="images/pike-press-up.jpg" alt="pikePressUp" class="routinePicture">' + 
+'<p>' + 
+'1. Assume a press-up position with your arms straight and hands under your shoulders.<br> 2. Walk your feet towards your hands, keeping' + ' your legs straight until you form a V-shape.<br> 3. Once in this position, slowly bend your elbows so your head goes towards the' +  ' ground. Go as low as you can, then press back up, locking out your elbows.' + '</p>',
+'<img src="images/donkey-kick.jpg" alt="donkeyKick" class="routinePicture">' +
+'<p>' +
+'This simple move is a particularly good glute-strengthener, but it also works your core, lower back and hips.<br><br> 1. ' + 'Start on all fours with your hands under your shoulders, and your knees and feet hip-width apart.<br> 2. Squeeze your ' + 'glutes and raise one leg behind you, keeping the knee bent at a 90° angle, until the sole of your foot faces the ' +  'ceiling, then bring it back down slowly.<br> 3. Make sure the rest of your body is completely still while you raise the leg' + '– letting your hips sag is a common mistake that reduces the move’s effectiveness.'
                  ,"Squats"];
 let stretches = ["Stretch 1", "Stretch 2","Stretch 3"];
 
