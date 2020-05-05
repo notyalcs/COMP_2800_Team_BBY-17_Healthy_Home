@@ -77,5 +77,11 @@ section{
     font-size: 20pt;
     background-color:lightgray;
     display:block;
+    text-align:center;
     width:100%;
+}
+.routinePicture{
+    margin-top:1%;
+    width:70%;
+    height:15%;
 }
