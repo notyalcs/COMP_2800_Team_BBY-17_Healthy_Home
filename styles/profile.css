@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: thistle;
+}
+#universalHeader {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 50px;
+    grid-template-areas: 
+        "logo logo logo"
+        "home reminders profile";
+        
+    /* Comment these 2 lines out to make it not sticky. */
+    position: sticky;
+    top: 0;
+    /*--------------------------------------------------*/
+
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#universalHeader > * {
+    padding: 10px;
+    margin: 5px;
+}
+#universalHeader > button {
+    /* width: 100%; */
+    background-color: #ff7f50;
+    border-radius: 10px;
+    font-size: large;
+    outline: none;
+}
+#universalHeader > button:not([disabled]):hover {
+    background-color: #ee6e3f;
+    box-shadow: 1px 1px #bbbbbb;
+    cursor: pointer;
+}
+#figureHeader {
+    margin: 0;
+    padding: 0;
+    grid-area: logo;
+}
+img#imageHeader {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#homeBTN {
+    grid-area: home;
+}
+#remindersBTN {
+    grid-area: reminders;
+}
+#profileBTN {
+    grid-area: profile;
+}

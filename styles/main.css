@@ -60,6 +60,7 @@ img {
     border-radius: 10px;
     font-size: x-large;
     box-shadow: 3px 3px #aaaaaa;
+    cursor: pointer;
 }
 #links button:hover {
     background-color: #dddddd;
