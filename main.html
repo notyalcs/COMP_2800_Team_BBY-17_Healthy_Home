@@ -5,18 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Healthy Home</title>
     <link rel="shortcut icon" type="image/png" href="images/logo_favicon.png">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
-    <!-- Beginning of header html -->
-    <header class="header">
-        <figure class="figureHeader"><img class="imageHeader" src="./images/logo_transparent.png" alt="logo"></figure>
-        <ul class="headerButtons">
-            <li><button>Home</button></li>
-            <li><button>Reminders</button></li>
-            <li><button>Profile</button></li>
-        </ul>
-    </header>
-    <!-- End of header html -->
-    
+    <div id="allContent">
+        <header class="header">
+            <figure class="figureHeader"><img class="imageHeader" src="./images/logo_transparent.png" alt="logo"></figure>
+        </header>
+        
+        <div id="welcome">
+            Welcome<br>John Doe
+        </div>
+
+        <div id="links">
+            <div id="reminders">
+                <button onclick="location.href='./reminders.html'">Reminders</button>
+            </div>
+            <div id="routines">
+                <button onclick="location.href='./routines.html'">Routines</button>
+            </div>
+            <div id="profile">
+                <button onclick="location.href='./profile.html'">Profile</button>
+            </div>
+            <div id="resources">
+                <button onclick="location.href='./resources.html'">Resources</button>
+            </div>
+            <div id="about">
+                <button onclick="location.href='./about.html'">About Us</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
