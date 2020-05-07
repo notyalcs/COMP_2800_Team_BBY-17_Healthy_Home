@@ -71,30 +71,3 @@ img#imageHeader {
     }
 }
 /*~~~~~~~~ End of Header Styling ~~~~~~~~*/
-section{
-    text-align: center;
-    font-size:50pt;
-    background-color:darkgrey;
-    padding:3%;
-    margin-bottom:2%;
-}
-.wrapper{
-    display:grid;
-    grid-template-columns:repeat(3, 400px);
-    grid-template-rows:repeat(3, 100px);
-    grid-gap:60px 100px;
-    justify-content: center;
-}
-.wrapper button{
-    font-size:20pt;
-}
-#start{
-    display:block;
-    text-align: center;
-    margin-top:-5%;
-}
-#start button{
-    font-size:20pt;
-    padding: 10px 50px;
-}
-

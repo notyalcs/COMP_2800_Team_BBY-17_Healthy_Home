@@ -8,13 +8,11 @@
     </head>
     <body>
         <!-- Beginning of header html -->
-        <header class="header">
-            <figure class="figureHeader"><img class="imageHeader" src="./images/logo_transparent.png" alt="logo"></figure>
-            <ul class="headerButtons">
-                <li><button>Home</button></li>
-                <li><button>Reminders</button></li>
-                <li><button>Profile</button></li>
-            </ul>
+        <header id="universalHeader">
+            <figure id="figureHeader"><img id="imageHeader" src="./images/logo_transparent.png" alt="logo" onclick="location.href='./main.html'"></figure>
+            <button onclick="location.href='./main.html'" id="homeHead">Home</button>
+            <button onclick="location.href='./reminders.html'" id="remindersHead">Reminders</button>
+            <button onclick="location.href='./profile.html'" id="profileHead">Profile</button>
         </header>
         <!-- End of header html -->
         <section>Choose your Workout and Difficulty</section>
