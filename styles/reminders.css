@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: thistle;
+}
+/*~~~~~~~~ Start of Header Styling ~~~~~~~~*/
+#universalHeader {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 50px;
+    grid-template-areas: 
+        "logo logo logo"
+        "home reminders profile";
+
+    /* Comment these 2 lines out to make it not sticky. */
+    position: sticky;
+    top: 0;
+    /*--------------------------------------------------*/
+
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#universalHeader > * {
+    padding: 10px;
+    margin: 5px;
+}
+#universalHeader > button {
+    background-color: #ff7f50;
+    border-radius: 10px;
+    font-size: large;
+    outline: none;
+}
+#universalHeader > button:not([disabled]):hover {
+    background-color: #ee6e3f;
+    box-shadow: 1px 1px #bbbbbb;
+    cursor: pointer;
+}
+#figureHeader {
+    margin: 0;
+    padding: 0;
+    grid-area: logo;
+}
+img#imageHeader {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#homeHead {
+    grid-area: home;
+}
+#remindersHead {
+    grid-area: reminders;
+}
+#profileHead {
+    grid-area: profile;
+}
+
+@media only screen and (max-width: 450px) {
+    #universalHeader {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "logo logo"
+            "home profile";
+    }
+    #universalHeader > button:disabled {
+        display: none;
+    }
+}
+/*~~~~~~~~ End of Header Styling ~~~~~~~~*/
+
+main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        "main"
+        "btns"
+        "footer";
+}
+.presets {
+    grid-area: btns;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "section1 description1 section2 description2"
+        "section3 description3 section4 description4";
+}
+
+p {
+    text-align: center;
+}
+ul {
+    display:block;
+    list-style-type:circle;
+    margin:auto;
+    text-align: left;
+}
+
+.btn {
+    width:20vw;
+    height:8vw;
+    margin: 0.5vw;
+    float: left;
+    font-size: large;
+
+}
+#btn1 {
+    grid-area: section1;
+
+}
+.desc {
+    width:20vw;
+    height:8vw;
+    margin: 0.5vw;
+    background-color: green;
+}
+.desc1 {
+    grid-area:description1;
+}
+.desc2 {
+    grid-area:description2;
+}
+.desc3 {
+    grid-area:description3;
+}
+.desc4 {
+    grid-area:description4;
+}
+
+#btn2 {
+    grid-area: section2;
+
+}
+#btn3 {
+    grid-area: section3;
+
+}
+#btn4 {
+    grid-area: section4;
+
+}
+
+
