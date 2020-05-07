@@ -1,28 +1,38 @@
-let exercises = ['<img src="images/squats.jpg" alt="squats" class="routinePicture">' + 
-'<p>' +
-'1. Stand with your feet shoulder-width apart and turn your toes out slightly.<br> 2. Put your arms out in front of you and engage your' + 'abdominals while broadening your chest and gently pulling your shoulder blades together.<br>' + 
-'3. Bend your knees slowly while pushing your hips and glutes out behind you as if you are about to sit down.<br> 4. Lower until your' + 'knees and hips are parallel, then push back up through your heels to the start position.' +
-'</p>',
-'<img src="images/pike-press-up.jpg" alt="pikePressUp" class="routinePicture">' + 
-'<p>' + 
-'1. Assume a press-up position with your arms straight and hands under your shoulders.<br> 2. Walk your feet towards your hands, keeping' + ' your legs straight until you form a V-shape.<br> 3. Once in this position, slowly bend your elbows so your head goes towards the' +  ' ground. Go as low as you can, then press back up, locking out your elbows.' + '</p>',
-'<img src="images/donkey-kick.jpg" alt="donkeyKick" class="routinePicture">' +
-'<p>' +
-'This simple move is a particularly good glute-strengthener, but it also works your core, lower back and hips.<br><br> 1. ' + 'Start on all fours with your hands under your shoulders, and your knees and feet hip-width apart.<br> 2. Squeeze your ' + 'glutes and raise one leg behind you, keeping the knee bent at a 90° angle, until the sole of your foot faces the ' +  'ceiling, then bring it back down slowly.<br> 3. Make sure the rest of your body is completely still while you raise the leg' + '– letting your hips sag is a common mistake that reduces the move’s effectiveness.'
-                 ,"Squats"];
-let stretches = ["Stretch 1", "Stretch 2","Stretch 3"];
+let routine = localStorage.getItem('workoutType') + "_" + localStorage.getItem('difficulty');
 
 function display(id){
     if(window.location.href.indexOf("exercise") > -1){
-        document.getElementById("displayRoutines").innerHTML=exercises[id];
-        $("#displayRoutines").innerHTML(exercises[id]);
+        $("#description").text(object[id][1]);
+        $("#routinePicture").attr("src", object[id][4]);
     }else if(window.location.href.indexOf("stretch") > -1){
         document.getElementById("displayRoutines").innerHTML=stretches[id];
     }
 }
 
+var object;
 $(".arrow").on("click", function(){ 
     $(".arrow").removeClass("down right").addClass("right");
     $(this).removeClass("right").addClass("down");
-    display($(this).attr('id'));                 
-});
+    display($(this).attr('id'));
+});              
+
+db.collection("Exercise_Routines").doc(routine).onSnapshot(function (doc) {
+    if(routine == "Full_Easy"){
+        $('#routines').append("<li>" + doc.data().Abdominal_Crunches[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Inchworms[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Inclined_Push_Ups[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Jumping_Jacks[0] + "</li>");
+        object = [doc.data().Abdominal_Crunches, doc.data().Inchworms, doc.data().Inclined_Push_Ups, doc.data().Jumping_Jacks];
+    }if(routine == "Upper_Easy"){
+        $('#routines').append("<li>" + doc.data().Abdominal_Crunches[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Heel_Touch[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Mountain_Climber[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Plank[0] + "</li>");
+        object = [doc.data().Abdominal_Crunches, doc.data().Heel_Touch, doc.data().Mountain_Climber, doc.data().Plank];
+    }if(routine == "Lower_Easy"){
+        $('#routines').append("<li>" + doc.data().Backward_Lunges[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Donkey_Kicks[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Quad_Stretch[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Side_Lying_Leg_Lift[0] + "</li>");
+        object = [doc.data().Backward_Lunges, doc.data().Donkey_Kicks, doc.data().Quad_Stretch, doc.data().Side_Lying_Leg_Lift];
+}});

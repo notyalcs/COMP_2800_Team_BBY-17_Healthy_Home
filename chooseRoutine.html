@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="styles/routineChoice.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!-- Beginning of header html -->
+        <header class="header">
+            <figure class="figureHeader"><img class="imageHeader" src="./images/logo_transparent.png" alt="logo"></figure>
+            <ul class="headerButtons">
+                <li><button>Home</button></li>
+                <li><button>Reminders</button></li>
+                <li><button>Profile</button></li>
+            </ul>
+        </header>
+        <!-- End of header html -->
+        <section>Choose your Workout and Difficulty</section>
+        <div class="wrapper">
+                <button class="workout">Full Body</button>
+                <button class="workout">Upper Body</button>
+                <button class="workout">Lower Body</button>
+                <button class="difficulty">Easy</button>
+                <button class="difficulty">Intermediate</button>
+                <button class="difficulty">Advanced</button>
+        </div>
+        <div id="start">
+            <button id="startButton" onclick="start()"disabled>Start</button>
+        </div>
+        <script src="./scripts/routineSelection.js"></script>
+    </body>
+</html>

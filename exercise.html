@@ -5,6 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" rel="stylesheet" href="styles/routine.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Relevant firebase script imports -->
+        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+        <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+        <!-- Our app's firebase configuration -->
+        <script src="./scripts/firebaseConfig.js"></script>
     </head>
     <body>
         <!-- Beginning of header html -->
@@ -23,14 +31,15 @@
                 <li><button><p id="0" class="arrow right"></p></button></li>
                 <li><button><p id="1" class="arrow right"></p></button></li>
                 <li><button><p id="2" class="arrow right"></p></button></li>
+                <li><button><p id="3" class="arrow right"></p></button></li>
+                <li><button><p id="4" class="arrow right"></p></button></li>
             </ul>
             <ul id="routines">
-                <li>Crunches - 4 x 15</li>
-                <li>Pike Press Up - 4 x 15</li>
-                <li>Donkey Kick - 4 x 15</li>
             </ul>
         </div>
         <div id="displayRoutines">
+            <p id="description"></p>
+            <img class="routinePicture">
         </div>
         <script src="./scripts/showRoutine.js"></script>
     </body>
