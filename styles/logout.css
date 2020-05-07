@@ -5,7 +5,6 @@ body {
     width: 100%;
     background-color: thistle;
 }
-/*~~~~~~~~ Start of Header Styling ~~~~~~~~*/
 #universalHeader {
     width: 100%;
     display: grid;
@@ -29,6 +28,7 @@ body {
     margin: 5px;
 }
 #universalHeader > button {
+    /* width: 100%; */
     background-color: #ff7f50;
     border-radius: 10px;
     font-size: large;
@@ -58,27 +58,19 @@ img#imageHeader {
 #profileHead {
     grid-area: profile;
 }
-
 @media only screen and (max-width: 450px) {
     #universalHeader {
         grid-template-columns: repeat(2, 1fr);
     }
-    #universalHeader > button:disabled {
+    #universalHeader > #profileHead {
         display: none;
     }
 }
-/*~~~~~~~~ End of Header Styling ~~~~~~~~*/
 
 
-div#pageContent button {
-    outline: none;
-}
 div#pageContent button:hover {
     background-color: #dddddd;
     box-shadow: 3px 3px #999999;
-}
-div#pageContent > * {
-    /* border: 2px solid red; */
 }
 div#mainContent {
     display: grid;
@@ -104,9 +96,4 @@ button#backBar {
 span#contentTitle {
     font-size: 60px;
     margin-left: 30px;
-}
-div#mainContent > button {
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 35px;
 }
