@@ -77,9 +77,6 @@ div#pageContent button:hover {
     background-color: #dddddd;
     box-shadow: 3px 3px #999999;
 }
-div#pageContent > * {
-    /* border: 2px solid red; */
-}
 div#mainContent {
     display: grid;
     grid-template-columns: 1fr;
