@@ -35,4 +35,40 @@ db.collection("Exercise_Routines").doc(routine).onSnapshot(function (doc) {
         $('#routines').append("<li>" + doc.data().Quad_Stretch[0] + "</li>");
         $('#routines').append("<li>" + doc.data().Side_Lying_Leg_Lift[0] + "</li>");
         object = [doc.data().Backward_Lunges, doc.data().Donkey_Kicks, doc.data().Quad_Stretch, doc.data().Side_Lying_Leg_Lift];
-}});
+    }if(routine == "Full_Intermediate"){
+        $('#routines').append("<li>" + doc.data().Abdominal_Crunches[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Inchworms[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Inclined_Push_Ups[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Jumping_Jacks[0] + "</li>");
+        object = [doc.data().Abdominal_Crunches, doc.data().Inchworms, doc.data().Inclined_Push_Ups, doc.data().Jumping_Jacks];
+    }if(routine == "Upper_Intermediate"){
+        $('#routines').append("<li>" + doc.data().Abdominal_Crunches[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Heel_Touch[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Mountain_Climber[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Plank[0] + "</li>");
+        object = [doc.data().Abdominal_Crunches, doc.data().Heel_Touch, doc.data().Mountain_Climber, doc.data().Plank];
+    }if(routine == "Lower_Intermediate"){
+        $('#routines').append("<li>" + doc.data().Backward_Lunges[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Donkey_Kicks[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Quad_Stretch[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Side_Lying_Leg_Lift[0] + "</li>");
+        object = [doc.data().Backward_Lunges, doc.data().Donkey_Kicks, doc.data().Quad_Stretch, doc.data().Side_Lying_Leg_Lift];
+    }if(routine == "Full_Advanced"){
+        $('#routines').append("<li>" + doc.data().Abdominal_Crunches[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Inchworms[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Inclined_Push_Ups[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Jumping_Jacks[0] + "</li>");
+        object = [doc.data().Abdominal_Crunches, doc.data().Inchworms, doc.data().Inclined_Push_Ups, doc.data().Jumping_Jacks];
+    }if(routine == "Upper_Advanced"){
+        $('#routines').append("<li>" + doc.data().Abdominal_Crunches[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Heel_Touch[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Mountain_Climber[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Plank[0] + "</li>");
+        object = [doc.data().Abdominal_Crunches, doc.data().Heel_Touch, doc.data().Mountain_Climber, doc.data().Plank];
+    }if(routine == "Lower_Advanced"){
+        $('#routines').append("<li>" + doc.data().Backward_Lunges[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Donkey_Kicks[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Quad_Stretch[0] + "</li>");
+        $('#routines').append("<li>" + doc.data().Side_Lying_Leg_Lift[0] + "</li>");
+        object = [doc.data().Backward_Lunges, doc.data().Donkey_Kicks, doc.data().Quad_Stretch, doc.data().Side_Lying_Leg_Lift];
+    }});
