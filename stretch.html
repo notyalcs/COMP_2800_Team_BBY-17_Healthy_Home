@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="styles/routine.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <figure class="figureHeader"><img class="imageHeader" src="./images/logo_transparent.png" alt="logo"></figure>
+            <ul class="headerButtons">
+                <li><button>Home</button></li>
+                <li><button>Reminders</button></li>
+                <li><button>Profile</button></li>
+            </ul>
+        </header>
+        <section>Stretch Routines</section>
+        <div id="overallContent">
+            <ul id="dropDowns">
+                <li><button><p id="0" class="arrow right"></p></button></li>
+                <li><button><p id="1" class="arrow right"></p></button></li>
+                <li><button><p id="2" class="arrow right"></p></button></li>
+            </ul>
+            <ul id="routines">
+                <li>Stretch 1</li>
+                <li>Stretch 2</li>
+                <li>Stretch 3</li>
+            </ul>
+        </div>
+        <div id="displayRoutines">
+        </div>
+        <script src="./scripts/showRoutine.js"></script>
+    </body>
+</html>

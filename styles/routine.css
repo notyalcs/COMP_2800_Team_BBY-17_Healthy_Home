@@ -1,0 +1,89 @@
+ body{
+    margin:0;
+    background-color:dimgray;
+}
+.header{
+    width:100%;
+    display:flex;
+    background-color:lightgray;
+}
+.figureHeader{
+    margin:0;
+    width:20%;
+}
+img{
+    width:100%;
+    height:100%;
+}
+.headerButtons{
+    list-style-type: none;
+    display:flex;
+    margin-left:55%;
+    width:23%;
+}
+.headerButtons li{
+    margin-right:10%;
+}
+.headerButtons button{
+    border-radius:10%;
+    width:80px;
+    margin-top:30%;
+    padding: 7% 10% 7% 10%;
+    border: none;
+    background-color:white;
+}
+section{
+    text-align: center;
+    font-size:50pt;
+    background-color:darkgrey;
+    padding:3%;
+}
+#dropDowns{
+    list-style-type: none;
+}
+#routines{
+    font-size:30pt;
+    text-align: center;
+    margin:1%;
+    width:100%;
+}
+#routines li{
+    list-style-type:none;
+    background-color:lightgray;
+}
+#routines li:not(:last-child){
+    margin-bottom:1%;
+}
+.arrow{
+    border: solid lightgray;
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    padding: 8px;
+}
+.right{
+    transform:rotate(-45deg);
+}
+.down {
+    transform: rotate(45deg);
+}
+#overallContent{
+    display:flex;
+}
+#overallContent button{
+    background-color:dimgray;
+    border:none;
+}
+#displayRoutines{
+    font-size: 20pt;
+    background-color:lightgray;
+    display:block;
+    width:100%;
+}
+.routinePicture{
+    display: block;
+    margin-top:1%;
+    margin-left: auto;
+    margin-right: auto;
+    width:70%;
+    height:15%;
+}
