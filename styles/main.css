@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     margin: 0;
     height: 100%;
@@ -101,3 +102,74 @@ img {
         font-size: 75px;
     }
 }
+=======
+main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        "header"
+        "main"
+        "btns"
+        "footer";
+}
+
+.head {
+    grid-area: header;
+    display:block;
+    margin:auto;
+
+}
+
+.main {
+    grid-area:main;
+    display:block;
+    margin:auto;
+    margin:3vw 15vw;
+    text-align: center;
+}
+
+.buttons {
+    grid-area: btns;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        "btn1 btn2 btn3"
+        "btn4 btn5 btn6";
+
+}
+.btn {
+    width:20vw;
+    height:8vw;
+    margin: 0.5vw;
+}
+#btn1 {
+    grid-area: btn1;
+    
+}
+#btn2 {
+    grid-area: btn2;
+
+}
+#btn3 {
+    grid-area: btn3;
+
+}
+#btn4 {
+    grid-area: btn4;
+
+}
+#btn5 {
+    grid-area: btn5;
+
+}
+#btn6 {
+    grid-area: btn6;
+
+}
+#logo {
+    width:540px; /* you can use % */
+    height: auto;
+}
+
+>>>>>>> Christopher_spooner_Timer
