@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*~~~~~~~~ Start of Header Styling ~~~~~~~~*/
+#universalHeader {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 50px;
+    grid-template-areas: 
+        "logo logo logo"
+        "home reminders profile";
+
+    /* Comment these 2 lines out to make it not sticky. */
+    position: sticky;
+    top: 0;
+    /*--------------------------------------------------*/
+
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#universalHeader > * {
+    padding: 10px;
+    margin: 5px;
+}
+#universalHeader > button {
+    background-color: #ff7f50;
+    border-radius: 10px;
+    font-size: large;
+    outline: none;
+}
+#universalHeader > button:not([disabled]):hover {
+    background-color: #ee6e3f;
+    box-shadow: 1px 1px #bbbbbb;
+    cursor: pointer;
+}
+#figureHeader {
+    margin: 0;
+    padding: 0;
+    grid-area: logo;
+}
+img#imageHeader {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#homeHead {
+    grid-area: home;
+}
+#remindersHead {
+    grid-area: reminders;
+}
+#profileHead {
+    grid-area: profile;
+}
+
+@media only screen and (max-width: 450px) {
+    #universalHeader {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "logo logo"
+            "home profile";
+    }
+    #universalHeader > button:disabled {
+        display: none;
+    }
+}
+
+/*~~~~~~~~ End of Header Styling ~~~~~~~~*/
+
+main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        "main"
+        "btns"
+        "footer";
+        margin:auto;
+
+}
+.presets {
+    grid-area: btns;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "section1 section2"
+        "section3 section4"
+        "createReminder createReminder";
+}
+
+p {
+    text-align: center;
+}
+ul {
+    display:block;
+    list-style-type:circle;
+    margin:auto;
+    text-align: left;
+}
+
+.btn {
+    width:20vw;
+    height:12vh;
+    margin: 0.5vw;
+    float: left;
+    font-size: large;
+
+}
+
+.desc {
+    width:20vw;
+    height:12vh;
+    margin: 0.5vw;
+}
+
+#default1 {
+    grid-area:section1;
+    display:flex;
+    background-color: rgb(219, 219, 219);
+    margin: 2%;
+}
+#default2 {
+    grid-area:section2;
+    display:flex;
+    background-color: rgb(219, 219, 219);
+    margin: 2%;
+
+}
+#default3 {
+    grid-area:section3;
+    display:flex;
+    background-color: rgb(219, 219, 219);
+    margin: 2%;
+
+}
+#default4 {
+    grid-area:section4;
+    display:flex;
+    background-color: rgb(219, 219, 219);
+    margin: 2%;
+}
+
+#createButton {
+    grid-area: createReminder;
+    margin:auto;
+    width: 60vw;
+    height: 12vh;
+    font-size: large;
+
+}
+
+@media only screen and (max-width: 450px) {
+    .presets {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        "section1"
+        "section2"
+        "section3" 
+        "section4"
+        "createReminder";
+}
+.desc {
+    width:45vw;
+    height:15vh;
+    margin:0%;
+    font-size:small
+}
+.btn {
+    width:45vw;
+    height:15vh;
+    margin:0%;
+}
+#createButtion {
+    grid-area:createReminder;
+    width:70vw;
+    height:15vh;
+
+}
+}
+
+
+

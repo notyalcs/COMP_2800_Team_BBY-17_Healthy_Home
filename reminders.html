@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/reminders.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/logo_favicon.png">
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+
+    <!-- Relevant firebase script imports -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <!-- Our app's firebase configuration -->
+    <script src="./scripts/firebaseConfig.js"></script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <title>Reminders</title>
+</head>
+
+<body>
+    <audio id="ding">
+        <source src="audio/ding.mp3" type="audio/mpeg">
+    </audio>
+    <header id="universalHeader">
+        <figure id="figureHeader"><img id="imageHeader" src="./images/logo_transparent.png" alt="logo" onclick="location.href='./main.html'"></figure>
+        <button onclick="location.href='./main.html'" id="homeHead">Home</button>
+        <button onclick="location.href='./reminders.html'" id="remindersHead" disabled>Reminders</button>
+        <button onclick="location.href='./profile.html'" id="profileHead">Profile</button>
+    </header>
+    <main>
+        <section class="presets">
+            <div id="default1">
+            <div class="timer" id="btn1">
+                <button class="btn">15 Minutes</button>
+            </div>
+            <div id="desc1" class="desc">
+                <p>Reminders:</p>
+                <ul id="rem1">
+                    <li>Improve Your Posture</li>
+                </ul>
+            </div>
+        </div>
+        <div id="default2">
+            <div class="timer" id="btn2">
+                <button class="btn">1 Hour</button>
+            </div>
+            <div class="desc2 desc">
+                <p>Reminders:</p>
+                <ul id="rem2">
+                    <li>Short Walk</li>
+                    <li>Refill your Water</li>
+                    <li>Stretch</li>
+                </ul>
+            </div>
+        </div>
+        <div id="default3">
+            <div class="timer" id="btn3">
+                <button class="btn">2 Hours</button>
+            </div>
+            <div class="desc3 desc">
+                <p>Reminders:</p>
+                <ul id="rem3">
+                    <li>Long Walk</li>
+                    <li>Refill your Water</li>
+                    <li>Stretch</li>
+
+
+                </ul>
+            </div>
+        </div>
+        <div id="default4">
+            <div class="timer" id="btn4">
+                <button class="btn">4 Hours</button>
+            </div>
+            <div class="desc4 desc">
+                <p>Reminders:</p>
+                <ul id="rem4">
+                    <li>Workout</li>
+                    <li>Long Walk</li>
+                    <li>Eat a Meal</li>
+                </ul>
+            </div>
+        </div>
+    <hr id="hr">
+            <button onclick="location.href='./createReminder.html'" id="createButton">Create Reminder</button>
+
+            <!-- <div class="timer" id="btn2">
+                <button class="btn">1 Hour Break</button>
+                <p>Timer 2 description <br><br>Short Walk<br>Refill Water<br></p>
+            </div>
+            <div class="timer" id="btn3">
+                <button class="btn">2 Hour Break</button>
+                <p>Timer 3 description<br></p>
+            </div>
+            <div class="timer" id="btn4">
+                <button class="btn">4 Hour Break</button>
+                <p>Timer 4 description<br></p>
+            </div> -->
+
+        </section>
+    </main>
+    <script type="text/javascript" src="scripts/timer.js"></script>
+</body>
+
+</html>

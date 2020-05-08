@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/profile.css">
+    <link rel="shortcut icon" type="image/png" href="images/logo_favicon.png">
+    <title>Profile</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+    <script src="./scripts/firebaseConfig.js"></script>
+</head>
+<body>  
+    <header id="universalHeader">
+        <figure id="figureHeader"><img id="imageHeader" src="./images/logo_transparent.png" alt="logo" onclick="location.href='./main.html'"></figure>
+        <button onclick="location.href='./main.html'" id="homeHead">Home</button>
+        <button onclick="location.href='./reminders.html'" id="remindersHead">Reminders</button>
+        <button onclick="location.href='./profile.html'" id="profileHead" disabled>Profile</button>
+    </header>
+
+    <div id="pageContent">
+        <div id="mainContent">
+            <div id="nameBar">
+                <span id="contentTitle">John Doe</span>
+            </div>
+            <button onclick="location.href='./userReminders.html'" id="remindersLink">Your Reminders</button>
+            <button onclick="location.href='./userRoutines.html'" id="routinesLink">Your Routines</button>
+            <button onclick="location.href='./userStats.html'" id="statsLink">Your Stats</button>
+            <button onclick="location.href='./logout.html'" id="logoutLink">Logout</button>
+        </div>
+    </div>
+
+ 
+    <script src="./scripts/profile.js"></script>
+</body>
+</html>
