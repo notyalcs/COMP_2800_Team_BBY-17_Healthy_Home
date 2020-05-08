@@ -87,13 +87,6 @@ div#mainContent > * {
     align-items: center;
     justify-content: center;
 }
-button#backBar {
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 25px;
-    padding: 15px;
-}
 span#contentTitle {
     font-size: 60px;
-    margin-left: 30px;
 }
