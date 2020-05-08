@@ -96,7 +96,7 @@ section{
     margin-bottom:1%;
 }
 .arrow{
-    border: solid lightgray;
+    border: solid black;
     border-width: 0 8px 8px 0;
     display: inline-block;
     padding: 8px;
@@ -112,6 +112,7 @@ section{
 }
 #overallContent button{
     border:none;
+    background-color:thistle;
 }
 #displayRoutines{
     font-size: 20pt;
