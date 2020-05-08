@@ -78,11 +78,63 @@ body {
 
 }
 
-#header {
+/*~~~~~~~~ Start of Header Styling ~~~~~~~~*/
+#universalHeader {
+    width: 100%;
     grid-area: header;
-    background-color: aquamarine;
-    height: 5vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 50px;
+    grid-template-areas: 
+        "logo logo logo"
+        "home reminders profile";
+
+    /* Comment these 2 lines out to make it not sticky. */
+    position: sticky;
+    top: 0;
+    /*--------------------------------------------------*/
+
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
+#universalHeader > * {
+    padding: 10px;
+    margin: 5px;
+}
+#universalHeader > button {
+    background-color: #ff7f50;
+    border-radius: 10px;
+    font-size: large;
+    outline: none;
+}
+#universalHeader > button:not([disabled]):hover {
+    background-color: #ee6e3f;
+    box-shadow: 1px 1px #bbbbbb;
+    cursor: pointer;
+}
+#figureHeader {
+    margin: 0;
+    padding: 0;
+    grid-area: logo;
+}
+img#imageHeader {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#homeHead {
+    grid-area: home;
+}
+#remindersHead {
+    grid-area: reminders;
+}
+#profileHead {
+    grid-area: profile;
+}
+
+/*~~~~~~~~ End of Header Styling ~~~~~~~~*/
+
 
 #taskList {
     grid-area: itemList;
@@ -245,6 +297,15 @@ body {
 
     }
 
+    #universalHeader {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "logo logo"
+            "reminders profile";
+    }
+    #universalHeader > button#homeHead {
+        display: none;
+    }
     #durationTitle {
         grid-area: durationTitle;
         margin: 1% 2%;

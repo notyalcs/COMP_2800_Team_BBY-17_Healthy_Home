@@ -23,13 +23,19 @@
     <!-- Our app's firebase configuration -->
     <script src="./scripts/firebaseConfig.js"></script>
 
+    <link rel="shortcut icon" type="image/png" href="./images/logo_favicon.png">
 
     <title>Create a Reminder</title>
 
 </head>
 
 <body>
-    <h3 id="header">placeholder</h3>
+    <header id="universalHeader">
+        <figure id="figureHeader"><img id="imageHeader" src="./images/logo_transparent.png" alt="logo" onclick="location.href='./main.html'"></figure>
+        <button onclick="location.href='./main.html'" id="homeHead">Home</button>
+        <button onclick="location.href='./reminders.html'" id="remindersHead">Reminders</button>
+        <button onclick="location.href='./profile.html'" id="profileHead">Profile</button>
+    </header>
     <h3 id="itemTitle">Add an Item</h3>
     <div id="item">
         <input type="text" id="tasks"> </input>
