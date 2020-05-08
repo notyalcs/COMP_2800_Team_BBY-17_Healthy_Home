@@ -79,6 +79,7 @@ section{
 }
 #dropDowns{
     list-style-type: none;
+    transform: translateY(-6px);
 }
 #routines{
     font-size:30pt;
@@ -89,6 +90,7 @@ section{
 #routines li{
     list-style-type:none;
     background-color:lightgray;
+    position:relative;
 }
 #routines li:not(:last-child){
     margin-bottom:1%;
@@ -109,7 +111,6 @@ section{
     display:flex;
 }
 #overallContent button{
-    background-color:dimgray;
     border:none;
 }
 #displayRoutines{
@@ -125,4 +126,27 @@ section{
     margin-right: auto;
     width:70%;
     height:15%;
+}
+@media only screen and (max-width:1000px){
+    .arrow{
+        padding:6px;
+        border-width: 0 6px 6px 0;
+    }
+}
+@media only screen and (max-width:800px){
+    #routines{
+        font-size:23pt;
+    }
+}
+@media only screen and (max-width:550px){
+    section{
+        font-size:40pt;
+    }
+    .arrow{
+        padding:5px;
+        border-width: 0 5px 5px 0;
+    }
+    #routines{
+        font-size:28pt;
+    }
 }
