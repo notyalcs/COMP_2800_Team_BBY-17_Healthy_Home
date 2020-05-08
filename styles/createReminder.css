@@ -2,7 +2,7 @@
     -webkit-appearance: none;
     /* Override default CSS styles */
     appearance: none;
-    width: 100%;
+    width: 95%;
     /* Full-width */
     height: 25px;
     /* Specified height */
@@ -15,7 +15,7 @@
     -webkit-transition: .2s;
     /* 0.2 seconds transition on hover */
     transition: opacity .2s;
-    margin: 1%;
+    margin: auto 1%;
 }
 
 .slider:hover {
@@ -265,7 +265,9 @@ body {
             "minutesTitle"
             "durationTime";
     }
-
+    #nameTitle {
+        margin:10% 0% 0% 0%;
+    }
     #finish {
         display: grid;
         height: 20vh;
@@ -301,5 +303,11 @@ body {
     #durationTitle,
     #duration {
         display: none;
+    }
+    #submit {
+        margin: 10% 0%;
+    }
+    #addItem{
+        font-size: small;
     }
 }
