@@ -11,8 +11,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/createReminder.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+    <!-- Relevant firebase script imports -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <!-- Our app's firebase configuration -->
+    <script src="./scripts/firebaseConfig.js"></script>
+
 
     <title>Create a Reminder</title>
 
@@ -43,7 +53,6 @@
         </div>
     </div>
 
-
     <h3 id="mobileSliderTitle">Select The Timer Duration</h3>
     <div class="slidecontainer" id="mobileDurationSlider">
         <input type="range" min="1" max="48" value="5" class="slider" id="mobileRange">
@@ -53,10 +62,9 @@
         <p id="mobileMinutes"></p>
     </div>
 
-
     <h3 id="nameTitle">Timer Name</h3>
     <div id="finish">
-        <input type="text" id="name"> </input>
+        <input type="text" id="name"></input>
         <button id="submit">Create Timer</button>
     </div>
     <script type="text/javascript" src="scripts/createTimer.js"></script>
