@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" rel="stylesheet" href="styles/routines.css">
+        <link type="text/css" rel="stylesheet" href="styles/resources.css">
         <link rel="shortcut icon" type="image/png" href="images/logo_favicon.png">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -25,7 +25,7 @@
             <button class="button1">Hydrate</button>
             <button class="button1">Exercise</button>
         </div>
-        <h2 id="title"></h2>
+        <h2 id="title1"></h2>
         <div class="btn-group2">
             <button class="button2">Full Body</button>
             <button class="button2">Upper Body</button>
@@ -39,7 +39,9 @@
         
         <script>
             $(".button1").on("click", function(){
-                $("#title").text($(this).text());
+                $("#title1").text($(this).text());
                 console.log("hello");
             });
         </script>
+    </body>
+</html>
