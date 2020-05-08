@@ -71,3 +71,12 @@ img#imageHeader {
     }
 }
 /*~~~~~~~~ End of Header Styling ~~~~~~~~*/
+#routines{
+    text-align: center;
+}
+#routines button{
+    padding:2% 8%;
+    font-size: 20pt;
+    margin:5%;
+}
+

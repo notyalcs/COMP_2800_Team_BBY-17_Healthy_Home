@@ -79,6 +79,7 @@ section{
 }
 #dropDowns{
     list-style-type: none;
+    transform: translateY(-6px);
 }
 #routines{
     font-size:30pt;
@@ -89,12 +90,13 @@ section{
 #routines li{
     list-style-type:none;
     background-color:lightgray;
+    position:relative;
 }
 #routines li:not(:last-child){
     margin-bottom:1%;
 }
 .arrow{
-    border: solid lightgray;
+    border: solid black;
     border-width: 0 8px 8px 0;
     display: inline-block;
     padding: 8px;
@@ -109,8 +111,8 @@ section{
     display:flex;
 }
 #overallContent button{
-    background-color:dimgray;
     border:none;
+    background-color:thistle;
 }
 #displayRoutines{
     font-size: 20pt;
@@ -125,4 +127,27 @@ section{
     margin-right: auto;
     width:70%;
     height:15%;
+}
+@media only screen and (max-width:1000px){
+    .arrow{
+        padding:6px;
+        border-width: 0 6px 6px 0;
+    }
+}
+@media only screen and (max-width:800px){
+    #routines{
+        font-size:23pt;
+    }
+}
+@media only screen and (max-width:550px){
+    section{
+        font-size:40pt;
+    }
+    .arrow{
+        padding:5px;
+        border-width: 0 5px 5px 0;
+    }
+    #routines{
+        font-size:28pt;
+    }
 }

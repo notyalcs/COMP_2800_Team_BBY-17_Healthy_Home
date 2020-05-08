@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="styles/resources.css">
+        <link rel="shortcut icon" type="image/png" href="images/logo_favicon.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <!-- Beginning of header html -->
+        <header id="universalHeader">
+            <figure id="figureHeader"><img id="imageHeader" src="./images/logo_transparent.png" alt="logo" onclick="location.href='./main.html'"></figure>
+            <button onclick="location.href='./main.html'" id="homeHead">Home</button>
+            <button onclick="location.href='./reminders.html'" id="remindersHead">Reminders</button>
+            <button onclick="location.href='./profile.html'" id="profileHead">Profile</button>
+        </header>
+        <!-- End of header html -->
+        <div class="btn-group1">
+            <button class="button1">Strength</button>
+            <button class="button1">Cardio</button>
+            <button class="button1">Stretching</button>
+            <button class="button1">Posture</button>
+            <button class="button1">Hydrate</button>
+            <button class="button1">Exercise</button>
+        </div>
+        <h2 id="title1"></h2>
+        <div class="btn-group2">
+            <button class="button2">Full Body</button>
+            <button class="button2">Upper Body</button>
+            <button class="button2">Abs</button>
+            <button class="button2">Chest</button>
+            <button class="button2">Legs</button>
+            <button class="button2">Legs and Abs</button>
+            <button class="button2">2 Day Split</button>
+            <button class="button2">3 Day Split</button>
+        </div>
+        
+        <script>
+            $(".button1").on("click", function(){
+                $("#title1").text($(this).text());
+                console.log("hello");
+            });
+        </script>
+    </body>
+</html>
