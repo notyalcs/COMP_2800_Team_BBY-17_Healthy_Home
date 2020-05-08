@@ -97,4 +97,23 @@ section{
     font-size:20pt;
     padding: 10px 50px;
 }
-
+@media only screen and (max-width:1200px){
+    .wrapper button{
+        font-size:15pt;
+    }
+    .wrapper{
+        grid-template-columns:repeat(3, 200px);
+        grid-template-rows:repeat(3, 80px);
+        grid-gap:20px 40px;
+    }
+}
+@media only screen and (max-width:450px){
+    .wrapper button{
+        font-size:10pt;
+    }
+    .wrapper{
+        grid-template-columns:repeat(3, 100px);
+        grid-template-rows:repeat(3, 60px);
+        grid-gap:10px 30px;
+    }
+}

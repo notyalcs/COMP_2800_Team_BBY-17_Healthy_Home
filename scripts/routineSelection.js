@@ -1,7 +1,13 @@
 var difficultySelected = false;
 var workout = false;
+let stretch = "";
 var workoutType = "";
 var difficulty = "";
+$(".difficulty").show();
+if(localStorage.getItem('stretch').includes('Stretching')){
+    $(".difficulty").hide();
+    difficultySelected = true;
+}
 
 function getFirstWord(str) {
     let spaceIndex = str.indexOf(' ');
