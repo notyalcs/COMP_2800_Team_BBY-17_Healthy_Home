@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles/userStats.css">
+    <link rel="stylesheet" type="text/css" href="styles/logout.css">
     <link rel="shortcut icon" type="image/png" href="images/logo_favicon.png">
     <title>Logout</title>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+    <script src="./scripts/firebaseConfig.js"></script>
 </head>
 <body>  
     <header id="universalHeader">
@@ -18,11 +22,13 @@
     <div id="pageContent">
         <div id="mainContent">
             <div id="nameBar">
-                <button onclick="location.href='./profile.html'" id="backBar">Back</button>
-                <span id="contentTitle">Logout</span>
+                <span id="contentTitle">Are you sure?</span>
             </div>
+            <button id="yesBTN" onclick="logout()">Yes</button>
+            <button id="noBTN" onclick="location.href='./profile.html'">No</button>
         </div>
     </div>
 
+    <script src="./scripts/logout.js"></script>
 </body>
 </html>

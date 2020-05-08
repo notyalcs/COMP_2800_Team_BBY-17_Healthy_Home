@@ -84,6 +84,18 @@ div#mainContent {
         "sean puru"
         "daniil chris";
 }
+div#group {
+    margin: auto;
+    width: 800px;
+}
+div#mainContent figure {
+    text-align: center;
+    object-fit: contain;
+}
+div#group ~ div {
+    margin: auto;
+    width: 400px;
+}
 div#mainContent h1,h2,p {
     text-align: center;
 }
@@ -103,6 +115,20 @@ div#chris {
     grid-area: chris;
 }
 
+@media only screen and (max-width: 1000px) {
+    div#mainContent {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "group"
+            "sean"
+            "puru"
+            "daniil"
+            "chris"
+    }
+    div#group {
+        width: auto;
+    }
+}
 @media only screen and (max-width: 450px) {
     div#mainContent {
         grid-template-columns: 1fr;
@@ -112,5 +138,13 @@ div#chris {
             "puru"
             "daniil"
             "chris";
+    }
+    div#group ~ div {
+        width: auto;
+    }
+    div#mainContent img {
+        width: 150px;
+        text-align: center;
+        object-fit: contain;
     }
 }
