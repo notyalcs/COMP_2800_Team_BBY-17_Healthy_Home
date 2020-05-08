@@ -3,7 +3,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: thistle;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /*~~~~~~~~ Start of Header Styling ~~~~~~~~*/
 #universalHeader {
@@ -70,6 +70,7 @@ img#imageHeader {
         display: none;
     }
 }
+
 /*~~~~~~~~ End of Header Styling ~~~~~~~~*/
 
 main {
@@ -79,15 +80,17 @@ main {
         "main"
         "btns"
         "footer";
+        margin:auto;
+
 }
 .presets {
     grid-area: btns;
-    margin:auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-        "section1 description1 section2 description2"
-        "section3 description3 section4 description4";
+        "section1 section2"
+        "section3 section4"
+        "createReminder createReminder";
 }
 
 p {
@@ -102,46 +105,83 @@ ul {
 
 .btn {
     width:20vw;
-    height:8vw;
+    height:12vh;
     margin: 0.5vw;
     float: left;
     font-size: large;
 
 }
-#btn1 {
-    grid-area: section1;
 
-}
 .desc {
     width:20vw;
-    height:8vw;
+    height:12vh;
     margin: 0.5vw;
-    background-color: green;
-}
-.desc1 {
-    grid-area:description1;
-}
-.desc2 {
-    grid-area:description2;
-}
-.desc3 {
-    grid-area:description3;
-}
-.desc4 {
-    grid-area:description4;
 }
 
-#btn2 {
-    grid-area: section2;
+#default1 {
+    grid-area:section1;
+    display:flex;
+    background-color: rgb(219, 219, 219);
+    margin: 2%;
+}
+#default2 {
+    grid-area:section2;
+    display:flex;
+    background-color: rgb(219, 219, 219);
+    margin: 2%;
 
 }
-#btn3 {
-    grid-area: section3;
+#default3 {
+    grid-area:section3;
+    display:flex;
+    background-color: rgb(219, 219, 219);
+    margin: 2%;
 
 }
-#btn4 {
-    grid-area: section4;
+#default4 {
+    grid-area:section4;
+    display:flex;
+    background-color: rgb(219, 219, 219);
+    margin: 2%;
+}
+
+#createButton {
+    grid-area: createReminder;
+    margin:auto;
+    width: 60vw;
+    height: 12vh;
+    font-size: large;
 
 }
+
+@media only screen and (max-width: 450px) {
+    .presets {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+        "section1"
+        "section2"
+        "section3" 
+        "section4"
+        "createReminder";
+}
+.desc {
+    width:45vw;
+    height:15vh;
+    margin:0%;
+    font-size:small
+}
+.btn {
+    width:45vw;
+    height:15vh;
+    margin:0%;
+}
+#createButtion {
+    grid-area:createReminder;
+    width:70vw;
+    height:15vh;
+
+}
+}
+
 
 
