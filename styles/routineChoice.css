@@ -97,7 +97,7 @@ section{
     font-size:20pt;
     padding: 10px 50px;
 }
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:1400px){
     .wrapper button{
         font-size:15pt;
     }
@@ -107,13 +107,28 @@ section{
         grid-gap:20px 40px;
     }
 }
-@media only screen and (max-width:450px){
-    .wrapper button{
-        font-size:10pt;
+@media only screen and (max-width:700px){
+    section{
+        width:750px;
+    }
+    #universalHeader{
+        width:775px;
     }
     .wrapper{
-        grid-template-columns:repeat(3, 100px);
-        grid-template-rows:repeat(3, 60px);
-        grid-gap:10px 30px;
+        width:780px;
+    }
+    #start{
+        width:780px;
+    }
+}
+@media only screen and (max-width:450px){
+    .wrapper button{
+        font-size:30pt;
+    }
+    .wrapper{
+        margin-top:100px;
+        grid-template-columns:repeat(3, 230px);
+        grid-template-rows:repeat(3, 100px);
+        grid-gap:50px 40px;
     }
 }

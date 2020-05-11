@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles/userRoutines.css">
     <link rel="shortcut icon" type="image/png" href="images/logo_favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <script src="./scripts/firebaseConfig.js"></script>
     <title>Your Routines</title>
 </head>
 <body>  
@@ -20,8 +27,12 @@
             <div id="nameBar">
                 <span id="contentTitle">Your Routines</span>
             </div>
+            <div id="routineList">
+                <ul>       
+                </ul>
+            </div>
         </div>
     </div>
-
+    <script src="./scripts/generateRoutineList.js"></script>
 </body>
 </html>
