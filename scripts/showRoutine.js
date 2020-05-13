@@ -1,15 +1,45 @@
 var object;
 var index;
 $(document).ready(function(){
+    function addList(recordArray){
+        console.log("adding list");
+        for (i = recordArray.length; i > 0; i--) {
+            $("#dropDowns").append("<li><button><p id=" + i + " class='arrow right'></p></button></li>");
+            $("#customRoutines").append("<li id=" + i + "x>" + recordArray[i]['Name'] + "</li>");
+        }
+    }
     let routine = localStorage.getItem('workoutType') + "_" + localStorage.getItem('difficulty');
     if(!routine.includes("Easy") && !routine.includes("Intermediate") && !routine.includes("Advanced")){
-        routine = localStorage.getItem('workoutType');
-        $("section").text("Stretching Routines");
+        if(localStorage.getItem('stretch').includes("Custom")){
+            firebase.auth().onAuthStateChanged(function (user) {
+                var recordArray = [];
+            
+                if (user) {
+                    db.collection("users").doc(user.uid).collection("Custom Routines").get().then(function (querySnapshot) {
+                        querySnapshot.forEach(function (doc) {
+            
+                            var record = {
+                                Description: doc.data()['Description'],
+                                Name: doc.data()['Name'],
+                                Reps: doc.data()['Reps'],
+                                Sets: doc.data()['Sets'],
+                            };
+                            recordArray.push(record); 
+                        });
+                        addList(recordArray);
+                    });
+                }
+            });
+            
+        }else{
+            routine = localStorage.getItem('workoutType');
+            $("section").text("Stretching Routines");
+        }
     }
     function display(id){
             /**$("#description").text(object[id][1]);
             $("#routinePicture").attr("src", object[id][4]);*/
-            $("#" + id + "x").after("<p id='desc'>" + object[id][1] + "</p>");
+            $("#" + id + "x").after("<p>" + object[id][3] + " reps for " + object[id][2] + " sets" + "</p>" + "<p id='desc'>" + object[id][1] + "</p>");
             index = id;
     }
     

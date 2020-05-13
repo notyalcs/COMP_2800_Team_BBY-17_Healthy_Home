@@ -13,6 +13,7 @@
         <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
         <!-- Our app's firebase configuration -->
         <script src="./scripts/firebaseConfig.js"></script>
+        <link rel="shortcut icon" type="image/png" href="./images/logo_favicon.png">
     </head>
     <body>
         <!-- Beginning of header html -->
@@ -23,22 +24,20 @@
             <button onclick="location.href='./profile.html'" id="profileHead">Profile</button>
         </header>
         <!-- End of header html -->
-        <section>Stretch Routines</section>
+        <section>Custom Routines</section>
+        <button>Create Routine</button>
         <div id="overallContent">
             <ul id="dropDowns">
-                <li><button><p id="0" class="arrow right"></p></button></li>
-                <li><button><p id="1" class="arrow right"></p></button></li>
-                <li><button><p id="2" class="arrow right"></p></button></li>
-                <li><button><p id="3" class="arrow right"></p></button></li>
-                <li><button><p id="4" class="arrow right"></p></button></li>
             </ul>
-            <ul id="routines">
+            <ul id="customRoutines">
             </ul>
         </div>
         <div id="displayRoutines">
             <p id="description"></p>
             <img class="routinePicture">
+            <button id="saveRoutine" onclick="save()">Save Routine</button>
         </div>
         <script src="./scripts/showRoutine.js"></script>
+        <script src="./scripts/saveRoutine.js"></script>
     </body>
 </html>

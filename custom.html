@@ -13,6 +13,7 @@
         <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
         <!-- Our app's firebase configuration -->
         <script src="./scripts/firebaseConfig.js"></script>
+        <link rel="shortcut icon" type="image/png" href="./images/logo_favicon.png">
     </head>
     <body>
         <!-- Beginning of header html -->
@@ -23,22 +24,14 @@
             <button onclick="location.href='./profile.html'" id="profileHead">Profile</button>
         </header>
         <!-- End of header html -->
-        <section>Stretch Routines</section>
-        <div id="overallContent">
-            <ul id="dropDowns">
-                <li><button><p id="0" class="arrow right"></p></button></li>
-                <li><button><p id="1" class="arrow right"></p></button></li>
-                <li><button><p id="2" class="arrow right"></p></button></li>
-                <li><button><p id="3" class="arrow right"></p></button></li>
-                <li><button><p id="4" class="arrow right"></p></button></li>
-            </ul>
-            <ul id="routines">
-            </ul>
-        </div>
-        <div id="displayRoutines">
-            <p id="description"></p>
-            <img class="routinePicture">
-        </div>
-        <script src="./scripts/showRoutine.js"></script>
+        <section>Create Your Routine</section>
+        <form id="form">
+            <input type="text" id="name" placeholder="Enter Routine Name *" required>
+            <input type="text" id="description" placeholder="Enter Routine Description">
+            <input type="number" id="sets" placeholder="Enter Number of Sets *" required>
+            <input type="number" id="reps" placeholder="Enter Number of Reps *" required>
+            <button type="button" onclick="handleSubmit()" id="submit">Submit</button>
+        </form>
+        <script src="scripts/customSubmission.js"></script>
     </body>
 </html>

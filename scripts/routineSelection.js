@@ -9,6 +9,10 @@ if(localStorage.getItem('stretch').includes('Stretching')){
     difficultySelected = true;
 }
 
+if(localStorage.getItem('stretch').includes('Custom')){
+    window.location.href="customRoutine.html";
+}
+
 function getFirstWord(str) {
     let spaceIndex = str.indexOf(' ');
     return spaceIndex === -1 ? str : str.substr(0, spaceIndex);
@@ -18,6 +22,7 @@ function start(){
     localStorage.setItem('workoutType', getFirstWord(workoutType));
     localStorage.setItem('difficulty', difficulty);
     window.location.href="exercise.html";
+    console.log("Started");
 }
 
 function check(){
