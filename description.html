@@ -3,12 +3,20 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" rel="stylesheet" href="styles/routineChoice.css">
+        <link type="text/css" rel="stylesheet" href="styles/description.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Relevant firebase script imports -->
+        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+        <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+        <!-- Our app's firebase configuration -->
+        <script src="./scripts/firebaseConfig.js"></script>
         <link rel="shortcut icon" type="image/png" href="./images/logo_favicon.png">
     </head>
     <body>
-        <!-- Beginning of header html -->
+         <!-- Beginning of header html -->
         <header id="universalHeader">
             <figure id="figureHeader"><img id="imageHeader" src="./images/logo_transparent.png" alt="logo" onclick="location.href='./main.html'"></figure>
             <button onclick="location.href='./main.html'" id="homeHead">Home</button>
@@ -16,20 +24,8 @@
             <button onclick="location.href='./profile.html'" id="profileHead">Profile</button>
         </header>
         <!-- End of header html -->
-        <section>Choose your Workout and Difficulty</section>
-        <!-- Grid that contains all these buttons -->
-        <div class="wrapper">
-                <button class="workout">Full Body</button>
-                <button class="workout">Upper Body</button>
-                <button class="workout">Lower Body</button>
-                <button class="difficulty">Easy</button>
-                <button class="difficulty">Intermediate</button>
-                <button class="difficulty">Advanced</button>
-        </div>
-        <!-- Start button is not located inside the grid -->
-        <div id="start">
-            <button id="startButton" onclick="start()"disabled>Start</button>
-        </div>
-        <script src="./scripts/routineSelection.js"></script>
+        <section></section>
+        <div id="description"></div>
+        <script src="./scripts/generateDescription.js"></script>
     </body>
 </html>

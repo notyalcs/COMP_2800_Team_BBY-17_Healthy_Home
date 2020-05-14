@@ -1,37 +1,11 @@
 var object;
 var index;
+var recordArray = [];
 $(document).ready(function(){
-    function addList(recordArray){
-        console.log("adding list");
-        for (i = recordArray.length; i > 0; i--) {
-            $("#dropDowns").append("<li><button><p id=" + i + " class='arrow right'></p></button></li>");
-            $("#customRoutines").append("<li id=" + i + "x>" + recordArray[i]['Name'] + "</li>");
-        }
-    }
     let routine = localStorage.getItem('workoutType') + "_" + localStorage.getItem('difficulty');
+
     if(!routine.includes("Easy") && !routine.includes("Intermediate") && !routine.includes("Advanced")){
-        if(localStorage.getItem('stretch').includes("Custom")){
-            firebase.auth().onAuthStateChanged(function (user) {
-                var recordArray = [];
-            
-                if (user) {
-                    db.collection("users").doc(user.uid).collection("Custom Routines").get().then(function (querySnapshot) {
-                        querySnapshot.forEach(function (doc) {
-            
-                            var record = {
-                                Description: doc.data()['Description'],
-                                Name: doc.data()['Name'],
-                                Reps: doc.data()['Reps'],
-                                Sets: doc.data()['Sets'],
-                            };
-                            recordArray.push(record); 
-                        });
-                        addList(recordArray);
-                    });
-                }
-            });
-            
-        }else{
+        if(localStorage.getItem('stretch').includes("Stretch")){
             routine = localStorage.getItem('workoutType');
             $("section").text("Stretching Routines");
         }
@@ -39,14 +13,15 @@ $(document).ready(function(){
     function display(id){
             /**$("#description").text(object[id][1]);
             $("#routinePicture").attr("src", object[id][4]);*/
-            $("#" + id + "x").after("<p>" + object[id][3] + " reps for " + object[id][2] + " sets" + "</p>" + "<p id='desc'>" + object[id][1] + "</p>");
-            index = id;
+                $("#" + id + "x").after("<p id='sets'>" + object[id][3] + " reps for " + object[id][2] + " sets" + "</p>" + "<p id='desc'>" + object[id][1] + "</p>");
+                index = id;
     }
     
     $(".arrow").on("click", function(){ 
         $(".arrow").removeClass("down right").addClass("right");
         $(this).removeClass("right").addClass("down");
         $("#desc").remove();
+        $("#sets").remove();
         display($(this).attr('id'));
         $("#saveRoutine").show();
     });              
@@ -127,5 +102,6 @@ $(document).ready(function(){
             $('#routines').append("<li id='3x'>" + doc.data().Triceps_Stretch[0] + "</li>");
             object = [doc.data().Chest_Stretch, doc.data().Spine_Lumbar_Twist_Stretch, doc.data().Standing_Side_Bend, doc.data().Triceps_Stretch];
         }
-    }); 
+    });
+
 });

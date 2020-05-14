@@ -13,10 +13,11 @@ firebase.auth().onAuthStateChanged(function (user) {
             });
             addList(recordArray);
         });
-    } else {
-        console.log("This code should be unreachable. The funny thing is I feel like someone will see this message one day. I'm sorry. -S");
     }
 });
+function gettext(obj){
+    localStorage.setItem('clickedAnchor', $(obj).text());
+}
 function addList(recordArray) {
     recordArray = recordArray.sort(function(a, b) {
         var dateA = new Date(a.release), dateB = new Date(b.release);
@@ -24,6 +25,6 @@ function addList(recordArray) {
     });
     console.log(recordArray[0]['routineName']);
     for (i = recordArray.length; i > 0; i--) {
-        $("#routineList ul").append("<li>" + recordArray[i - 1]['routineName'] + "</li>");
+        $("#routineList ul").append("<li><a onclick='gettext(this)' href='description.html'>" + recordArray[i - 1]['routineName'] + "</a></li>");
     }
 }

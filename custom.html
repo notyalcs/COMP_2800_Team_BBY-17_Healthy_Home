@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" rel="stylesheet" href="styles/routine.css">
+        <link type="text/css" rel="stylesheet" href="styles/custom.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- Relevant firebase script imports -->
         <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
@@ -25,11 +25,12 @@
         </header>
         <!-- End of header html -->
         <section>Create Your Routine</section>
+         <!-- Form that contains all the inputs necessary to create a custom routine -->
         <form id="form">
-            <input type="text" id="name" placeholder="Enter Routine Name *" required>
-            <input type="text" id="description" placeholder="Enter Routine Description">
-            <input type="number" id="sets" placeholder="Enter Number of Sets *" required>
-            <input type="number" id="reps" placeholder="Enter Number of Reps *" required>
+            <input type="text" id="name" placeholder="Enter Routine Name *" required><br/>
+            <input type="text" id="description" placeholder="Enter Routine Description"><br/>
+            <input type="number" id="sets" placeholder="Enter Number of Sets *" required><br/>
+            <input type="number" id="reps" placeholder="Enter Number of Reps *" required><br/>
             <button type="button" onclick="handleSubmit()" id="submit">Submit</button>
         </form>
         <script src="scripts/customSubmission.js"></script>

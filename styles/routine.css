@@ -70,35 +70,48 @@ img#imageHeader {
     }
 }
 /*~~~~~~~~ End of Header Styling ~~~~~~~~*/
+
+/* Title */
 section{
     text-align: center;
     font-size:50pt;
     background-color:darkgrey;
     padding:3%;
 }
+
+/*Save Routine Button*/
 #saveRoutine{
     display:none;
     padding: 1% 5%;
     font-size:20pt;
 }
+
+/*Dropdown container*/
 #dropDowns{
     list-style-type: none;
     transform: translateY(-6px);
 }
+
+/*Routine list container*/
 #routines{
     font-size:30pt;
     text-align: center;
     margin:1%;
     width:100%;
 }
+
+/*Each list item in the unorganized list*/
 #routines li{
     list-style-type:none;
     background-color:lightgray;
     position:relative;
 }
+
+/*All list items except for the last one have a margin bottom*/
 #routines li:not(:last-child){
     margin-bottom:1%;
 }
+
 .arrow{
     border: solid black;
     border-width: 0 8px 8px 0;
@@ -111,13 +124,19 @@ section{
 .down {
     transform: rotate(45deg);
 }
+
+/* Contains the dropdowns and the list of routines */
 #overallContent{
     display:flex;
 }
+
+/* The dropdown buttons */
 #overallContent button{
     border:none;
     background-color:thistle;
 }
+
+/* Contains the save routine button */
 #displayRoutines{
     font-size: 20pt;
     background-color:lightgray;
@@ -125,6 +144,8 @@ section{
     width:100%;
     text-align: center;
 }
+
+/* Later will become the picture for the routines once the source names are added to the database */
 .routinePicture{
     display: block;
     margin-top:1%;
@@ -133,6 +154,7 @@ section{
     width:70%;
     height:15%;
 }
+
 @media only screen and (max-width:1000px){
     .arrow{
         padding:6px;
