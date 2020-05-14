@@ -78,12 +78,15 @@ body {
 
 }
 
+/*Placeholder header. CAN BE REPLACED WITH REAL HEADER */
 #header {
     grid-area: header;
     background-color: aquamarine;
     height: 5vh;
 }
 
+/*list of user input tasks.
+adds a grey line on the side of the list and minor styling. */
 #taskList {
     grid-area: itemList;
     border-left: 2px solid rgb(59, 59, 59);
@@ -91,6 +94,7 @@ body {
 
 }
 
+/*header for the add item input field */
 #itemTitle {
     grid-area: itemTitle;
     margin: 2% 1% 0% 1%;
@@ -98,6 +102,7 @@ body {
 
 }
 
+/*"add tasks input field" and "add to list" container*/
 #item {
     grid-area: item;
     height: 20vh;
@@ -108,18 +113,21 @@ body {
     margin: 0% 1%;
 }
 
+/*input field for tasks */
 #tasks {
     grid-area: tasks;
     height: 10vh;
 
 }
 
+/*add to list button */
 #addItem {
     grid-area: addItem;
     height: 10vh;
 
 }
 
+/*slider and timer duration headers sub-grid */
 #durationTitle {
     grid-area: durationTitle;
     margin: 1% 2%;
@@ -129,17 +137,19 @@ body {
         "sliderTitle minutesTitle";
 }
 
+/*timer slider header*/
 #sliderTitle {
     grid-area: sliderTitle;
 
 }
 
+/*Timer duration header*/
 #minutesTitle {
     grid-area: minutesTitle;
-
     margin: auto;
 }
 
+/*duration slider and duration display container */
 #duration {
     display: grid;
     height: 20vh;
@@ -154,21 +164,25 @@ body {
     grid-area: durationForm;
 }
 
+/*duration div*/
 #minutesDiv {
     grid-area: durationTime;
 }
 
+/*duration p tag*/
 #minutes {
     vertical-align: top;
     text-align: center;
 }
 
+/*timer name header */
 #nameTitle {
     grid-area: nameTitle;
     height: 5vh;
     margin: 0% 1%;
 }
 
+/*name form and submission button container */
 #finish {
     display: grid;
     height: 20vh;
@@ -179,12 +193,13 @@ body {
     margin: 0% 1%;
 }
 
+/*timer name form */
 #name {
     grid-area: nameForm;
     height: 10vh;
 
 }
-
+/*submit button*/
 #submit {
     grid-area: submit;
     height: 10vh;
@@ -245,6 +260,7 @@ body {
 
     }
 
+    /* Sub-container for the
     #durationTitle {
         grid-area: durationTitle;
         margin: 1% 2%;
@@ -253,8 +269,8 @@ body {
         grid-template-areas:
             "sliderTitle"
             "durationForm";
-    }
-
+    } */
+/* 
     #duration {
         display: grid;
         height: 20vh;
@@ -264,10 +280,17 @@ body {
         grid-template-areas:
             "minutesTitle"
             "durationTime";
-    }
+    } */
     #nameTitle {
         margin:10% 0% 0% 0%;
     }
+
+    /* reduces tasks width to make the add to list button larger (responsive to 315 px)*/
+    #tasks {
+        width:65vw;
+    }
+
+    /*Sub-container for vertically aligning the name header and input field/ submit button */
     #finish {
         display: grid;
         height: 20vh;
@@ -279,34 +302,49 @@ body {
         margin: 0% 1%;
     }
 
+    /*shows the mobile duration elements and places them on a grid*/
     #mobileDiv {
         display: block;
         grid-area: durationTime;
 
     }
-
+    /*shows the mobile duration elements and places them on a grid*/
     #mobileTitle {
         display: block;
         grid-area: minutesTitle;
     }
-
+    /*shows the mobile duration elements and places them on a grid*/
     #mobileSliderTitle {
         display: block;
         grid-area: sliderTitle;
     }
-
+    /*shows the mobile duration elements and places them on a grid*/
     #mobileDurationSlider {
         display: block;
         grid-area: durationForm
     }
 
+    /*hides the desktop duration elemetns */
     #durationTitle,
     #duration {
         display: none;
     }
+    
+    /*submit button.
+    Restricting width to prevent horizontal scrolling*/
     #submit {
-        margin: 10% 0%;
+        margin:auto;
+        width:90vw;
+
     }
+
+    /*timer name input field.
+    Adds a bottom margin. */
+    #name {
+        margin: 0% 0% 10% 0%;
+    }
+    /*"add to list" button.
+    prevents text overflow on the button  */
     #addItem{
         font-size: small;
     }

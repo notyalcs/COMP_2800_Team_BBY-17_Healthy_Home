@@ -1,0 +1,87 @@
+        /* Sizes the body and lays out the gridpane*/
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0%;
+            font-family: 'open sans', arial, sans-serif;
+            display: grid;
+            grid-template-columns: 2fr 1.5fr;
+            grid-template-areas:
+                "header header"
+                "cardioTitle mapTitle"
+                "cardioInfo map"
+                "cardioResourceTitle map"
+                "cardioResource map"
+                "filler map";
+        }
+
+        /*A placeholder header */
+        #header {
+            background-color: purple;
+            grid-area: header;
+            margin: 0%;
+        }
+
+        /*header for the cardio information */
+        #cardioTitle {
+            grid-area: cardioTitle;
+            padding: 1%;
+
+        }
+
+        /*cardio information */
+        #cardioInfo {
+            grid-area: cardioInfo;
+            padding: 1%;
+        }
+
+        /*header for the cardio resource information */        
+        #cardioResourceTitle {
+            grid-area: cardioResourceTitle;
+            padding: 1%;
+        }
+        /*cardio resource information */
+        #cardioResource {
+            grid-area: cardioResource;
+            padding: 1%;
+        }
+        /*Header for the map.
+        placed above the map on the gridpane */
+        #mapTitle {
+            grid-area: mapTitle;
+        }
+
+        /* map
+        explicitly stated height and width is required (overrules gridpane) */
+        #map {
+            width: 42vw;
+            height: 80vh;
+            background-color: grey;
+            grid-area: map;
+            margin:auto;
+
+        }
+
+        /*Makes the content tablet and mobile friendly when the screen width is 900px or less*/
+        @media only screen and (max-width: 900px){
+        /*rearranges the body */
+            body {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "header "
+                "cardioTitle"
+                "cardioInfo"
+                "cardioResourceTitle"
+                "cardioResource"
+                "mapTitle"
+                "map";
+            }
+            /*resizes and centers the map */
+            #map {
+                width:90vw;
+                margin:auto;
+            }
+            #mapTitle {
+                text-align:center;
+            }
+        }
