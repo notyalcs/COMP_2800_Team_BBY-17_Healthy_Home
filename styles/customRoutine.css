@@ -152,6 +152,7 @@ aside button{
 /* Contains the dropdowns and the list of routines */
 #overallContent{
     display:flex;
+    border: solid black 1px;
 }
 
 /* The dropdown buttons */
