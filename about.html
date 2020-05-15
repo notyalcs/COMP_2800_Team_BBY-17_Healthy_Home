@@ -6,6 +6,15 @@
     <link rel="stylesheet" type="text/css" href="./styles/about.css">
     <link rel="shortcut icon" type="image/png" href="./images/logo_favicon.png">
     <title>About Us</title>
+     <!-- Relevant firebase script imports -->
+     <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+     <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+     <!-- Our app's firebase configuration -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./scripts/firebaseConfig.js"></script>
 </head>
 <body>  
     <header id="universalHeader">
@@ -14,6 +23,7 @@
         <button onclick="location.href='./reminders.html'" id="remindersHead">Reminders</button>
         <button onclick="location.href='./profile.html'" id="profileHead">Profile</button>
     </header>
+
 
     <div id="mainContent">
         <div id="group">
@@ -42,5 +52,6 @@
         </div>
     </div>
 
+    <script src="scripts/about.js"></script>
 </body>
 </html>
