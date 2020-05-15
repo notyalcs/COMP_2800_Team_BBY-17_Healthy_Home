@@ -79,6 +79,7 @@ main {
     grid-template-areas:
         "main"
         "btns"
+        "custom"
         "footer";
         margin:auto;
 
@@ -90,7 +91,8 @@ main {
     grid-template-areas:
         "section1 section2"
         "section3 section4"
-        "createReminder createReminder";
+        "createReminder createReminder"
+        "custom custom";
 }
 
 p {
@@ -153,6 +155,18 @@ ul {
     font-size: large;
 
 }
+#customTimer {
+    grid-area: custom;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    'custom1 custom2'}
+
+    .custom1 {
+        grid-area: custom1;
+    }
+    .custom2 {
+        grid-area: custom1;
+    }
 
 @media only screen and (max-width: 450px) {
     .presets {
@@ -180,6 +194,9 @@ ul {
     width:70vw;
     height:15vh;
 
+}
+.customButton {
+    margin:2.5%;
 }
 }
 
