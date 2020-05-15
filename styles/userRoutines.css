@@ -3,7 +3,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: thistle;
+    background-color: lightblue;
 }
 #universalHeader {
     width: 100%;
@@ -82,14 +82,14 @@ div#mainContent > * {
     /* border: 2px solid blue; */
     margin: 15px 50px 15px 50px;
 }
-#nameBar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-span#contentTitle {
-    font-size: 60px;
+/* Title */
+section{
+    text-align: center;
+    font-size:50pt;
+    padding:3%;
+    margin-bottom:2%;
 }
 ul{
     list-style-type:none;
+    text-align:center;
 }
