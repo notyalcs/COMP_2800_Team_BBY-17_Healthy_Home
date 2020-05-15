@@ -4,7 +4,8 @@ function getTextArea(){
             Description: $("textarea").val(),
             Timestamp: firebase.firestore.FieldValue.serverTimestamp()
         }).then(function () {
-            window.location.href = "notes.html";
+            // window.location.href = "notes.html";
+            location.reload(true);
         });
     });
 }
