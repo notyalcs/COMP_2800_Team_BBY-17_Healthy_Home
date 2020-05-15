@@ -93,6 +93,8 @@ section{
 textarea{
     width:80%;
     height:20%;
+    margin: auto;
+    resize:none;
 }
 
 #notes{
@@ -103,4 +105,7 @@ textarea{
 }
 h3{
     text-align: center;
+}
+p{
+    margin: 0% 1%;
 }

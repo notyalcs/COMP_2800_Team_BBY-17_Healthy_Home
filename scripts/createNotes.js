@@ -3,9 +3,9 @@ function getTextArea(){
         db.collection("users").doc(user.uid).collection("Notes").add({
             Description: $("textarea").val(),
             Timestamp: firebase.firestore.FieldValue.serverTimestamp()
-        })// .then(function () {
-        //     window.location.href = "profile.html";
-        // });
+        }).then(function () {
+            window.location.href = "notes.html";
+        });
     });
 }
 
