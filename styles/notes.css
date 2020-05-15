@@ -96,11 +96,11 @@ textarea{
 }
 
 #notes{
-    /* display:block; */
+    display:block;
     margin: 2vh 5vw;
     background-color:white;
     /* text-align:center; */
 }
-p {
-    float:left;
+h3{
+    text-align: center;
 }
