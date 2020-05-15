@@ -3,26 +3,15 @@ function getTextArea(){
         db.collection("users").doc(user.uid).collection("Notes").add({
             Description: $("textarea").val(),
             Timestamp: firebase.firestore.FieldValue.serverTimestamp()
-        }).then(function () {
-            window.location.href = "profile.html";
-        });
+        })// .then(function () {
+        //     window.location.href = "profile.html";
+        // });
     });
 }
 
-function generateList(){
+let noteList = [];
+function getNotes() {
     firebase.auth().onAuthStateChanged(function (user) {
-        db.collection("users")
-            .doc(user.uid)
-            .collection("Notes")
-            .get()
-            .then(function (querySnapshot) {
-                querySnapshot.forEach(function (doc) {
-                    $("#notes").append("<p>" + doc.data()['Description'] + "</p>");
-                    console.log(doc.data()['Timestamp'].toDate());
-                });
-            });       
-});}
-function getEvent() {
     db.collection("users")
      .doc(user.uid)
      .collection("Notes")
@@ -30,9 +19,29 @@ function getEvent() {
      .get()
         .then(function (snap) {
             snap.forEach(function (doc) {
-                noteList.push(doc.id)
+                $("#notes").prepend("<h3>" + doc.data()['Timestamp'].toDate().toDateString() + "</h3><p>" + doc.data()['Description'] + "</p>");
+                console.log();
             })
-        })
+        })})
         
 }
-generateList();
+
+// function generateList(){
+//     console.log('hi')
+//     firebase.auth().onAuthStateChanged(function (user) {
+//         for (let i = noteList.length - 1; i > noteList.length; i--) {
+//         db.collection("users")
+//             .doc(user.uid)
+//             .collection("Notes")
+//             .doc('' + noteList[i])
+//             .get()
+//             .then(function (doc) {
+//                 console.log('hi')
+//                     $("#notes").append("<p>" + doc.data()['Description'] + "</p>");
+//                     console.log(doc.data()['Timestamp'].toDate());
+//                 });
+//             }       
+// })}
+
+getNotes()
+// generateList();
