@@ -51,13 +51,12 @@ span#name {
     height: 40%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 150px);
+    grid-template-rows: repeat(2, 150px);
     grid-gap: 25px;
     margin: 25px;
     grid-template-areas: 
-        "reminders routines profile"
-        "resources resources resources"
-        "about about about";
+        "reminders routines cardio"
+        "resources about profile";
 }
 #links button {
     width: 100%;
@@ -78,6 +77,9 @@ span#name {
 #routines {
     grid-area: routines;
 }
+#cardio {
+    grid-area: cardio;
+}
 #profile {
     grid-area: profile;
 }
@@ -93,14 +95,15 @@ span#name {
         height: 40%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 150px);
+        grid-template-rows: repeat(6, 150px);
         grid-gap: 25px;
         margin: 25px;
         grid-template-areas: 
             "reminders"
             "routines"
-            "profile"
+            "cardio"
             "resources"
+            "profile"
             "about";
     }
     #welcome {
