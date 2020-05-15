@@ -13,7 +13,8 @@ $(document).ready(function(){
     function display(id){
             /**$("#description").text(object[id][1]);
             $("#routinePicture").attr("src", object[id][4]);*/
-                $("#" + id + "x").after("<p id='sets'>" + object[id][3] + " reps for " + object[id][2] + " sets" + "</p>" + "<p id='desc'>" + object[id][1] + "</p>");
+                $("#" + id + "x").after("<p id='sets'>" + object[id][3] + " reps for " + object[id][2] + " sets" + "</p>" + "<p id='desc'>" + object[id][1] + "</p><img class='routinePicture'>");
+                $(".routinePicture").attr('src', 'images/' + object[id][4]);
                 index = id;
     }
     
@@ -22,6 +23,7 @@ $(document).ready(function(){
         $(this).removeClass("right").addClass("down");
         $("#desc").remove();
         $("#sets").remove();
+        $(".routinePicture").remove();
         display($(this).attr('id'));
         $("#saveRoutine").show();
     });              

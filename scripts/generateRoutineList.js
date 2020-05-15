@@ -25,6 +25,6 @@ function addList(recordArray) {
     });
     console.log(recordArray[0]['routineName']);
     for (i = recordArray.length; i > 0; i--) {
-        $("#routineList ul").append("<li><a onclick='gettext(this)' href='description.html'>" + recordArray[i - 1]['routineName'] + "</a></li>");
+        $("#routineList ul").append("<li id=" + i + "><a onclick='gettext(this)' href='description.html'>" + recordArray[i - 1]['routineName'] + "</a><button id='" + i + "'class='fa fa-trash' onclick='deleteRoutine(this)'></button></li>");
     }
 }
