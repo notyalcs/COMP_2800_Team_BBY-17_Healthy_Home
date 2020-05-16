@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 body {
     margin: 0;
     position: absolute;
     height: 100%;
     width: 100%;
     background-color: thistle;
+    /* background-image: url("../images/confetti.gif"); */
 }
 /*~~~~~~~~ Start of Header Styling ~~~~~~~~*/
 #universalHeader {
@@ -25,13 +27,13 @@ body {
     border-bottom-right-radius: 10px;
 }
 #universalHeader > * {
-    padding: 10px;
-    margin: 5px;
+    margin: 0 5px 5px 5px;
 }
 #universalHeader > button {
     background-color: #ff7f50;
     border-radius: 10px;
     font-size: large;
+    font-family: Poppins, sans-serif;
     outline: none;
 }
 #universalHeader > button:not([disabled]):hover {
@@ -71,9 +73,7 @@ img#imageHeader {
     }
 }
 /*~~~~~~~~ End of Header Styling ~~~~~~~~*/
-div#mainContent > * {
-    border: 2px solid blue;
-}
+
 div#mainContent {
     margin: 50px;
     display: grid;
@@ -83,10 +83,12 @@ div#mainContent {
         "group group"
         "sean puru"
         "daniil chris";
+    font-family: Poppins, sans-serif;
 }
 div#group {
     margin: auto;
     width: 800px;
+    /* font-family: Poppins, sans-serif; */
 }
 div#mainContent figure {
     text-align: center;
@@ -113,6 +115,12 @@ div#daniil {
 }
 div#chris {
     grid-area: chris;
+}
+
+#confetti {
+    object-fit: fill;
+    width: 100vw;
+    /* display: none; */
 }
 
 @media only screen and (max-width: 1000px) {

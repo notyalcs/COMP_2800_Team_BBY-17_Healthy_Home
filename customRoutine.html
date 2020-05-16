@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Custom Routines</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="styles/customRoutine.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Relevant firebase script imports -->
+        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+        <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+        <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+        <!-- Our app's firebase configuration -->
+        <script src="./scripts/firebaseConfig.js"></script>
+        <link rel="shortcut icon" type="image/png" href="./images/logo_favicon.png">
+    </head>
+    <body>
+        <!-- Beginning of header html -->
+        <header id="universalHeader">
+            <figure id="figureHeader"><img id="imageHeader" src="./images/logo_transparent.png" alt="logo" onclick="location.href='./main.html'"></figure>
+            <button onclick="location.href='./main.html'" id="homeHead">Home</button>
+            <button onclick="location.href='./reminders.html'" id="remindersHead">Reminders</button>
+            <button onclick="location.href='./profile.html'" id="profileHead">Profile</button>
+        </header>
+        <!-- End of header html -->
+        <section>Custom Routines</section>
+        <aside><button onclick="window.location.href='custom.html'">Create Routine</button></aside>
+        <!-- Shows the list of routines-->
+        <div id="overallContent">
+            <!-- The drop down arrows, located in exercise.html and are generated from generateCustomRoutines.js on line 12-->
+            <ul id="dropDowns">
+            </ul>
+            <!-- List of routines, generated from generateCustomRoutines.js on line 13 -->
+            <ul id="customRoutines">
+            </ul>
+        </div>
+        <div id="displayRoutines">
+            <button id="saveRoutine" onclick="save()">Save Routine</button>
+        </div>
+        <script src="./scripts/saveRoutine.js"></script>
+        <script src="./scripts/generateCustomRoutines.js"></script>
+        <script src="./scripts/showCustomRoutine.js"></script>
+    </body>
+</html>
