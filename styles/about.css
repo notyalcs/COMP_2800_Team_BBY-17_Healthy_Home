@@ -5,6 +5,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: thistle;
+    /* background-image: url("../images/confetti.gif"); */
 }
 /*~~~~~~~~ Start of Header Styling ~~~~~~~~*/
 #universalHeader {
@@ -114,6 +115,12 @@ div#daniil {
 }
 div#chris {
     grid-area: chris;
+}
+
+#confetti {
+    object-fit: fill;
+    width: 100vw;
+    /* display: none; */
 }
 
 @media only screen and (max-width: 1000px) {

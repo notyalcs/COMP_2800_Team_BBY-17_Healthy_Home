@@ -37,6 +37,7 @@ function getYLocation() {
 
 function easterEgg() {
     console.log("CONGRATULATIONS!");
+    document.body.style.backgroundImage = "url('./images/confetti.gif')";
     createEgg();
     createEgg();
     createEgg();
