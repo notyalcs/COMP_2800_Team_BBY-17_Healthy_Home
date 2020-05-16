@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+}
+/*~~~~~~~~ Start of Header Styling ~~~~~~~~*/
+#universalHeader {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 50px;
+    grid-template-areas: 
+        "logo logo logo"
+        "home reminders profile";
+
+    /* Comment these 2 lines out to make it not sticky. */
+    position: sticky;
+    top: 0;
+    /*--------------------------------------------------*/
+
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#universalHeader > * {
+    padding: 10px;
+    margin: 5px;
+}
+#universalHeader > button {
+    background-color: #ff7f50;
+    border-radius: 10px;
+    font-size: large;
+    outline: none;
+}
+#universalHeader > button:not([disabled]):hover {
+    background-color: #ee6e3f;
+    box-shadow: 1px 1px #bbbbbb;
+    cursor: pointer;
+}
+#figureHeader {
+    margin: 0;
+    padding: 0;
+    grid-area: logo;
+}
+img#imageHeader {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#homeHead {
+    grid-area: home;
+}
+#remindersHead {
+    grid-area: reminders;
+}
+#profileHead {
+    grid-area: profile;
+}
+
+@media only screen and (max-width: 450px) {
+    #universalHeader {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "logo logo"
+            "reminders profile";
+    }
+    #universalHeader > button#homeHead {
+        display: none;
+    }
+}
+/*~~~~~~~~ End of Header Styling ~~~~~~~~*/
+
+/* Title */
+section{
+    text-align: center;
+    font-size:50pt;
+    padding:3%;
+    margin-bottom:2%;
+}
+
+/*Save Routine Button*/
+#saveRoutine{
+    display:none;
+    padding: 1% 5%;
+    font-size:20pt;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+aside{
+    text-align: center;
+}
+aside button{
+    font-size:20pt;
+    padding: 1% 5%;
+    font-size:20pt;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*Dropdown container*/
+#dropDowns{
+    list-style-type: none;
+    transform: translateY(-6px);
+}
+
+/*Routine list container*/
+#customRoutines{
+    font-size:30pt;
+    text-align: center;
+    margin:1%;
+    width:100%;
+}
+
+/*Each list item in the unorganized list*/
+#customRoutines li{
+    list-style-type:none;
+    background-color:white;
+    position:relative;
+}
+
+/*All list items except for the last one have a margin bottom*/
+#customRoutines li:not(:last-child){
+    margin-bottom:1%;
+}
+
+.arrow{
+    border: solid black;
+    border-width: 0 8px 8px 0;
+    display: inline-block;
+    padding: 8px;
+}
+.right{
+    transform:rotate(-45deg);
+}
+.down {
+    transform: rotate(45deg);
+}
+
+/* Contains the dropdowns and the list of routines */
+#overallContent{
+    display:flex;
+    border: solid black 1px;
+}
+
+/* The dropdown buttons */
+#overallContent button{
+    border:none;
+    background-color:lightblue;
+}
+
+/* Contains the save routine button */
+#displayRoutines{
+    font-size: 20pt;
+    display:block;
+    width:100%;
+    text-align: center;
+    background-color:lightblue;
+}
+
+/* Later will become the picture for the routines once the source names are added to the database */
+.routinePicture{
+    display: block;
+    margin-top:1%;
+    margin-left: auto;
+    margin-right: auto;
+    width:70%;
+    height:15%;
+}
+@media only screen and (max-width:1000px){
+    .arrow{
+        padding:6px;
+        border-width: 0 6px 6px 0;
+    }
+}
+@media only screen and (max-width:800px){
+    #customRoutines{
+        font-size:23pt;
+    }
+}
+@media only screen and (max-width:550px){
+    section{
+        font-size:40pt;
+    }
+    .arrow{
+        padding:5px;
+        border-width: 0 5px 5px 0;
+    }
+    #customRoutines{
+        font-size:18pt;
+    }
+}

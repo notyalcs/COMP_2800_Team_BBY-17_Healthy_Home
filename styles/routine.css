@@ -3,7 +3,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: thistle;
+    background-color: lightblue;
 }
 /*~~~~~~~~ Start of Header Styling ~~~~~~~~*/
 #universalHeader {
@@ -58,7 +58,6 @@ img#imageHeader {
 #profileHead {
     grid-area: profile;
 }
-
 @media only screen and (max-width: 450px) {
     #universalHeader {
         grid-template-columns: repeat(2, 1fr);
@@ -71,30 +70,55 @@ img#imageHeader {
     }
 }
 /*~~~~~~~~ End of Header Styling ~~~~~~~~*/
+
+/* Title */
 section{
     text-align: center;
     font-size:50pt;
-    background-color:darkgrey;
     padding:3%;
 }
+
+/*Save Routine Button*/
+#saveRoutine{
+    display:none;
+    padding: 1% 5%;
+    font-size:20pt;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top:200px;
+}
+
+/*Dropdown container*/
 #dropDowns{
     list-style-type: none;
     transform: translateY(-6px);
 }
+
+/*Routine list container*/
 #routines{
     font-size:30pt;
     text-align: center;
     margin:1%;
     width:100%;
 }
+
+/*Each list item in the unorganized list*/
 #routines li{
     list-style-type:none;
-    background-color:lightgray;
+    background-color:white;
     position:relative;
 }
+
+/*All list items except for the last one have a margin bottom*/
 #routines li:not(:last-child){
     margin-bottom:1%;
 }
+
 .arrow{
     border: solid black;
     border-width: 0 8px 8px 0;
@@ -107,27 +131,37 @@ section{
 .down {
     transform: rotate(45deg);
 }
+
+/* Contains the dropdowns and the list of routines */
 #overallContent{
     display:flex;
+    border: solid black 1px;
 }
+
+/* The dropdown buttons */
 #overallContent button{
     border:none;
-    background-color:thistle;
+    background-color:lightblue;
 }
+
+/* Contains the save routine button */
 #displayRoutines{
     font-size: 20pt;
-    background-color:lightgray;
     display:block;
     width:100%;
+    text-align: center;
 }
+
+/* Later will become the picture for the routines once the source names are added to the database */
 .routinePicture{
     display: block;
     margin-top:1%;
     margin-left: auto;
     margin-right: auto;
-    width:70%;
-    height:15%;
+    width:50%;
+    height:25%;
 }
+
 @media only screen and (max-width:1000px){
     .arrow{
         padding:6px;
@@ -148,6 +182,6 @@ section{
         border-width: 0 5px 5px 0;
     }
     #routines{
-        font-size:28pt;
+        font-size:18pt;
     }
 }
