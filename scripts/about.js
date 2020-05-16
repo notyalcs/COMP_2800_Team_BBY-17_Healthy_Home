@@ -28,6 +28,11 @@ function update() {
     })
 }
 
+function playAudio() {
+    let audio = new Audio("./audio/egg.mp3");
+    audio.play();
+}
+
 function getXLocation() {
     return Math.random() * (document.body.scrollWidth - 100) + "px";
 }
@@ -38,6 +43,7 @@ function getYLocation() {
 function easterEgg() {
     console.log("CONGRATULATIONS!");
     document.body.style.backgroundImage = "url('./images/confetti.gif')";
+    document.getElementById("groupName").onclick = playAudio;
     createEgg();
     createEgg();
     createEgg();
