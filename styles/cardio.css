@@ -95,12 +95,7 @@ img#imageHeader {
     grid-area: cardioResourceTitle;
     padding: 0% 1%;
 }
-/*cardio resource information */
-#cardioResource {
-    grid-area: cardioResource;
-    padding: 0%;
 
-}
 
 .tile{
     border-radius: 10px;
@@ -108,6 +103,22 @@ img#imageHeader {
     padding:1vw;
     margin:1%;
     border: 1px solid grey;
+}
+
+.tileResource {
+    border-radius: 10px;
+    background-color: white;
+    padding:1vw;
+    margin:0% 1% 1% 1%;
+    border: 1px solid grey;
+}
+/*cardio resource information */
+#cardioResource {
+    grid-area: cardioResource;
+    padding: 0%;
+    
+
+
 }
 /*Header for the map.
 placed above the map on the gridpane */
