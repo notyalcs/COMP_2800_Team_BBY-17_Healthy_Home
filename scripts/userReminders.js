@@ -16,9 +16,9 @@ firebase.auth().onAuthStateChanged(function (user) {
                 for (let i = 0; i < buttonArr.length; i++) {
                     itemString += buttonArr[i] + '\n';
                 }
-
+                
                 /*Appends timers from db to the reminders*/
-                $('#reminderList').append('<div class="col"><p class="name">Name: ' + name + '</p><p class="duration">Duration: ' + duration + '</p><button id="delete' + doc.id + '">delete</button><button class="edit">edit</button></div>')
+                $('#reminderList').append('<div class="col"><p class="name">Name: ' + name + '</p><p class="duration">Duration: ' + duration + '</p><button id="delete' + doc.id + '">delete</button><button id="' + doc.id + '">edit</button></div>')
                 /*deletes timers from the db when the delete button is clicked*/
                 $("#delete" + doc.id).click(function () {
                     firebase.auth().onAuthStateChanged(function (user) {
@@ -37,6 +37,10 @@ firebase.auth().onAuthStateChanged(function (user) {
                     })
                 });
             
+$('#' + doc.id).on('click', function() {
+    sessionStorage.setItem('docID', doc.id);
+    window.location.href = 'editReminder.html';
+})
 
 
             })
