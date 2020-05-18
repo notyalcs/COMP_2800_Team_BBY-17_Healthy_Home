@@ -27,7 +27,9 @@ firebase.auth().onAuthStateChanged(function (user) {
                                 querySnapshot.forEach(function (doc) {
                                     if (docID == doc.id) {
                                         console.log("doc id: " + doc.id);
-                                        db.collection("users").doc(user.uid).collection("Reminders").doc(doc.id).delete();
+                                        db.collection("users").doc(user.uid).collection("Reminders").doc(doc.id).delete().then(function(){
+                                            location.reload(true);
+                                        });
                                     }
                                 })
                             })
