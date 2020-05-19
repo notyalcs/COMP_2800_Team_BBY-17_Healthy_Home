@@ -21,7 +21,7 @@ function save(saveButton){
 });}
     else{
         firebase.auth().onAuthStateChanged(function(user){
-            db.collection("users").doc(user.uid).collection("Saved Routines").add({routineName:exercises[index]['Name']}).then(function() {
+            db.collection("users").doc(user.uid).collection("Saved Routines").add({routineName:$("#name" + index).text()}).then(function() {
                 $(".saveRoutine").after($("<p>Routine saved!</p>"));
                 $(".saveRoutine").prop("disabled", true);
             }).catch(function(error){

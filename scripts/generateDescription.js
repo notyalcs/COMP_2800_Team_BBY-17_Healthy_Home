@@ -3,22 +3,21 @@ var i;
 
 $("section").text(x);
 
-firebase.auth().onAuthStateChanged(function (user) {
-    i = 0;
-    if (user) {
-        db.collection("users").doc(user.uid).collection("Custom Routines").get().then(function (querySnapshot) {
-            querySnapshot.forEach(function (doc) {
-                console.log("Database: " + doc.data()['Name']);
-                console.log("X: " + x);
-                if(doc.data()['Name'] == x){
-                    $("#description").append("<p>" + doc.data()['Description'] + "</p>");
-                    return;
-                }
-                i++;
+if(x.includes("Custom")){
+    let newID = x.substring(15, x.length);
+    firebase.auth().onAuthStateChanged(function(user){
+        if(user){
+            db.collection("users").doc(user.uid).collection("Custom Routines").get().then(function(querySnapshot){
+                querySnapshot.forEach(function(doc){
+                    if(doc.data()['Value'] == newID){
+                        $("#description").append("<h3><b>" + doc.data()['Name'] + "</b></h3><p>" + doc.data()['Description'] + "</p>");
+                    }
+                });
             });
-        });
-    }
-});
+        }
+    });
+}
+
 db.collection("Exercise_Routines").doc("Full_Easy").onSnapshot(function (doc) {
 if(x == doc.data().Abdominal_Crunches[0]){
     $("#description").append("<p>" + doc.data().Abdominal_Crunches[1] + "</p>");
