@@ -162,6 +162,7 @@ section{
     height:25%;
 }
 
+
 @media only screen and (max-width:1000px){
     .arrow{
         padding:6px;
@@ -185,3 +186,4 @@ section{
         font-size:18pt;
     }
 }
+
