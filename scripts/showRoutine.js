@@ -24,15 +24,19 @@ $(document).ready(function () {
         })
     $('#b1').on('click', function () {
         document.getElementById('desc1').style.display = document.getElementById('desc1').style.display === 'none' ? '' : 'none';
+        index = 0;
     });
     $('#b2').on('click', function () {
         document.getElementById('desc2').style.display = document.getElementById('desc2').style.display === 'none' ? '' : 'none';
+        index = 1;
     });
     $('#b3').on('click', function () {
         document.getElementById('desc3').style.display = document.getElementById('desc3').style.display === 'none' ? '' : 'none';
+        index = 3;
     });
     $('#b4').on('click', function () {
         document.getElementById('desc4').style.display = document.getElementById('desc4').style.display === 'none' ? '' : 'none';
+        index = 4;
     });
 
 });
