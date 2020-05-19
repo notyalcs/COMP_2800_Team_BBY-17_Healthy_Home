@@ -136,6 +136,7 @@ explicitly stated height and width is required (overrules gridpane) */
     background-color: grey;
     grid-area: map;
     margin:auto;
+    z-index: -1;
 }
 h3 {
     color:teal;
