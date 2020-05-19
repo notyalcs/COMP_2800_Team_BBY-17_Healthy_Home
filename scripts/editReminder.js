@@ -16,11 +16,15 @@ firebase.auth().onAuthStateChanged(function (user) {
             var duration = doc.data()['Duration'];
             var name = doc.data()['Name'];
             console.log(buttonArr);
+
+
             $('#name').val(name);
             $('#minutes').html(duration)
             for (let i = 0; i < buttonArr.length; i++) {
                 console.log(i);
                 $('#items').append('<input type="text" class="items ' + i + '" value="' + buttonArr[i] + '"></input><input type="button" class="' + i + '" id = "' + i + '" value="delete"></input>');
+                
+                
                 $("#" + i).on('click', function() {
                     console.log(i);
                     $("." + i).remove();
@@ -49,14 +53,15 @@ $('#update').on('click', function() {
     window.location.href = 'userReminders.html';
             })
 })})
-var newID = 'a'
+var a = 'a'
 $('#newItem').on('click', function() {
+    let newID = a;
     $('#items').append('<input type="text" class="items ' + newID + '"></input><input type="button" class="' + newID + '" id = "' + newID + '" value="delete"></input>');
-    // $("#" + newID).on('click', function() {
-    //     console.log(newID);
-    //     $("." + newID).remove();
-    // })
-    // newID += 'a';
+    $("#" + newID).on('click', function() {
+        console.log(newID);
+        $("." + newID).remove();
+    })
+    a += 'a';
 });
 
 // Update the current slider value (each time you drag the slider handle)
