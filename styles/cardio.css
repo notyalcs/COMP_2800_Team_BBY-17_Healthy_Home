@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+    font-family: Poppins, sans-serif;
+}
 /* Sizes the body and lays out the gridpane*/
 body {
     height: 100%;
@@ -13,6 +17,7 @@ body {
         "cardioResourceTitle map"
         "cardioResource map"
         "filler map";
+    background-color: #eeeeff;
 }
 
 /*~~~~~~~~ Start of Header Styling ~~~~~~~~*/
@@ -36,8 +41,7 @@ body {
     border-bottom-right-radius: 10px;
 }
 #universalHeader > * {
-    padding: 10px;
-    margin: 5px;
+    margin: 0 5px 5px 5px;
 }
 #universalHeader > button {
     background-color: #ff7f50;

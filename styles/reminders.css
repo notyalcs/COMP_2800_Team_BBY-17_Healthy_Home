@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 body {
     margin: 0;
     position: absolute;
@@ -25,13 +26,13 @@ body {
     border-bottom-right-radius: 10px;
 }
 #universalHeader > * {
-    padding: 10px;
-    margin: 5px;
+    margin: 0 5px 5px 5px;
 }
 #universalHeader > button {
     background-color: #ff7f50;
     border-radius: 10px;
     font-size: large;
+    font-family: Poppins, sans-serif;
     outline: none;
 }
 #universalHeader > button:not([disabled]):hover {
@@ -81,8 +82,15 @@ main {
         "btns"
         "custom"
         "footer";
-        margin:auto;
-
+    margin:auto;
+}
+main button {
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+main button:hover {
+    background-color: #dedede;
 }
 .presets {
     grid-area: btns;
@@ -93,10 +101,18 @@ main {
         "section3 section4"
         "createReminder createReminder"
         "custom custom";
+    font-family: Poppins, sans-serif;
+}
+
+.presets div {
+    border-radius: 5px;
 }
 
 p {
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 ul {
     display:block;
@@ -111,7 +127,7 @@ ul {
     margin: 0.5vw;
     float: left;
     font-size: large;
-
+    font-family: Poppins, sans-serif;
 }
 
 .desc {
@@ -123,27 +139,27 @@ ul {
 #default1 {
     grid-area:section1;
     display:flex;
-    background-color: rgb(219, 219, 219);
+    background-color: #ddddf0;
     margin: 2%;
 }
 #default2 {
     grid-area:section2;
     display:flex;
-    background-color: rgb(219, 219, 219);
+    background-color: #ddddf0;
     margin: 2%;
 
 }
 #default3 {
     grid-area:section3;
     display:flex;
-    background-color: rgb(219, 219, 219);
+    background-color: #ddddf0;
     margin: 2%;
 
 }
 #default4 {
     grid-area:section4;
     display:flex;
-    background-color: rgb(219, 219, 219);
+    background-color: #ddddf0;
     margin: 2%;
 }
 
@@ -152,21 +168,36 @@ ul {
     margin:auto;
     width: 60vw;
     height: 12vh;
-    font-size: large;
-
+    font-size: 25px;
+    background-color: #5DDD61;
+    font-family: Poppins, sans-serif;
+}
+#createButton:hover {
+    background-color: #4CBA50;
+}
+h3 {
+    font-family: Poppins, sans-serif;
+    margin-left: 20px;
 }
 #customTimer {
+    background-color: #eeeeff;
     grid-area: custom;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
     'custom1 custom2'}
 
-    .custom1 {
-        grid-area: custom1;
+.custom1 {
+    grid-area: custom1;
+}
+.custom2 {
+    grid-area: custom1;
+}
+
+@media only screen and (max-width: 900px) {
+    li {
+        font-size: 12px;
     }
-    .custom2 {
-        grid-area: custom1;
-    }
+}
 
 @media only screen and (max-width: 450px) {
     .presets {
@@ -177,27 +208,27 @@ ul {
         "section3" 
         "section4"
         "createReminder";
-}
-.desc {
-    width:45vw;
-    height:15vh;
-    margin:0%;
-    font-size:small
-}
-.btn {
-    width:45vw;
-    height:15vh;
-    margin:0%;
-}
-#createButtion {
-    grid-area:createReminder;
-    width:70vw;
-    height:15vh;
+    }
+    .desc {
+        width:45vw;
+        height:15vh;
+        margin:0%;
+        font-size:small
+    }
+    .btn {
+        width:45vw;
+        height:15vh;
+        margin:0%;
+    }
+    #createButtion {
+        grid-area:createReminder;
+        width:70vw;
+        height:15vh;
 
-}
-.customButton {
-    margin:2.5%;
-}
+    }
+    .customButton {
+        margin:2.5%;
+    }
 }
 
 

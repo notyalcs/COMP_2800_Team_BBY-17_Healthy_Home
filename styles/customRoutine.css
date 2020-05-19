@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+    font-family: Poppins, sans-serif;
+}
 body {
     margin: 0;
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: lightblue;
+    background-color: #eeeeff;
 }
 /*~~~~~~~~ Start of Header Styling ~~~~~~~~*/
 #universalHeader {
@@ -157,8 +161,9 @@ aside button{
 
 /* The dropdown buttons */
 #overallContent button{
+    cursor: pointer;
+    outline: none;
     border:none;
-    background-color:lightblue;
 }
 
 /* Contains the save routine button */
@@ -167,7 +172,6 @@ aside button{
     display:block;
     width:100%;
     text-align: center;
-    background-color:lightblue;
 }
 
 /* Later will become the picture for the routines once the source names are added to the database */

@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+    font-family: Poppins, sans-serif;
+}
 body {
     margin: 0;
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: lightblue;
+    background-color: #eeeeff;
 }
 /*~~~~~~~~ Start of Header Styling ~~~~~~~~*/
 #universalHeader {
@@ -25,8 +29,7 @@ body {
     border-bottom-right-radius: 10px;
 }
 #universalHeader > * {
-    padding: 10px;
-    margin: 5px;
+    margin: 0 5px 5px 5px;
 }
 #universalHeader > button {
     background-color: #ff7f50;
@@ -120,10 +123,12 @@ section{
 }
 
 .arrow{
+    outline: none;
     border: solid black;
     border-width: 0 8px 8px 0;
     display: inline-block;
     padding: 8px;
+    cursor: pointer;
 }
 .right{
     transform:rotate(-45deg);
@@ -140,8 +145,8 @@ section{
 
 /* The dropdown buttons */
 #overallContent button{
-    border:none;
-    background-color:lightblue;
+    border: none;
+    outline: none;
 }
 
 /* Contains the save routine button */
