@@ -79,18 +79,16 @@ section{
 }
 
 /*Save Routine Button*/
-#saveRoutine{
-    display:none;
+.saveRoutine{
     padding: 1% 5%;
-    font-size:20pt;
+    font-size:15pt;
     background-color: #4CAF50;
     color: white;
-    padding: 14px 20px;
+    padding: 10px 15px;
     margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-top:200px;
 }
 
 /*Dropdown container*/
@@ -161,7 +159,6 @@ section{
     width:50%;
     height:25%;
 }
-
 
 @media only screen and (max-width:1000px){
     .arrow{

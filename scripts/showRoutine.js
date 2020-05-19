@@ -1,13 +1,13 @@
 var object;
-var index;
 var recordArray = [];
+var exercises;
 $(document).ready(function () {
     var routine = localStorage.getItem('workoutType') + "_" + localStorage.getItem('difficulty');
     db.collection("Exercise_Routines")
         .doc(routine)
         .get()
         .then(function (doc) {
-            let exercises = doc.data();
+            exercises = doc.data();
             object = exercises;
             console.log(exercises);
             let i = 1;
@@ -16,7 +16,7 @@ $(document).ready(function () {
                     console.log(key + " -> " + exercises[key][0]);
                     $('#name' + i).html(exercises[key][0]);
                     $('#sets' + i).html(exercises[key][2] + ' x ' + exercises[key][3]);
-                    $('#desc' + i).html(exercises[key][1]);
+                    $('#desc' + i).prepend(exercises[key][1]);
                     i++;
                 }
             }
@@ -24,19 +24,35 @@ $(document).ready(function () {
         })
     $('#b1').on('click', function () {
         document.getElementById('desc1').style.display = document.getElementById('desc1').style.display === 'none' ? '' : 'none';
-        index = 0;
+        if(document.getElementById('desc1').style.display == 'none'){
+            $(this).val('Expand');
+        }else{
+            $(this).val('Collapse');
+        }
     });
     $('#b2').on('click', function () {
         document.getElementById('desc2').style.display = document.getElementById('desc2').style.display === 'none' ? '' : 'none';
-        index = 1;
+        if(document.getElementById('desc2').style.display == 'none'){
+            $(this).val('Expand');
+        }else{
+            $(this).val('Collapse');
+        }
     });
     $('#b3').on('click', function () {
         document.getElementById('desc3').style.display = document.getElementById('desc3').style.display === 'none' ? '' : 'none';
-        index = 3;
+        if(document.getElementById('desc3').style.display == 'none'){
+            $(this).val('Expand');
+        }else{
+            $(this).val('Collapse');
+        }
     });
     $('#b4').on('click', function () {
         document.getElementById('desc4').style.display = document.getElementById('desc4').style.display === 'none' ? '' : 'none';
-        index = 4;
+        if(document.getElementById('desc4').style.display == 'none'){
+            $(this).val('Expand');
+        }else{
+            $(this).val('Collapse');
+        }
     });
 
 });
