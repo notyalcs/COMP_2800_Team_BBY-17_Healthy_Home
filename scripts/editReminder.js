@@ -1,6 +1,5 @@
 let buttonArr = [];
 var docID = sessionStorage.getItem('docID')
-
 var slider = document.getElementById("myRange");
 var output = document.getElementById("minutes");
 
@@ -20,7 +19,12 @@ firebase.auth().onAuthStateChanged(function (user) {
             $('#name').val(name);
             $('#minutes').html(duration)
             for (let i = 0; i < buttonArr.length; i++) {
-                $('#items').append('<input type="text" class="items" value="' + buttonArr[i] + '"></input>')
+                console.log(i);
+                $('#items').append('<input type="text" class="items ' + i + '" value="' + buttonArr[i] + '"></input><input type="button" class="' + i + '" id = "' + i + '" value="delete"></input>');
+                $("#" + i).on('click', function() {
+                    console.log(i);
+                    $("." + i).remove();
+                })
             }
         })
 })
@@ -28,8 +32,8 @@ firebase.auth().onAuthStateChanged(function (user) {
 $('#update').on('click', function() {
     let itemArr = [];
     let itemList = document.getElementsByClassName('items')
-    for (let i = 0; i < itemList.length; i++) {
-        itemArr.push(itemList[i].value)
+    for (let j = 0; j < itemList.length; j++) {
+        itemArr.push(itemList[j].value)
     }
     console.log(itemArr);
     firebase.auth().onAuthStateChanged(function (user) {
@@ -45,9 +49,14 @@ $('#update').on('click', function() {
     window.location.href = 'userReminders.html';
             })
 })})
-
+var newID = 'a'
 $('#newItem').on('click', function() {
-    $('#items').append('<input class="items" type="text"></form>')
+    $('#items').append('<input type="text" class="items ' + newID + '"></input><input type="button" class="' + newID + '" id = "' + newID + '" value="delete"></input>');
+    // $("#" + newID).on('click', function() {
+    //     console.log(newID);
+    //     $("." + newID).remove();
+    // })
+    // newID += 'a';
 });
 
 // Update the current slider value (each time you drag the slider handle)
