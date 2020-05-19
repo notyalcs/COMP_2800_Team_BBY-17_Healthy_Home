@@ -1,0 +1,17 @@
+.info {
+    display:none;
+}
+body {
+    background-color: lightgray;
+}
+h3 {
+    margin:auto;
+    text-align: center;
+}
+p {
+    background-color:white;
+    padding:1%;
+    border-radius: 10px;
+    border: 1px solid grey;
+    margin:1vh 20vw;
+}
