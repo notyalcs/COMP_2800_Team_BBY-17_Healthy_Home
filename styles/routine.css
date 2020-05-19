@@ -78,6 +78,9 @@ section{
     padding:3%;
 }
 
+body {
+    background-color: #EEEEFF;
+}
 /*Save Routine Button*/
 #saveRoutine{
     display:none;
@@ -141,7 +144,7 @@ section{
 /* The dropdown buttons */
 #overallContent button{
     border:none;
-    background-color:lightblue;
+    /* background-color:lightblue; */
 }
 
 /* Contains the save routine button */
