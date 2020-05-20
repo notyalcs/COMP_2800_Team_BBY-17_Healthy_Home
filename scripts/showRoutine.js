@@ -16,7 +16,11 @@ $(document).ready(function () {
                     console.log(key + " -> " + exercises[key][0]);
                     $('#name' + i).html(exercises[key][0]);
                     $('#sets' + i).html(exercises[key][2] + ' x ' + exercises[key][3]);
-                    $('#desc' + i).prepend(exercises[key][1]);
+                    if(exercises[key][0] == 'Inchworms'){
+                        $('#desc' + i).prepend(exercises[key][1] + "<br/><br/><br/><br/><br/><p style='text-align:center;'>No image available</p><br/><br/><br/><br/><br/>");
+                    }else{
+                        $('#desc' + i).prepend(exercises[key][1] + "<img class='routinePicture' src=./images/" + exercises[key][4] + ">");
+                    }
                     i++;
                 }
             }
