@@ -81,6 +81,9 @@ section{
     padding:3%;
 }
 
+body {
+    background-color: #EEEEFF;
+}
 /*Save Routine Button*/
 .saveRoutine{
     padding: 1% 5%;
@@ -88,57 +91,37 @@ section{
     background-color: #4CAF50;
     color: white;
     padding: 10px 15px;
-    margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-top:50px;
+    margin-left:10px
 }
 
-/*Dropdown container*/
-#dropDowns{
-    list-style-type: none;
-    transform: translateY(-6px);
-}
-
-/*Routine list container*/
-#routines{
-    font-size:30pt;
-    text-align: center;
-    margin:1%;
-    width:100%;
-}
-
-/*Each list item in the unorganized list*/
-#routines li{
-    list-style-type:none;
-    background-color:white;
-    position:relative;
-}
-
-/*All list items except for the last one have a margin bottom*/
-#routines li:not(:last-child){
-    margin-bottom:1%;
-}
-
-.arrow{
-    outline: none;
-    border: solid black;
-    border-width: 0 8px 8px 0;
-    display: inline-block;
-    padding: 8px;
-    cursor: pointer;
-}
-.right{
-    transform:rotate(-45deg);
-}
-.down {
-    transform: rotate(45deg);
-}
-
-/* Contains the dropdowns and the list of routines */
-#overallContent{
+#head1,
+#head2,
+#head3,
+#head4 {
     display:flex;
-    border: solid black 1px;
+}
+
+div img{
+    display:block;
+    width:20%;
+    height:17%;
+    float:right;
+    border-radius:8px;
+    padding:1px;
+    border:1px solid gray;
+    background-color:black;
+}
+
+#descDiv1,
+#descDiv2,
+#descDiv3,
+#descDiv4 {
+    margin: 2vh 1vw 0vh 1vw;
+    display:flex;
 }
 
 /* The dropdown buttons */
@@ -146,15 +129,18 @@ section{
     border: none;
     outline: none;
 }
-
-/* Contains the save routine button */
-#displayRoutines{
-    font-size: 20pt;
-    display:block;
-    width:100%;
-    text-align: center;
+h3,
+p {
+    margin: 0vh 1vw;
 }
 
+.items {
+    background-color:white;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding:1%;
+    margin:1%;
+}
 /* Later will become the picture for the routines once the source names are added to the database */
 .routinePicture{
     display: block;
@@ -163,29 +149,15 @@ section{
     margin-right: auto;
     width:50%;
     height:25%;
+    border-radius:8px;
+    padding:1px;
+    border:1px solid gray;
+    background-color:black;
 }
-
-@media only screen and (max-width:1000px){
-    .arrow{
-        padding:6px;
-        border-width: 0 6px 6px 0;
-    }
+@media only screen and (max-width:500px){
+    div img{
+        display:block;
+        width:35%;
+        height:30%;
+   }
 }
-@media only screen and (max-width:800px){
-    #routines{
-        font-size:23pt;
-    }
-}
-@media only screen and (max-width:550px){
-    section{
-        font-size:40pt;
-    }
-    .arrow{
-        padding:5px;
-        border-width: 0 5px 5px 0;
-    }
-    #routines{
-        font-size:18pt;
-    }
-}
-

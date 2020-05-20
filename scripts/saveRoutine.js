@@ -51,8 +51,8 @@ function save(saveButton){
                     if(boo == 1){
                         firebase.auth().onAuthStateChanged(function(user){
                             db.collection("users").doc(user.uid).collection("Saved Routines").add({routineName:$("#name" + index).text()}).then(function() {
-                                $(".saveRoutine").after($("<p>Routine saved!</p>"));
-                                $(".saveRoutine").prop("disabled", true);
+                                $(saveButton).after($("<p>Routine saved!</p>"));
+                                $(saveButton).prop("disabled", true);
                             }).catch(function(error){
                                 console.log("there was an error");
                             });

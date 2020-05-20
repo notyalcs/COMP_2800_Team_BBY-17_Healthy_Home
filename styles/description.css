@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+    font-family: Poppins, sans-serif;
+}
 body {
     margin: 0;
     position: absolute;
@@ -85,6 +89,16 @@ section{
     border: 1px solid black;
     background-color:white;
     margin-top:50px;
+}
+figure{
+    text-align: center;
+    align-content: center;
+}
+center img{
+   border-radius:8px;
+   padding:1px;
+   border:1px solid gray;
+   background-color:black;
 }
 @media only screen and (max-width:400px){
     section{

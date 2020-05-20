@@ -73,6 +73,7 @@ img#imageHeader {
     }
 }
 /*~~~~~~~~ End of Header Styling ~~~~~~~~*/
+
 /* Title */
 section{
     text-align: center;
@@ -99,6 +100,7 @@ section{
 .choice:hover {
     background-color: #cccce9;
 }
+
 .custom {
     background-color: #5ddd61;
 }
