@@ -29,8 +29,7 @@ body {
     border-bottom-right-radius: 10px;
 }
 #universalHeader > * {
-    padding: 10px;
-    margin: 5px;
+    margin: 0 5px 5px 5px;
 }
 #universalHeader > button {
     background-color: #ff7f50;
@@ -153,7 +152,6 @@ p {
     display:block;
     width:100%;
     text-align: center;
-    margin
 }
 
 /* Later will become the picture for the routines once the source names are added to the database */
