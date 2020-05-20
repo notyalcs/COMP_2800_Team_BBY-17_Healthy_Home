@@ -18,12 +18,8 @@ body {
     grid-template-areas: 
         "logo logo logo"
         "home reminders profile";
-
-    /* Comment these 2 lines out to make it not sticky. */
     position: sticky;
     top: 0;
-    /*--------------------------------------------------*/
-
     background-color: white;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -74,6 +70,7 @@ img#imageHeader {
     }
 }
 /*~~~~~~~~ End of Header Styling ~~~~~~~~*/
+
 section{
     text-align: center;
     font-size:50pt;
@@ -120,6 +117,8 @@ section{
 button[disabled]{
     background-color: #ff2222;
 }
+
+/* Alterations depending on screen size - Desktop */
 @media only screen and (max-width:1400px){
     .wrapper button{
         font-size:15pt;
@@ -130,6 +129,7 @@ button[disabled]{
         grid-gap:20px 40px;
     }
 }
+/* Tablet */
 @media only screen and (max-width:700px){
     section{
         width:750px;
@@ -144,6 +144,7 @@ button[disabled]{
         width:780px;
     }
 }
+/* Mobile */
 @media only screen and (max-width:450px){
     .wrapper{
         margin-top:100px;

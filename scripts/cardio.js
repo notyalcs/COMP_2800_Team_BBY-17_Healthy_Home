@@ -48,8 +48,8 @@
 
     // Handle a geolocation error
     function handleLocationError(browserHasGeolocation, infoWindow) {
-      // Set default location to Sydney, Australia
-      pos = { lat: -33.856, lng: 151.215 };
+      // Set default location to BCIT
+      pos = { lat: 49.250481, lng: -123.001605 };
       map = new google.maps.Map(document.getElementById('map'), {
         center: pos,
         zoom: 15
