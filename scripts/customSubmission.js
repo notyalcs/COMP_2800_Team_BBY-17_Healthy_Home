@@ -1,7 +1,7 @@
 function createRoutine(rout){
     firebase.auth().onAuthStateChanged(function(user){
         db.collection("users").doc(user.uid).collection("Custom Routines").add(rout).then(function() {
-            window.location.href="routines.html";
+            window.location.href="customRoutine.html";
         }).catch(function(error){
             console.log("there was an error");
         });
