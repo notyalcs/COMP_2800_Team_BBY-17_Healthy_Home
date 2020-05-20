@@ -85,39 +85,17 @@ body {
     background-color: #EEEEFF;
 }
 /*Save Routine Button*/
-#saveRoutine{
-    display:none;
+.saveRoutine{
     padding: 1% 5%;
-    font-size:20pt;
+    font-size:15pt;
     background-color: #4CAF50;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 10px 15px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-top:200px;
-}
-
-/*Dropdown container*/
-#dropDowns{
-    list-style-type: none;
-    transform: translateY(-6px);
-}
-
-/*Routine list container*/
-#routines{
-    font-size:30pt;
-    text-align: center;
-    margin:1%;
-    width:100%;
-}
-
-/*Each list item in the unorganized list*/
-#routines li{
-    list-style-type:none;
-    background-color:white;
-    position:relative;
+    margin-top:50px;
+    margin-left:10px
 }
 
 /*All list items except for the last one have a margin bottom*/
@@ -129,10 +107,15 @@ body {
     display:flex;
 }
 
-img {
-    width:10%;
-    height:10%;
+div img{
+    display:block;
+    width:20%;
+    height:17%;
     float:right;
+    border-radius:8px;
+    padding:1px;
+    border:1px solid gray;
+    background-color:black;
 }
 
 #descDiv1,
@@ -143,6 +126,11 @@ img {
     display:flex;
 }
 
+/* The dropdown buttons */
+#overallContent button{
+    border: none;
+    outline: none;
+}
 h3,
 p {
     margin: 0vh 1vw;
@@ -163,30 +151,15 @@ p {
     margin-right: auto;
     width:50%;
     height:25%;
+    border-radius:8px;
+    padding:1px;
+    border:1px solid gray;
+    background-color:black;
 }
-
-
-@media only screen and (max-width:1000px){
-    .arrow{
-        padding:6px;
-        border-width: 0 6px 6px 0;
-    }
-}
-@media only screen and (max-width:800px){
-    #routines{
-        font-size:23pt;
-    }
-}
-@media only screen and (max-width:450px){
-    /* #head1 {
-        display:'';
-    }
-    #section1 {
-        display:flex;
-    }
-    #sets1 {
+@media only screen and (max-width:500px){
+    div img{
         display:block;
-    }
-*/
-
+        width:35%;
+        height:30%;
+   }
 }

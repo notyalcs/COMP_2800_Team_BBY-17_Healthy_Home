@@ -15,6 +15,7 @@
     <!-- Our app's firebase configuration -->
     <script src="./scripts/firebaseConfig.js"></script>
     <link rel="shortcut icon" type="image/png" href="./images/logo_favicon.png">
+    <title>Routine</title>
 </head>
 
 <body>
@@ -31,58 +32,72 @@
 <div class='items'>
     <div id='head1'>
         <div id='section1'>
-        <input type='button' value='expand' id='b1'>
+        <input type='button' value='Expand' id='b1'>
         <h3 id='name1'></h3>
         </div>
-        <h3 id='sets1'></p>
+        <h3 id='sets1'></h3>
     </div>
     <div id='descDiv1'>
+
         <p id='desc1'></p>
-        <img id='img1' alt='image not found'></img>
+        <img id='img1' alt='image not found'>
+        <span id="displayRoutines">
+            <button id="1" class="saveRoutine" onclick="save(this)">Save Routine</button>
+        </span>
     </div>
 </div>
 <div class='items'>
-
     <div id='head2'>
-        <input type='button' value='expand' id='b2'>
+        <div id='section2'>
+        <input type='button' value='Expand' id='b2'>
         <h3 id='name2'></h3>
-        <h3 id='sets2'></p>
+        </div>
+        <h3 id='sets2'></h3>
     </div>
     <div id='descDiv2'>
-        <p id='desc2'></p>
-        <img id='img2' alt='image not found'></img>
 
+        <p id='desc2'></p>
+        <img id='img2' alt='image not found'>
+ <span id="displayRoutines">
+            <button id="2" class="saveRoutine" onclick="save(this)">Save Routine</button>
+        </span>
     </div>
 
 </div>
 <div class='items'>
     <div id='head3'>
-        <input type='button' value='expand' id='b3'>
+        <div id='section3'>
+        <input type='button' value='Expand' id='b3'>
         <h3 id='name3'></h3>
-        <h3 id='sets3'></p>
+        </div>
+        <h3 id='sets3'></h3>
     </div>
     <div id='descDiv3'>
-        <p id='desc3'></p>
-        <img id='img3' alt='image not found'></img>
 
+        <p id='desc3'></p>
+        <img id='img3' alt='image not found'>
+<span id="displayRoutines">
+            <button id="3" class="saveRoutine" onclick="save(this)">Save Routine</button>
+        </span>
     </div>
 </div>
 <div class='items'>
     <div id='head4'>
-        <input type='button' value='expand' id='b4'>
+        <div id='section4'>
+        <input type='button' value='Expand' id='b4'>
         <h3 id='name4'></h3>
-        <h3 id='sets4'></p>
+        </div>
+        <h3 id='sets4'></h3>
     </div>
     <div id='descDiv4'>
-        <p id='desc4'></p>
-        <img id='img4' alt='image not found'></img>
 
+        <p id='desc4'></p>
+        <img id='img4' alt='image not found'>
+<span id="displayRoutines">
+            <button id="4" class="saveRoutine" onclick="save(this)">Save Routine</button>
+        </span>
     </div>
 </div>
-
-    <div id="displayRoutines">
-        <button id="saveRoutine" onclick="save()">Save Routine</button>
-    </div>
     <script src="./scripts/showRoutine.js"></script>
     <script src="./scripts/saveRoutine.js"></script>
 </body>
