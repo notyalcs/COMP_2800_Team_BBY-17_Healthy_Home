@@ -101,6 +101,13 @@ section{
     background-color: #cccce9;
 }
 
+.custom {
+    background-color: #5ddd61;
+}
+.custom:hover {
+    background-color: #4cba50;
+}
+
 @media only screen and (max-width:550px){
     section{
         font-size:40pt;
