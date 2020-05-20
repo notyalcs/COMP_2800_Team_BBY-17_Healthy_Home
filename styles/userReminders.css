@@ -72,6 +72,7 @@ img#imageHeader {
 
 
 div#pageContent button:hover {
+    cursor: pointer;
     background-color: #dddddd;
     box-shadow: 3px 3px #999999;
 }
@@ -87,11 +88,6 @@ div#mainContent {
     display: flex;
     flex-wrap: wrap;
     margin:0%;
-
-    /* grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "Reminder1 Reminder2"; */
-
 }
 #nameBar {
     grid-area: nameBar;
