@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+    font-family: Poppins, sans-serif;
+}
 body {
     margin: 0;
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: thistle;
+    background-color: #eeeeff;
 }
 #universalHeader {
     width: 100%;
@@ -24,8 +28,7 @@ body {
     border-bottom-right-radius: 10px;
 }
 #universalHeader > * {
-    padding: 10px;
-    margin: 5px;
+    margin: 0 5px 5px 5px;
 }
 #universalHeader > button {
     /* width: 100%; */
@@ -75,12 +78,43 @@ div#pageContent button:hover {
 div#mainContent {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 150px);
-    /* margin: 20px; */
+    grid-template-areas: 
+    "nameBar"
+    "reminder";
+}
+#reminderList {
+    grid-area: reminder;
+    display: flex;
+    flex-wrap: wrap;
+    margin:0%;
+
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "Reminder1 Reminder2"; */
+
+}
+#nameBar {
+    grid-area: nameBar;
+
+}
+/*Displays timers 4 wide on the screen (Not a great method but it works). 
+Messing with this code will cause layout issues. */
+.col {
+    background-color: white;
+    border: 0.05vw solid grey;
+    border-radius: 10px;
+    width: 22vw;
+    padding:0.94vw;
+    margin:1vh 0.5vw 1vh 0.5vw;
+}
+
+
+#test {
+    grid-area:Reminder2;
 }
 div#mainContent > * {
     /* border: 2px solid blue; */
-    margin: 15px 50px 15px 50px;
+    /* margin: 15px 50px 15px 50px; */
 }
 #nameBar {
     display: flex;
@@ -90,3 +124,4 @@ div#mainContent > * {
 span#contentTitle {
     font-size: 60px;
 }
+

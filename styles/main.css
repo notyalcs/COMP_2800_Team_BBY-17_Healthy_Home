@@ -48,15 +48,14 @@ span#name {
     visibility: hidden;
 }
 #links {
-    height: 40%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 150px);
+    grid-template-rows: 150px 150px;
     grid-gap: 25px;
     margin: 25px;
     grid-template-areas: 
         "reminders routines cardio"
-        "resources about profile";
+        "resources about profile"
 }
 #links button {
     width: 100%;
@@ -90,14 +89,36 @@ span#name {
     grid-area: about;
 }
 
+#social {
+    margin: 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.twitter-share-button {
+    vertical-align: bottom;
+}
+.fb-share-button {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    #links {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 150px);
+        grid-template-areas: 
+            "reminders routines"
+            "cardio resources"
+            "profile about";
+    }
+    #welcome {
+        font-size: 75px;
+    }
+}
 @media only screen and (max-width: 450px) {
     #links {
-        height: 40%;
-        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 150px);
-        grid-gap: 25px;
-        margin: 25px;
         grid-template-areas: 
             "reminders"
             "routines"
@@ -107,6 +128,6 @@ span#name {
             "about";
     }
     #welcome {
-        font-size: 75px;
+        font-size: 70px;
     }
 }

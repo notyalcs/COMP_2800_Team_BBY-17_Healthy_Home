@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
-    <link rel="stylesheet" type="text/css" href="styles/createReminder.css">
+    <link rel="stylesheet" type="text/css" href="styles/editReminder.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-
     <!-- Relevant firebase script imports -->
     <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
@@ -24,32 +22,13 @@
     <script src="./scripts/firebaseConfig.js"></script>
 
     <link rel="shortcut icon" type="image/png" href="./images/logo_favicon.png">
-
-    <title>Create a Reminder</title>
-
+    <title>Document</title>
 </head>
-
 <body>
-    <header id="universalHeader">
-        <figure id="figureHeader"><img id="imageHeader" src="./images/logo_transparent.png" alt="logo" onclick="location.href='./main.html'"></figure>
-        <button onclick="location.href='./main.html'" id="homeHead">Home</button>
-        <button onclick="location.href='./reminders.html'" id="remindersHead">Reminders</button>
-        <button onclick="location.href='./profile.html'" id="profileHead">Profile</button>
-    </header>
-    <h3 id="itemTitle">Add an Item</h3>
-    <div id="item">
-        <input type="text" id="tasks"> </input>
-        <button id="addItem">Add to List</button>
+    <input type="text" id="name"></input>
+    <div id="items">
+
     </div>
-
-    <ul id="taskList">
-    </ul>
-
-    <div id="durationTitle">
-        <h3 id="sliderTitle">Select The Timer Duration</h3>
-        <h3 id="minutesTitle">Duration in Minutes</h3>
-    </div>
-
     <div id="duration">
         <div class="slidecontainer" id="durationSlider">
             <input type="range" min="1" max="48" value="5" class="slider" id="myRange">
@@ -58,23 +37,9 @@
             <p id="minutes"></p>
         </div>
     </div>
-
-    <h3 id="mobileSliderTitle">Select The Timer Duration</h3>
-    <div class="slidecontainer" id="mobileDurationSlider">
-        <input type="range" min="1" max="48" value="5" class="slider" id="mobileRange">
-    </div>
-    <h3 id="mobileTitle">Duration in Minutes</h3>
-    <div id="mobileDiv">
-        <p id="mobileMinutes"></p>
-    </div>
-
-    <h3 id="nameTitle">Timer Name</h3>
-    <div id="finish">
-        <input type="text" id="name"></input>
-        <button id="submit">Create Reminder</button>
-    </div>
-    <script type="text/javascript" src="scripts/createTimer.js"></script>
+    <button id="newItem">New Item</button>
+    <button id='update'>Update</button>
+    <script src='scripts/editReminder.js'></script>
 
 </body>
-
 </html>

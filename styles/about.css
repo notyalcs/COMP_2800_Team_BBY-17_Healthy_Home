@@ -4,7 +4,7 @@ body {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: thistle;
+    background-color: #eeeeff;
     /* background-image: url("../images/confetti.gif"); */
 }
 /*~~~~~~~~ Start of Header Styling ~~~~~~~~*/

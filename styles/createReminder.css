@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 .slider {
     -webkit-appearance: none;
     /* Override default CSS styles */
@@ -48,11 +49,6 @@
     /* Cursor on hover */
 }
 
-button {
-    background-color: rgb(31, 112, 34);
-    color: white;
-    margin: 0vw 1vw;
-}
 
 #mobileTitle,
 #mobileDiv,
@@ -65,6 +61,7 @@ button {
 body {
     display: grid;
     font-size: x-large;
+    font-family: Poppins, sans-serif;
     grid-template-columns: 4fr 2fr 3fr;
     grid-template-areas:
         "header header header"
@@ -99,8 +96,7 @@ body {
     border-bottom-right-radius: 10px;
 }
 #universalHeader > * {
-    padding: 10px;
-    margin: 5px;
+    margin: 0 5px 5px 5px;
 }
 #universalHeader > button {
     background-color: #ff7f50;
@@ -135,21 +131,25 @@ img#imageHeader {
 
 /*~~~~~~~~ End of Header Styling ~~~~~~~~*/
 
+div button {
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 25px;
+}
 
 #taskList {
     grid-area: itemList;
     border-left: 2px solid rgb(59, 59, 59);
     margin-left: 2%;
-
+    background-color: #eeeeff;
 }
 
 #itemTitle {
     grid-area: itemTitle;
     margin: 2% 1% 0% 1%;
     height: 5vh;
-
 }
-
 #item {
     grid-area: item;
     height: 20vh;
@@ -163,13 +163,16 @@ img#imageHeader {
 #tasks {
     grid-area: tasks;
     height: 10vh;
-
 }
 
 #addItem {
+    outline: none;
     grid-area: addItem;
     height: 10vh;
-
+    background-color: #ddddff;
+}
+#addItem:hover {
+    background-color: #cccce9;
 }
 
 #durationTitle {
@@ -183,12 +186,10 @@ img#imageHeader {
 
 #sliderTitle {
     grid-area: sliderTitle;
-
 }
 
 #minutesTitle {
     grid-area: minutesTitle;
-
     margin: auto;
 }
 
@@ -234,13 +235,16 @@ img#imageHeader {
 #name {
     grid-area: nameForm;
     height: 10vh;
-
 }
 
 #submit {
+    outline: none;
     grid-area: submit;
     height: 10vh;
-
+    background-color: #5DDD61;
+}
+#submit:hover {
+    background-color: #4CBA50;
 }
 
 /* Makes the timer creation page tablet friendly (devices <= 900px width)*/
@@ -259,7 +263,6 @@ img#imageHeader {
             "nameTitle nameTitle"
             "finish finish"
             "footer footer";
-
     }
 
     #item {
@@ -294,7 +297,6 @@ img#imageHeader {
             "nameTitle"
             "finish"
             "footer";
-
     }
 
     #universalHeader {
@@ -368,7 +370,13 @@ img#imageHeader {
     #submit {
         margin: 10% 0%;
     }
+    #tasks {
+        margin-left: 5px;
+        width: 60vw;
+    }
     #addItem{
-        font-size: small;
+        width: 35vw;
+        margin-right: 5px;
+        font-size: 20px;
     }
 }

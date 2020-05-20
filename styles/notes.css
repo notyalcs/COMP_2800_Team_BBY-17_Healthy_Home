@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+    font-family: Poppins, sans-serif;
+}
 body {
     margin: 0;
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: lightblue;
+    background-color: #eeeeff;
     font-family: 'open sans', arial, sans-serif;
 }
 #universalHeader {
@@ -25,8 +29,7 @@ body {
     border-bottom-right-radius: 10px;
 }
 #universalHeader > * {
-    padding: 10px;
-    margin: 5px;
+    margin: 0 5px 5px 5px;
 }
 #universalHeader > button {
     /* width: 100%; */
@@ -122,6 +125,13 @@ p{
 #submitButton{
     height:5vh;
     width:30vw;
+    background-color: #5ddd61;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+}
+#submitButton:hover {
+    background-color: #4cba50;
 }
 
 @media only screen and (max-width: 900px) {
