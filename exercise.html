@@ -1,46 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" rel="stylesheet" href="styles/routine.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- Relevant firebase script imports -->
-        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
-        <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-        <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
-        <!-- Our app's firebase configuration -->
-        <script src="./scripts/firebaseConfig.js"></script>
-        <link rel="shortcut icon" type="image/png" href="./images/logo_favicon.png">
-    </head>
-    <body>
-        <!-- Beginning of header html -->
-        <header id="universalHeader">
-            <figure id="figureHeader"><img id="imageHeader" src="./images/logo_transparent.png" alt="logo" onclick="location.href='./main.html'"></figure>
-            <button onclick="location.href='./main.html'" id="homeHead">Home</button>
-            <button onclick="location.href='./reminders.html'" id="remindersHead">Reminders</button>
-            <button onclick="location.href='./profile.html'" id="profileHead">Profile</button>
-        </header>
-        <!-- End of header html -->
-        <section>Exercise Routines</section>
-        <div id="overallContent">
-            <!-- The drop down arrows -->
-            <ul id="dropDowns">
-                <li><button><p id="0" class="arrow right"></p></button></li>
-                <li><button><p id="1" class="arrow right"></p></button></li>
-                <li><button><p id="2" class="arrow right"></p></button></li>
-                <li><button><p id="3" class="arrow right"></p></button></li>
-            </ul>
-            <!-- List of routines, generated from showRoutine.js in the display(id) method -->
-            <ul id="routines">
-            </ul>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles/routine.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Relevant firebase script imports -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <!-- Our app's firebase configuration -->
+    <script src="./scripts/firebaseConfig.js"></script>
+    <link rel="shortcut icon" type="image/png" href="./images/logo_favicon.png">
+</head>
+
+<body>
+    <!-- Beginning of header html -->
+    <header id="universalHeader">
+        <figure id="figureHeader"><img id="imageHeader" src="./images/logo_transparent.png" alt="logo"
+                onclick="location.href='./main.html'"></figure>
+        <button onclick="location.href='./main.html'" id="homeHead">Home</button>
+        <button onclick="location.href='./reminders.html'" id="remindersHead">Reminders</button>
+        <button onclick="location.href='./profile.html'" id="profileHead">Profile</button>
+    </header>
+    <!-- End of header html -->
+    <section>Exercise Routines</section>
+<div class='items'>
+    <div id='head1'>
+        <div id='section1'>
+        <input type='button' value='expand' id='b1'>
+        <h3 id='name1'></h3>
         </div>
-        <div id="displayRoutines">
-            <button id="saveRoutine" onclick="save()">Save Routine</button>
-        </div>
-        <script src="./scripts/showRoutine.js"></script>
-        <script src="./scripts/saveRoutine.js"></script>
-    </body>
+        <h3 id='sets1'></p>
+    </div>
+    <div id='descDiv1'>
+        <p id='desc1'></p>
+        <img id='img1' alt='image not found'></img>
+    </div>
+</div>
+<div class='items'>
+
+    <div id='head2'>
+        <input type='button' value='expand' id='b2'>
+        <h3 id='name2'></h3>
+        <h3 id='sets2'></p>
+    </div>
+    <div id='descDiv2'>
+        <p id='desc2'></p>
+        <img id='img2' alt='image not found'></img>
+
+    </div>
+
+</div>
+<div class='items'>
+    <div id='head3'>
+        <input type='button' value='expand' id='b3'>
+        <h3 id='name3'></h3>
+        <h3 id='sets3'></p>
+    </div>
+    <div id='descDiv3'>
+        <p id='desc3'></p>
+        <img id='img3' alt='image not found'></img>
+
+    </div>
+</div>
+<div class='items'>
+    <div id='head4'>
+        <input type='button' value='expand' id='b4'>
+        <h3 id='name4'></h3>
+        <h3 id='sets4'></p>
+    </div>
+    <div id='descDiv4'>
+        <p id='desc4'></p>
+        <img id='img4' alt='image not found'></img>
+
+    </div>
+</div>
+
+    <div id="displayRoutines">
+        <button id="saveRoutine" onclick="save()">Save Routine</button>
+    </div>
+    <script src="./scripts/showRoutine.js"></script>
+    <script src="./scripts/saveRoutine.js"></script>
+</body>
+
 </html>

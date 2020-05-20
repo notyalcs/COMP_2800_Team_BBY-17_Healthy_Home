@@ -81,6 +81,9 @@ section{
     padding:3%;
 }
 
+body {
+    background-color: #EEEEFF;
+}
 /*Save Routine Button*/
 #saveRoutine{
     display:none;
@@ -118,45 +121,40 @@ section{
 }
 
 /*All list items except for the last one have a margin bottom*/
-#routines li:not(:last-child){
-    margin-bottom:1%;
-}
 
-.arrow{
-    outline: none;
-    border: solid black;
-    border-width: 0 8px 8px 0;
-    display: inline-block;
-    padding: 8px;
-    cursor: pointer;
-}
-.right{
-    transform:rotate(-45deg);
-}
-.down {
-    transform: rotate(45deg);
-}
-
-/* Contains the dropdowns and the list of routines */
-#overallContent{
+#head1,
+#head2,
+#head3,
+#head4 {
     display:flex;
-    border: solid black 1px;
 }
 
-/* The dropdown buttons */
-#overallContent button{
-    border: none;
-    outline: none;
+img {
+    width:10%;
+    height:10%;
+    float:right;
 }
 
-/* Contains the save routine button */
-#displayRoutines{
-    font-size: 20pt;
-    display:block;
-    width:100%;
-    text-align: center;
+#descDiv1,
+#descDiv2,
+#descDiv3,
+#descDiv4 {
+    margin: 2vh 1vw 0vh 1vw;
+    display:flex;
 }
 
+h3,
+p {
+    margin: 0vh 1vw;
+}
+
+.items {
+    background-color:white;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding:1%;
+    margin:1%;
+}
 /* Later will become the picture for the routines once the source names are added to the database */
 .routinePicture{
     display: block;
@@ -166,6 +164,7 @@ section{
     width:50%;
     height:25%;
 }
+
 
 @media only screen and (max-width:1000px){
     .arrow{
@@ -178,15 +177,16 @@ section{
         font-size:23pt;
     }
 }
-@media only screen and (max-width:550px){
-    section{
-        font-size:40pt;
+@media only screen and (max-width:450px){
+    /* #head1 {
+        display:'';
     }
-    .arrow{
-        padding:5px;
-        border-width: 0 5px 5px 0;
+    #section1 {
+        display:flex;
     }
-    #routines{
-        font-size:18pt;
+    #sets1 {
+        display:block;
     }
+*/
+
 }
