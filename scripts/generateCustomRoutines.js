@@ -8,21 +8,29 @@ function addList(recordArray){
      if(size == 0){
 
      }else{
+        let first = 0;
+        let second = 0;
+        let third = 0;
+        let fourth = 0;
         for (i = 0; i < recordArray.length; i++) {
             if(recordArray[i]['Value'] == 1){
-                $("#sets1").append(recordArray[i]['Name'] + " " + recordArray[i]['Sets'] + " x " + recordArray[i]['Reps'] + "   |||   ");
+                first++;
+                $("#sets1").prepend(recordArray[i]['Name'] + " " + recordArray[i]['Sets'] + " x " + recordArray[i]['Reps'] + "   |||   ");
                 $("#desc1").prepend(recordArray[i]['Description'] + "<br/><br/>");
                 $("#" + (i + 1)).after("<hr style='height:2px;border-width:0;color:gray;background-color:gray'>");
             }else if(recordArray[i]['Value'] == 2){
-                $("#sets2").text(recordArray[i]['Name'] + " " + recordArray[i]['Sets'] + " x " + recordArray[i]['Reps'] + "   |||   ");
+                second++;
+                $("#sets2").prepend(recordArray[i]['Name'] + " " + recordArray[i]['Sets'] + " x " + recordArray[i]['Reps'] + "   |||   ");
                 $("#desc2").prepend(recordArray[i]['Description'] + "<br/><br/>");
                 $("#" + i).after("<hr style='height:2px;border-width:0;color:gray;background-color:gray'>");
             }else if(recordArray[i]['Value'] == 3){
-                $("#sets3").text(recordArray[i]['Name'] + " " + recordArray[i]['Sets'] + " x " + recordArray[i]['Reps'] + "   |||   ");
+                third++;
+                $("#sets3").prepend(recordArray[i]['Name'] + " " + recordArray[i]['Sets'] + " x " + recordArray[i]['Reps'] + "   |||   ");
                 $("#desc3").prepend(recordArray[i]['Description'] + "<br/><br/>");
                 $("#" + i).after("<hr style='height:2px;border-width:0;color:gray;background-color:gray'>");
             }else if(recordArray[i]['Value'] == 4){
-                $("#sets4").text(recordArray[i]['Name'] + " " + recordArray[i]['Sets'] + " x " + recordArray[i]['Reps'] + "   |||   ");
+                fourth++;
+                $("#sets4").prepend(recordArray[i]['Name'] + " " + recordArray[i]['Sets'] + " x " + recordArray[i]['Reps'] + "   |||   ");
                 $("#desc4").prepend(recordArray[i]['Description'] + "<br/><br/>");
                 $("#" + i).after("<hr style='height:2px;border-width:0;color:gray;background-color:gray'>");
             }
