@@ -1,43 +1,55 @@
 let alert = document.getElementById("ding");
 $("#btn1").click(function () {
-    document.getElementById("btn1").disabled = true;
+    $('#btn1a').css('background-color','grey');
+
+    document.getElementById("btn1a").disabled = true;
     console.log("clicked 1");
     setTimeout(function () {
         alert.play();
+        $('#btn1a').css('background-color','');
+
         window.alert(document.getElementById("rem1").textContent);
-        document.getElementById("btn1").disabled = false;
+        document.getElementById("btn1a").disabled = false;
     }, 1000)
 })
 
 $("#btn2").click(function () {
-    document.getElementById("btn2").disabled = true;
+    $('#btn2a').css('background-color','grey');
+
+    document.getElementById("btn2a").disabled = true;
     console.log("clicked 2");
     setTimeout(function () {
         alert.play();
+        $('#btn2a').css('background-color','');
+
         window.alert(document.getElementById("rem2").textContent);
-        document.getElementById("btn1").disabled = false;
+        document.getElementById("btn2a").disabled = false;
     }, 2000)
 })
 
 $("#btn3").click(function () {
+    $('#btn3a').css('background-color','grey');
 
-    document.getElementById("btn2").disabled = true;
+    document.getElementById("btn3a").disabled = true;
     console.log("clicked 3");
     setTimeout(function () {
         alert.play();
+        $('#btn3a').css('background-color','');
+
         window.alert(document.getElementById("rem3").textContent);
-        document.getElementById("btn1").disabled = false;
+        document.getElementById("btn3a").disabled = false;
     }, 3000)
 })
 
 $("#btn4").click(function () {
-
-    document.getElementById("btn2").disabled = true;
+    $('#btn4a').css('background-color','grey');
+    document.getElementById("btn4a").disabled = true;
     console.log("clicked 4");
     setTimeout(function () {
         alert.play();
+        $('#btn4a').css('background-color','');
         window.alert(document.getElementById("rem4").textContent);
-        document.getElementById("btn1").disabled = false;
+        document.getElementById("btn4a").disabled = false;
     }, 4000)
 })
 
@@ -63,13 +75,17 @@ firebase.auth().onAuthStateChanged(function (user) {
                 console.log(doc.id);
                 $('#customTimer').append('<button class="btn customButton" id="' + doc.id + '">' + name + '</button><script></script>')
                 $("#" + doc.id).click(function () {
-                    // document.getElementById("btn2").disabled = true;
+                    $('#' + doc.id).css('background-color','grey');
+                    document.getElementById(doc.id).disabled = true;
                     console.log("clicked " + name);
                     setTimeout(function () {
                         alert.play();
+                        $('#' + doc.id).css('background-color','');
                         window.alert(itemString);
+                        document.getElementById(doc.id).disabled = false;
+
                         // document.getElementById("btn1").disabled = false;
-                    }, duration /* * 60000*/)});
+                    }, duration  * 60000)});
 
 
 

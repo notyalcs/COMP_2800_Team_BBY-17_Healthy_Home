@@ -22,7 +22,7 @@ firebase.auth().onAuthStateChanged(function (user) {
             $('#minutes').html(duration)
             for (let i = 0; i < buttonArr.length; i++) {
                 console.log(i);
-                $('#items').append('<input type="text" class="items ' + i + '" value="' + buttonArr[i] + '"></input><input type="button" class="' + i + '" id = "' + i + '" value="delete"></input>');
+                $('#items').append('<div class = "itemsDiv ' + i + '"><input type="text" class="items ' + i + '" value="' + buttonArr[i] + '"></input><input type="button" class="delete ' + i + '" id = "' + i + '" value="delete"></input></div>');
                 
                 
                 $("#" + i).on('click', function() {
@@ -56,7 +56,7 @@ $('#update').on('click', function() {
 var a = 'a'
 $('#newItem').on('click', function() {
     let newID = a;
-    $('#items').append('<input type="text" class="items ' + newID + '"></input><input type="button" class="' + newID + '" id = "' + newID + '" value="delete"></input>');
+    $('#items').append('<div class="itemsDiv ' + newID +'"><input type="text" class="items ' + newID + '"></input><input type="button" class=" delete ' + newID + '" id = "' + newID + '" value="delete"></input></div>');
     $("#" + newID).on('click', function() {
         console.log(newID);
         $("." + newID).remove();

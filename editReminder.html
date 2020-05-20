@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,22 +25,35 @@
     <link rel="shortcut icon" type="image/png" href="./images/logo_favicon.png">
     <title>Document</title>
 </head>
-<body>
-    <input type="text" id="name"></input>
-    <div id="items">
+<center>
 
-    </div>
-    <div id="duration">
-        <div class="slidecontainer" id="durationSlider">
-            <input type="range" min="1" max="48" value="5" class="slider" id="myRange">
+    <body>
+        <div id='nameDiv'>
+            <h3>Reminder Name</h3>
+            <input type="text" id="name"></input>
         </div>
-        <div id="minutesDiv">
-            <p id="minutes"></p>
-        </div>
-    </div>
-    <button id="newItem">New Item</button>
-    <button id='update'>Update</button>
-    <script src='scripts/editReminder.js'></script>
 
-</body>
+        <div id="items">
+            <h3>Reminder Items</h3>
+        </div>
+        <div id=timeDiv>
+            <h3>Duration</h3>
+            <div id="duration">
+                <div class="slidecontainer" id="durationSlider">
+                    <input type="range" min="1" max="48" value="5" class="slider" id="myRange">
+                </div>
+                <div id="minutesDiv">
+                    <p id="minutes"></p>
+                </div>
+            </div>
+        </div>
+        <div id='buttons'>
+            <button id="newItem">New Item</button>
+            <button id='update'>Update</button>
+        </div>
+        <script src='scripts/editReminder.js'></script>
+
+    </body>
+</center>
+
 </html>
