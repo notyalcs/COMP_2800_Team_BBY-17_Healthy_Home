@@ -1,3 +1,4 @@
+var savedRoutines = [];
 firebase.auth().onAuthStateChanged(function (user) {
     var recordArray = [];
     console.log("this is the user", user.uid);
@@ -23,7 +24,6 @@ function addList(recordArray) {
         var dateA = new Date(a.release), dateB = new Date(b.release);
         return dateA - dateB;
     });
-    console.log(recordArray[0]['routineName']);
     for (i = recordArray.length; i > 0; i--) {
         $("#routineList ul").append("<li id=" + i + "><a onclick='gettext(this)' href='description.html'>" + recordArray[i - 1]['routineName'] + "</a><button id='" + i + "'class='fa fa-trash' onclick='deleteRoutine(this)'></button></li>");
     }

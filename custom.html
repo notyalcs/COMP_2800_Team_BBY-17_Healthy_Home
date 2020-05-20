@@ -24,14 +24,21 @@
             <button onclick="location.href='./profile.html'" id="profileHead">Profile</button>
         </header>
         <!-- End of header html -->
-        <section>Create Your Routine</section>
+        <section>Create Your Exercise</section>
          <!-- Form that contains all the inputs necessary to create a custom routine -->
         <form id="form">
-            <input type="text" id="name" placeholder="Enter Routine Name *" required>
-            <input type="text" id="description" placeholder="Enter Routine Description">
-            <input type="number" id="sets" placeholder="Enter Number of Sets *" required>
-            <input type="number" id="reps" placeholder="Enter Number of Reps *" required>
-            <button type="button" onclick="handleSubmit()" id="submit">Create Routine</button>
+            <input type="text" id="name" placeholder="Enter Exercise Name *" required>
+            <input type="text" id="description" placeholder="Enter Exercise Description">
+            <input type="number" id="sets" placeholder="Enter Number of Sets">
+            <input type="number" id="reps" placeholder="Enter Number of Reps"><br/>
+            <label for="routineNumber">Choose routine to append to</label>
+            <select id="routineNumber">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select><br/>
+            <button type="button" onclick="handleSubmit()" id="submit">Create Exercise</button>
         </form>
         <script src="scripts/customSubmission.js"></script>
     </body>
