@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+    font-size:x-large;
+    background-color:#EEEEFF;
+}
+
+.slider {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 50%;
+    /* Full-width */
+    height: 25px;
+    /* Specified height */
+    background: #d3d3d3;
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    opacity: 0.7;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    margin: auto 1%;
+}
+
+.slider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: rgb(31, 112, 34);
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: #4CAF50;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+#nameDiv {
+    margin: 1vw 1vw 2vw 1vw;
+    
+}
+
+#name {
+    border-radius: 5px;
+}
+
+#items {
+    margin: 1vw 1vw 2vw 1vw;
+}
+.itemsDiv,
+.items {
+    margin: 0vw 0vw 0.5vw 0vw;
+    width:50vw;
+    display:flex;
+    height:4vw;
+    border-radius: 5px;
+}
+
+#buttons {
+    display:flex;
+    justify-content: center
+}
+
+#delete {
+    width:10vw;
+    height:4vh;
+    border-radius: 10px;
+    font-size: x-large;
+    font-family: Poppins, sans-serif;
+    box-shadow: 3px 3px #aaaaaa;
+    cursor: pointer;
+    outline: none;
+}
+
+button {
+    width: 20%;
+    height: 20%;
+    border-radius: 10px;
+    font-size: x-large;
+    font-family: Poppins, sans-serif;
+    box-shadow: 3px 3px #aaaaaa;
+    cursor: pointer;
+    outline: none;
+    margin: 0.5vw;
+}
+
+#minutes {
+    width:10vw;
+    height:4vh;
+    text-align: center;
+    border-radius: 5px;
+    border: solid gray 1px;
+    background-color:white;
+}
+@media only screen and (max-width: 900px) {
+    .itemsDiv,
+    .items {
+        height:8vh;
+        width:80vw;
+    }
+    button {
+        width:30%
+    }
+    .slider {
+        width: 70vw
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        font-size:medium;
+    }
+    .itemsDiv {
+        height:6vh;
+        width:90vw;
+        margin:1vh 0vh 0vh 0vh;
+    }
+    .items {
+        height:6vh;
+        margin:1vh 0vh 0vh 0vh;
+
+        width:70vw;
+    }
+    .delete {
+        width:20vw;
+        height:6vh;
+        margin:1vh 0vh 0vh 0vh;
+
+        
+    }
+    button {
+        width:40%
+    }
+    #minutes {
+        width:15vw;
+        height:6vh;
+        text-align: center;
+        padding:3%;
+    }
+    #name {
+        width:70vw;
+        height:6vh;
+    }
+
+
+}
