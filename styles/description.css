@@ -90,15 +90,17 @@ section{
     margin-top:50px;
 }
 figure{
+    margin: 0;
+    margin-top: 5px;
     text-align: center;
-    align-content: center;
+    /* object-fit: cover; */
 }
-center img{
-   border-radius:8px;
-   padding:1px;
-   border:1px solid gray;
-   background-color:black;
+.routinePicture {
+    border-radius: 8px;
+    border: 2px solid gray;
+    background-color: black;
 }
+
 @media only screen and (max-width:400px){
     section{
         width:400px;

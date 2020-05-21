@@ -40,7 +40,7 @@ for(i = 0; i < routineList.length; i++){
                     if(x != "Inchworms"){
                         //Prevents duplicates. Some routines have the same exercises and we can't have two descriptions and images that are the same. 
                         if($("body").children().length <= 3){
-                            $("body").append("<div class='description'><p>" + newerList[key][1] + "</p></div><center><figure><img class='routinePicture' src=./images/" + newerList[key][4] + "></figure></center>");
+                            $("body").append("<div class='description'><p>" + newerList[key][1] + "</p></div><figure><img class='routinePicture' src=./images/" + newerList[key][4] + "></figure>");
                         }
                     }else{
                         if($("body").children().length <= 3){
@@ -63,7 +63,7 @@ for(i = 0; i < routineTwoList.length; i++){
                     if(x != "Spine Lumbar Twist Stretch"){
                         //Prevents duplicates. Some routines have the same exercises and we can't have two descriptions and images that are the same. 
                         if($("body").children().length <= 3){
-                            $("body").append("<div class='description'><p>" + newerList[key][1] + "</p></div><center><figure><img class='routinePicture' src=./images/" + newerList[key][4] + "></figure></center>");                      
+                            $("body").append("<div class='description'><p>" + newerList[key][1] + "</p></div><figure><img class='routinePicture' src=./images/" + newerList[key][4] + "></figure>");                      
                         }
                     }else{
                         if($("body").children().length <= 3){
