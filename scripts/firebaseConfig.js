@@ -1,5 +1,4 @@
-// Scuba Log's Firebase Configuration
-
+//Firebase Configuration
 var firebaseConfig = {
     apiKey: "AIzaSyAOEb8EEpYJQ-B61phZG2AfnTpyZsNJz1o",
     authDomain: "healthyhome-6ae2f.firebaseapp.com",
