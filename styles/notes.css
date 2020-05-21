@@ -133,6 +133,7 @@ p{
     height:5vh;
     width:30vw;
     background-color: #5ddd61;
+    border-radius: 5px;
     font-size: 20px;
     cursor: pointer;
     outline: none;

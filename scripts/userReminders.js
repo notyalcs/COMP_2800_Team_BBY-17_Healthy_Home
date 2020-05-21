@@ -16,7 +16,7 @@ firebase.auth().onAuthStateChanged(function (user) {
                 }
 
                 /*Appends timers from db to the reminders*/
-                $('#reminderList').append('<div class="col"><p class="name">Name: ' + name + '</p><p class="duration">Duration: ' + duration + '</p><button id="delete' + doc.id + '">delete</button><button id="' + doc.id + '">edit</button></div>')
+                $('#reminderList').append('<div class="col"><p class="name">Name: ' + name + '</p><p class="duration">Duration: ' + duration + '</p><button class="delete" id="delete' + doc.id + '">delete</button><button class="edit" id="' + doc.id + '">edit</button></div>')
                 /*deletes timers from the db when the delete button is clicked*/
                 $("#delete" + doc.id).click(function () {
                     firebase.auth().onAuthStateChanged(function (user) {

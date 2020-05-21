@@ -97,6 +97,7 @@ main button:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
+        "reminders notes"
         "section1 section2"
         "section3 section4"
         "createReminder createReminder"
@@ -165,7 +166,9 @@ ul {
 
 #createButton {
     grid-area: createReminder;
-    margin:auto;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 60vw;
     height: 12vh;
     font-size: 25px;
@@ -175,6 +178,28 @@ ul {
 #createButton:hover {
     background-color: #4CBA50;
 }
+
+button.links {
+    justify-self: center;
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+    width: 400px;
+    height: 50px;
+    background-color: #bbbbff;
+}
+button.links:hover {
+    cursor: pointer;
+    background-color: #aaaae9;
+}
+#userReminders {
+    grid-area: reminders;
+}
+#notes {
+    grid-area: notes;
+    margin-bottom: 20px;
+}
+
 h3 {
     font-family: Poppins, sans-serif;
     margin-left: 20px;
@@ -194,6 +219,15 @@ h3 {
 }
 
 @media only screen and (max-width: 900px) {
+    .presets {
+        grid-template-areas:
+        "reminders reminders"
+        "notes notes"
+        "section1 section2"
+        "section3 section4"
+        "createReminder createReminder"
+        "custom custom";
+    }
     li {
         font-size: 12px;
     }
@@ -203,6 +237,8 @@ h3 {
     .presets {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas:
+        "reminders"
+        "notes"
         "section1"
         "section2"
         "section3" 
@@ -224,11 +260,13 @@ h3 {
         grid-area:createReminder;
         width:70vw;
         height:15vh;
-
-}
-.customButton {
-    margin:2.5%;
-}
+    }
+    .customButton {
+        margin:2.5%;
+    }
+    button.links {
+        width: 300px;
+    }
 }
 
 
