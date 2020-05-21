@@ -41,8 +41,12 @@ $(document).ready(function () {
         document.getElementById('exerciseInfo').style.display = 'block';
     });
     //Reidrect to Cardio Page on associated button press
-    $('#cardioButton').on('click', function() {
+    $('#cardioButton').on('click', function () {
         window.location.href = 'cardio.html';
+    })
+    //Reidrect to Routine Page on associated button press
+    $('.redirectButton').on('click', function () {
+        window.location.href = 'routines.html';
     })
 });
 
