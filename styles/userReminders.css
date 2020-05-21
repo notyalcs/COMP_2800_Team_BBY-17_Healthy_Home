@@ -154,10 +154,14 @@ span#contentTitle {
     height:5vh;
     outline: none;
     border-radius: 3px;
-    background-color: #ee6e3f;
+    background-color: #ccccff;
     font-size:large;
-
+    cursor: pointer;
 }
+#newTimer:hover {
+    background-color: #a4a4ca;
+}
+
 @media only screen and (max-width: 900px) {
     .col {
         width:30vw;
