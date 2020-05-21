@@ -21,7 +21,7 @@ body {
     grid-template-areas: 
         "logo logo logo"
         "home reminders profile";
-
+    z-index:100; 
     /* Comment these 2 lines out to make it not sticky. */
     position: sticky;
     top: 0;
@@ -80,6 +80,7 @@ div#navBar {
     justify-content: center;
     text-align: center;
     margin-top: 5px;
+    /* z-index: -1; */
 }
 div#navBar > input[type="button"] {
     position: relative;
@@ -91,7 +92,26 @@ div#navBar > input[type="button"] {
     border-radius: 5px;
     outline: none;
     cursor: pointer;
-    background-color: #ddddff;
+    background-color: #b0b0ff;
+    /* z-index: -1; */
+}
+.redirectDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.redirectButton {
+    position: relative;
+    left: 0;
+    font-size: 16px;
+    width: 25vw;
+    height: 6vh;
+    margin: 0 5px 5px 5px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background-color: #b0b0ff;
 }
 div#navBar > input[type="button"]:hover {
     background-color: #cccce9;
@@ -114,13 +134,21 @@ p {
 
 @media only screen and (max-width: 900px) {
     div#navBar {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        flex-wrap: wrap;
     }
     div#navBar > input[type="button"] {
         font-size: 15px;
-        width: 90%;
+        width: 45%;
         height: 42px;
         margin-top: 5px;
+    }
+    p {
+        margin: 2vw;
+    }
+    .redirectButton {
+        width: 80vw;
+        font-size:small;
     }
 }
