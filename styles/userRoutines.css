@@ -95,6 +95,7 @@ section{
 ul{
     list-style-type:none;
     text-align:center;
+    margin-top:40px;
 }
 li button{
   background-color: red;
@@ -104,4 +105,7 @@ li button{
   font-size: 16px;
   cursor: pointer;
   margin-left: 10px
+}
+li{
+    margin-top:10px;
 }

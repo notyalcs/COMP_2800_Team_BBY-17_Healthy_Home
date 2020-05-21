@@ -1,56 +1,75 @@
+//variable declarations
 let alert = document.getElementById("ding");
+let buttonArr = [];
+
+//makes the button disabled for the duration of the timer and sends an alert when completed (triggered onclick)
 $("#btn1").click(function () {
-    document.getElementById("btn1").disabled = true;
+    $('#btn1a').css('background-color','grey');
+
+    document.getElementById("btn1a").disabled = true;
     console.log("clicked 1");
     setTimeout(function () {
         alert.play();
+        $('#btn1a').css('background-color','');
+
         window.alert(document.getElementById("rem1").textContent);
-        document.getElementById("btn1").disabled = false;
+        document.getElementById("btn1a").disabled = false;
     }, 1000)
 })
 
+//makes the button disabled for the duration of the timer and sends an alert when completed (triggered onclick)
 $("#btn2").click(function () {
-    document.getElementById("btn2").disabled = true;
+    $('#btn2a').css('background-color','grey');
+
+    document.getElementById("btn2a").disabled = true;
     console.log("clicked 2");
     setTimeout(function () {
         alert.play();
+        $('#btn2a').css('background-color','');
+
         window.alert(document.getElementById("rem2").textContent);
-        document.getElementById("btn1").disabled = false;
+        document.getElementById("btn2a").disabled = false;
     }, 2000)
 })
 
+//makes the button disabled for the duration of the timer and sends an alert when completed (triggered onclick)
 $("#btn3").click(function () {
+    $('#btn3a').css('background-color','grey');
 
-    document.getElementById("btn2").disabled = true;
+    document.getElementById("btn3a").disabled = true;
     console.log("clicked 3");
     setTimeout(function () {
         alert.play();
+        $('#btn3a').css('background-color','');
+
         window.alert(document.getElementById("rem3").textContent);
-        document.getElementById("btn1").disabled = false;
+        document.getElementById("btn3a").disabled = false;
     }, 3000)
 })
 
+//makes the button disabled for the duration of the timer and sends an alert when completed (triggered onclick)
 $("#btn4").click(function () {
-
-    document.getElementById("btn2").disabled = true;
+    $('#btn4a').css('background-color','grey');
+    document.getElementById("btn4a").disabled = true;
     console.log("clicked 4");
     setTimeout(function () {
         alert.play();
+        $('#btn4a').css('background-color','');
         window.alert(document.getElementById("rem4").textContent);
-        document.getElementById("btn1").disabled = false;
+        document.getElementById("btn4a").disabled = false;
     }, 4000)
 })
 
 window.onload = update;
 
-let buttonArr = [];
-let counter = true;
+//Dynamically generates timers from the database
 firebase.auth().onAuthStateChanged(function (user) {
     db.collection("users")
         .doc(user.uid)
         .collection("Reminders")
         .get()
         .then(function (querySnapshot) {
+            //For each document in the db save values in variables 
             querySnapshot.forEach(function (doc) {
                 var buttonArr = doc.data()['Items'];
                 var duration = doc.data()['Duration'];
@@ -59,56 +78,25 @@ firebase.auth().onAuthStateChanged(function (user) {
                 for(let i=0; i < buttonArr.length; i++){
                     itemString += buttonArr[i] + '\n';
                 }
-
+                //add button to the document and create onclick functionality
                 console.log(doc.id);
                 $('#customTimer').append('<button class="btn customButton" id="' + doc.id + '">' + name + '</button><script></script>')
                 $("#" + doc.id).click(function () {
-                    // document.getElementById("btn2").disabled = true;
+                    $('#' + doc.id).css('background-color','grey');
+                    document.getElementById(doc.id).disabled = true;
                     console.log("clicked " + name);
                     setTimeout(function () {
                         alert.play();
+                        $('#' + doc.id).css('background-color','');
                         window.alert(itemString);
-                        // document.getElementById("btn1").disabled = false;
-                    }, duration /* * 60000*/)});
-
-
-
-
-
-
-
-                // if (counter == true) {
-                //     console.log(buttonArr);
-                //     $('#customTimer').append('<div class="custom1"><div class="timer"><button class="btn">' + duration + ' minutes</button></div><div class="desc2 desc"><p>Reminders:</p><ul id="rem2">')
-                //     for (let i = 0; i < buttonArr.length; i++) {
-                //         $('#customTimer').append('<li>' + buttonArr[i] + '</li>')
-                //     }
-                //     $('#customTimer').append('</ul></div></div>')
-                //     counter = false;
-                // } else {
-                //     console.log(buttonArr);
-                //     $('#customTimer').append('<div class="custom2"><div class="timer"><button class="btn">' + duration + ' minutes</button></div><div class="desc2 desc"><p>Reminders:</p><ul id="rem2">')
-                //     for (let i = 0; i < buttonArr.length; i++) {
-                //         $('#customTimer').append('<li>' + buttonArr[i] + '</li>')
-                //     }
-                //     $('#customTimer').append('</ul></div></div>')
-                //     counter = true;
-                // }
+                        document.getElementById(doc.id).disabled = false;
+                    }, duration  * 60000)});
             });
 
         })
 });
 
-// $("#JUprjOuK3OFLSz7hdjcB").click(function () {
-//     // document.getElementById("btn2").disabled = true;
-//     console.log("clicked 4");
-//     setTimeout(function () {
-//         alert.play();
-//         window.alert(document.getElementById("rem4").textContent);
-//         // document.getElementById("btn1").disabled = false;
-//     }, 4000)});
-
-
+//Button that logs the key press in the database (for the easter egg)
 function keyPressed() {
     document.getElementById("key").style.display = "none";
     firebase.auth().onAuthStateChanged(function(user) {
@@ -122,7 +110,7 @@ function keyPressed() {
             })
     })
 }
-
+//create the key for the easter egg if the user hasn't found that key already
 function update() {
     firebase.auth().onAuthStateChanged(function(user) {
         db.collection("users")

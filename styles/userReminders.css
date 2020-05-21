@@ -70,51 +70,74 @@ img#imageHeader {
     }
 }
 
-
+div#pageContent button {
+    outline: none;
+    border-radius: 3px;
+}
 div#pageContent button:hover {
-    background-color: #dddddd;
-    box-shadow: 3px 3px #999999;
+    cursor: pointer;
 }
 div#mainContent {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "nameBar"
-    "reminder";
+    "reminder"
+    "newTimer";
 }
 #reminderList {
     grid-area: reminder;
     display: flex;
     flex-wrap: wrap;
     margin:0%;
-
-    /* grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "Reminder1 Reminder2"; */
-
+    justify-content: center;
 }
 #nameBar {
     grid-area: nameBar;
 
 }
+p.name,
+p.duration {
+    margin: 0.5vh;
+}
 /*Displays timers 4 wide on the screen (Not a great method but it works). 
 Messing with this code will cause layout issues. */
 .col {
     background-color: white;
-    border: 0.05vw solid grey;
+    border: 1px solid grey;
     border-radius: 10px;
-    width: 22vw;
+    width: 21vw;
     padding:0.94vw;
     margin:1vh 0.5vw 1vh 0.5vw;
+    font-size: large;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+.col button.delete {
+    background-color: #f84e4e;
+    width:7vw;
+    height:4vh;
+    margin: 0.2vw;
+
+}
+.col button.delete:hover {
+    background-color: #ca2c2c;
+}
+.col button.edit {
+    background-color: #5ddd61;
+    width:7vw;
+    height:4vh;
+    margin: 0.2vw;
+}
+.col button.edit:hover {
+    background-color: #4cba50;
+}
 
 #test {
     grid-area:Reminder2;
-}
-div#mainContent > * {
-    /* border: 2px solid blue; */
-    /* margin: 15px 50px 15px 50px; */
 }
 #nameBar {
     display: flex;
@@ -125,3 +148,65 @@ span#contentTitle {
     font-size: 60px;
 }
 
+#newTimer {
+    margin:auto;
+    width: 20vw;
+    height:5vh;
+    outline: none;
+    border-radius: 3px;
+    background-color: #ee6e3f;
+    font-size:large;
+
+}
+@media only screen and (max-width: 900px) {
+    .col {
+        width:30vw;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size:medium;
+        
+    }
+    .col > * {
+        margin:auto;
+        text-align:center;
+    }
+    .col button.edit,
+    .col button.delete {
+        width:10vw;
+        height:5vh;
+    }
+    #newTimer {
+        width: 40vw;
+    }
+}
+@media only screen and (max-width: 550px) {
+
+    .col {
+        width:90vw;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .col > * {
+        margin:auto;
+        text-align:center;
+    }
+    .col button.edit,
+    .col button.delete {
+        width:30vw;
+        height:5vh;
+    }
+    #newTimer {
+        width: 60vw;
+        font-size:medium;
+    }
+    span#contentTitle {
+        font-size: 40px;
+    }
+}

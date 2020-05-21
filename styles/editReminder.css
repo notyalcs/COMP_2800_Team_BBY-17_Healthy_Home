@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    margin: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-size:x-large;
+    background-color:#EEEEFF;
+}
+
+#universalHeader {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 50px;
+    grid-template-areas: 
+        "logo logo logo"
+        "home reminders profile";
+
+    /* Comment these 2 lines out to make it not sticky. */
+    position: sticky;
+    top: 0;
+    /*--------------------------------------------------*/
+
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#universalHeader > * {
+    margin: 0 5px 5px 5px;
+}
+#universalHeader > button {
+    /* width: 100%; */
+    background-color: #ff7f50;
+    border-radius: 10px;
+    font-size: large;
+    outline: none;
+}
+#universalHeader > button:not([disabled]):hover {
+    background-color: #ee6e3f;
+    box-shadow: 1px 1px #bbbbbb;
+    cursor: pointer;
+}
+#figureHeader {
+    margin: 0;
+    padding: 0;
+    grid-area: logo;
+}
+img#imageHeader {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#homeHead {
+    grid-area: home;
+}
+#remindersHead {
+    grid-area: reminders;
+}
+#profileHead {
+    grid-area: profile;
+}
+@media only screen and (max-width: 450px) {
+    #universalHeader {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #universalHeader > #profileHead {
+        display: none;
+    }
+}
+
+.slider {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 50%;
+    /* Full-width */
+    height: 25px;
+    /* Specified height */
+    background: #d3d3d3;
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    opacity: 0.7;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    margin: auto 1%;
+}
+
+.slider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: rgb(31, 112, 34);
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    /* Set a specific slider handle width */
+    height: 25px;
+    /* Slider handle height */
+    background: #4CAF50;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+#nameDiv {
+    margin: 1vw 1vw 2vw 1vw;
+    
+}
+
+#name {
+    border-radius: 5px;
+}
+
+#items {
+    margin: 1vw 1vw 2vw 1vw;
+}
+.itemsDiv,
+.items {
+    margin: 0vw 0vw 0.5vw 0vw;
+    width:50vw;
+    display:flex;
+    height:4vw;
+    border-radius: 5px;
+}
+
+#buttons {
+    display:flex;
+    justify-content: center
+}
+
+#delete {
+    width:10vw;
+    height:4vh;
+    border-radius: 10px;
+    font-size: x-large;
+    font-family: Poppins, sans-serif;
+    box-shadow: 3px 3px #aaaaaa;
+    cursor: pointer;
+    outline: none;
+}
+
+.delete {
+    margin-left: 3px;
+    outline: none;
+    background-color: #f84e4e;
+}
+.delete:hover {
+    cursor: pointer;
+    background-color: #ca2c2c;
+}
+
+#buttons button {
+    width: 20%;
+    height: 20%;
+    border-radius: 10px;
+    font-size: x-large;
+    font-family: Poppins, sans-serif;
+    box-shadow: 3px 3px #aaaaaa;
+    cursor: pointer;
+    outline: none;
+    margin: 0.5vw;
+}
+button#newItem {
+    background-color: #ccccff;
+}
+button#newItem:hover {
+    background-color: #a4a4ca;
+}
+button#update {
+    background-color: #5DDD61;
+}
+button#update:hover {
+    background-color: #4CBA50;
+}
+
+#minutes {
+    width:10vw;
+    height:4vh;
+    text-align: center;
+    border-radius: 5px;
+    border: solid gray 1px;
+    background-color:white;
+}
+@media only screen and (max-width: 900px) {
+    .itemsDiv,
+    .items {
+        height:8vh;
+        width:80vw;
+    }
+    #buttons {
+        flex-direction: column;
+    }
+    #buttons button {
+        width:30%;
+        margin: 10px;
+    }
+    .slider {
+        width: 70vw
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        font-size:medium;
+    }
+    .itemsDiv {
+        height:6vh;
+        width:90vw;
+        margin:1vh 0vh 0vh 0vh;
+    }
+    .items {
+        height:6vh;
+        margin:1vh 0vh 0vh 0vh;
+
+        width:70vw;
+    }
+    .delete {
+        width:20vw;
+        height:6vh;
+        margin:1vh 0vh 0vh 0vh;
+
+        
+    }
+    #buttons button {
+        width:40%
+    }
+    #minutes {
+        width:15vw;
+        height:6vh;
+        text-align: center;
+        padding:3%;
+    }
+    #name {
+        width:70vw;
+        height:6vh;
+    }
+
+
+}

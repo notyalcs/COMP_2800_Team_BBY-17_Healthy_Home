@@ -1,3 +1,4 @@
+//Determines what happens when you click on either exercise, stretching or custom routines
 $(".r").on("click", function(){
     let buttonText = $(this).text();
     console.log(buttonText);
@@ -6,7 +7,7 @@ $(".r").on("click", function(){
 });
 
 window.onload = update;
-
+//Easter egg tracking update
 function keyPressed() {
     document.getElementById("key").style.display = "none";
     firebase.auth().onAuthStateChanged(function(user) {
@@ -21,6 +22,7 @@ function keyPressed() {
     })
 }
 
+//Easter egg tracking update
 function update() {
     firebase.auth().onAuthStateChanged(function(user) {
         db.collection("users")

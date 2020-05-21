@@ -88,11 +88,13 @@ section{
 #routines button{
     outline: none;
     cursor: pointer;
-    padding: 2% 8%;
+    /* padding: 2% 8%; */
     font-size: 20pt;
     font-family: Poppins, sans-serif;
     margin: 5%;
     border-radius: 5px;
+    width: 400px;
+    height: 150px;
 }
 .choice {
     background-color: #ddddff;
@@ -100,10 +102,25 @@ section{
 .choice:hover {
     background-color: #cccce9;
 }
+.custom {
+    background-color: #5ddd61;
+}
+.custom:hover {
+    background-color: #4cba50;
+}
+.notes {
+    background-color: #bbbbff;
+}
+.notes:hover {
+    background-color: #aaaae9;
+}
 
 @media only screen and (max-width:550px){
+    #routines button {
+        width: 300px;
+    }
     section{
-        font-size:40pt;
+        font-size:35pt;
     }
 }
 
