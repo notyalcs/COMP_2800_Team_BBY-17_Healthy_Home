@@ -159,6 +159,16 @@ img#imageHeader {
     outline: none;
 }
 
+.delete {
+    margin-left: 3px;
+    outline: none;
+    background-color: #f84e4e;
+}
+.delete:hover {
+    cursor: pointer;
+    background-color: #ca2c2c;
+}
+
 #buttons button {
     width: 20%;
     height: 20%;
@@ -169,6 +179,18 @@ img#imageHeader {
     cursor: pointer;
     outline: none;
     margin: 0.5vw;
+}
+button#newItem {
+    background-color: #ccccff;
+}
+button#newItem:hover {
+    background-color: #a4a4ca;
+}
+button#update {
+    background-color: #5DDD61;
+}
+button#update:hover {
+    background-color: #4CBA50;
 }
 
 #minutes {
@@ -185,8 +207,12 @@ img#imageHeader {
         height:8vh;
         width:80vw;
     }
+    #buttons {
+        flex-direction: column;
+    }
     #buttons button {
-        width:30%
+        width:30%;
+        margin: 10px;
     }
     .slider {
         width: 70vw

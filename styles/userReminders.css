@@ -70,11 +70,12 @@ img#imageHeader {
     }
 }
 
-
+div#pageContent button {
+    outline: none;
+    border-radius: 3px;
+}
 div#pageContent button:hover {
     cursor: pointer;
-    background-color: #dddddd;
-    box-shadow: 3px 3px #999999;
 }
 div#mainContent {
     display: grid;
@@ -104,13 +105,21 @@ Messing with this code will cause layout issues. */
     margin:1vh 0.5vw 1vh 0.5vw;
 }
 
+.col button.delete {
+    background-color: #f84e4e;
+}
+.col button.delete:hover {
+    background-color: #ca2c2c;
+}
+.col button.edit {
+    background-color: #5ddd61;
+}
+.col button.edit:hover {
+    background-color: #4cba50;
+}
 
 #test {
     grid-area:Reminder2;
-}
-div#mainContent > * {
-    /* border: 2px solid blue; */
-    /* margin: 15px 50px 15px 50px; */
 }
 #nameBar {
     display: flex;
