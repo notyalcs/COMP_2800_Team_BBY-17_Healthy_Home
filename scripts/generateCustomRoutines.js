@@ -1,4 +1,5 @@
 var recordArray = [];
+//Adds the list of custom routines with their exercises to the HTML. 
 function addList(recordArray){
     var size;
     firebase.auth().onAuthStateChanged(function (user) {
@@ -8,25 +9,19 @@ function addList(recordArray){
      if(size == 0){
 
      }else{
-        let first = 0;
-        let second = 0;
-        let third = 0;
-        let fourth = 0;
+        //Adds information to each description div according to their values
         for (i = 0; i < recordArray.length; i++) {
             if(recordArray[i]['Value'] == 1){
-                first++;
                 $("#desc1").prepend("<b>" + recordArray[i]['Name'] + " " + recordArray[i]['Sets'] + " x " + recordArray[i]['Reps'] + ": </b>" + recordArray[i]['Description'] + "<br/><br/>");
             }else if(recordArray[i]['Value'] == 2){
-                second++;
                 $("#desc2").prepend("<b>" + recordArray[i]['Name'] + " " + recordArray[i]['Sets'] + " x " + recordArray[i]['Reps'] + ": </b>" + recordArray[i]['Description'] + "<br/><br/>");
             }else if(recordArray[i]['Value'] == 3){
-                third++;
                 $("#desc3").prepend("<b>" + recordArray[i]['Name'] + " " + recordArray[i]['Sets'] + " x " + recordArray[i]['Reps'] + ": </b>" + recordArray[i]['Description'] + "<br/><br/>");
             }else if(recordArray[i]['Value'] == 4){
-                fourth++;
                 $("#desc4").prepend("<b>" + recordArray[i]['Name'] + " " + recordArray[i]['Sets'] + " x " + recordArray[i]['Reps'] + ": </b>" + recordArray[i]['Description'] + "<br/><br/>");
             }
         }}
+        //Does not add a save routine button if the routine is empty
         for(j = 1; j < 5; j++){
             console.log($("#desc" + j).text().length);
             if($("#desc" + j).text().length == 0){
@@ -34,6 +29,7 @@ function addList(recordArray){
             }
         }
 }
+//Goes through the user's custom routines and adds them to an array
 firebase.auth().onAuthStateChanged(function (user) {
     if (user) {
         db.collection("users").doc(user.uid).collection("Custom Routines").get().then(function (querySnapshot) {
@@ -51,6 +47,7 @@ firebase.auth().onAuthStateChanged(function (user) {
         });
     }
 });
+//At the beginning, the descriptions cannot be seen. 
 document.getElementById('desc1').style.display = 'none';
 document.getElementById('desc2').style.display = 'none';
 document.getElementById('desc3').style.display = 'none';
