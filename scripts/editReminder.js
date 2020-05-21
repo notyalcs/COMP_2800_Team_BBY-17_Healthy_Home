@@ -25,7 +25,7 @@ firebase.auth().onAuthStateChanged(function (user) {
             for (let i = 0; i < buttonArr.length; i++) {
                 console.log(i);
                 //Add items into the page with the proper descriptions
-                $('#items').append('<div class = "itemsDiv ' + i + '"><input type="text" class="items ' + i + '" value="' + buttonArr[i] + '"></input><input type="button" class="delete ' + i + '" id = "' + i + '" value="delete"></input></div>');
+                $('#items').append('<div class = "itemsDiv ' + i + '"><input type="text" class="items ' + i + '" value="' + buttonArr[i] + '"></input><input type="button" class="delete" id = "' + i + '" value="delete"></input></div>');
                 //A function to delete the item from the db when the associated delete button is pressed
                 $("#" + i).on('click', function () {
                     console.log(i);
