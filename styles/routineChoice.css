@@ -79,13 +79,15 @@ section{
 }
 .wrapper{
     display:grid;
-    grid-template-columns:repeat(3, 400px);
-    grid-template-rows:repeat(3, 100px);
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows:repeat(2, 100px);
     grid-gap:60px 100px;
     justify-content: center;
+    margin-right: 80px;
+    margin-left: 80px;
 }
 .wrapper button{
-    font-size:20pt;
+    font-size:15pt;
     background-color: #5DAF61;
     color: white;
     padding: 14px 20px;
@@ -99,7 +101,7 @@ section{
 #start{
     display:block;
     text-align: center;
-    margin-top:-5%;
+    margin-top: 5%;
 }
 #start button{
     font-size:20pt;
@@ -118,38 +120,29 @@ button[disabled]{
     background-color: #ff2222;
 }
 
-/* Alterations depending on screen size - Desktop */
-@media only screen and (max-width:1400px){
-    .wrapper button{
-        font-size:15pt;
-    }
-    .wrapper{
-        grid-template-columns:repeat(3, 200px);
-        grid-template-rows:repeat(3, 80px);
-        grid-gap:20px 40px;
-    }
-}
 /* Tablet */
-@media only screen and (max-width:700px){
+@media only screen and (max-width:1000px){
     section{
-        width:750px;
-    }
-    #universalHeader{
-        width:775px;
+        font-size: 40pt;
     }
     .wrapper{
-        width:780px;
+        grid-template-columns: 1fr;
+        grid-template-rows: unset;
+        grid-gap: 5px 0;
+        margin-right: 40px;
+        margin-left: 40px;
     }
-    #start{
-        width:780px;
+    .wrapper button {
+        margin: 0 8px 0 8px;
+        height: 60px;
+    }
+    button:nth-child(4) {
+        margin-top: 50px;
     }
 }
 /* Mobile */
-@media only screen and (max-width:450px){
-    .wrapper{
-        margin-top:100px;
-        grid-template-columns:repeat(3, 230px);
-        grid-template-rows:repeat(3, 100px);
-        grid-gap:50px 40px;
+@media only screen and (max-width:500px){
+    section {
+        font-size: 30pt;
     }
 }

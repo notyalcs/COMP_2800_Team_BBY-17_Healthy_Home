@@ -8,6 +8,8 @@ A web app for COMP 2800.
 
 * [Link to the Repo](https://github.com/notyalcs/COMP_2800_Team_BBY-17_Healthy_Home)
 
+* [Link to test documentation](https://docs.google.com/spreadsheets/d/1FjqV7sPj76q4FfnMjdK2AUF4mgpyMtTy5w3ExuYEzDM/edit?usp=sharing)
+
 #
 
 ## Team
