@@ -8,9 +8,13 @@ A web app for COMP 2800.
 
 * [Link to the Repo](https://github.com/notyalcs/COMP_2800_Team_BBY-17_Healthy_Home)
 
+#
+
 ## Team
 
 * BBY-17
+
+#
 
 ## Contributors
 
@@ -39,6 +43,7 @@ Top level of the repo contains all the html files. There are folders containing 
 #
 
 ## Environment Setup
+This is a list of instructions on how to start making your own edits. If you have created something you believe will benefit the app, create a pull request for us to look at!
 
 1. Clone the repository to your local machine.
 
