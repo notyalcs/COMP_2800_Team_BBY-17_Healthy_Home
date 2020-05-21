@@ -31,14 +31,6 @@ $(document).ready(function () {
         }
         document.getElementById('stretchingInfo').style.display = 'block';
     });
-    //Display Meditation on associated button press
-    $('#meditationButton').on('click', function () {
-        let x = document.getElementsByClassName('info');
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = 'none';
-        }
-        document.getElementById('meditationInfo').style.display = 'block';
-    });
 
     //Display Exercise on associated button press
     $('#exerciseButton').on('click', function () {
