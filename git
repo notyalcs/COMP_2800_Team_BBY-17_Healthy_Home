@@ -1,0 +1,1027 @@
+[33mcommit 8beffeb2cf30041d248a729175a3b2aab41b4de4[m[33m ([m[1;36mHEAD -> [m[1;32mdev[m[33m, [m[1;31morigin/dev[m[33m)[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Thu May 21 14:11:52 2020 -0700
+
+    fixed some grammatical errors in ressources page
+
+[33mcommit 71c2d1dd55b3d268531818fa2e98b026a8f72b1a[m
+Merge: b559287 b33497a
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu May 21 13:18:28 2020 -0700
+
+    Merge branch 'dev' of https://github.com/notyalcs/COMP-2800-Team-BBY-17-Healthy-Home into dev
+
+[33mcommit b55928738d8623ecf57e03e6c2643ed0666fb357[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu May 21 13:18:24 2020 -0700
+
+    fixed centering on description
+
+[33mcommit b33497a3b126c0b3511a2c9b2ddc9543e2161cf5[m
+Merge: e219ba7 76d929f
+Author: purugarg3003 <purugarg3003@gmail.com>
+Date:   Thu May 21 13:04:06 2020 -0700
+
+    Merge branch 'dev' of https://github.com/notyalcs/COMP_2800_Team_BBY-17_Healthy_Home into dev
+
+[33mcommit e219ba7f495a195cb51416d57b53f8e2d26db0ba[m
+Author: purugarg3003 <purugarg3003@gmail.com>
+Date:   Thu May 21 13:04:01 2020 -0700
+
+    made changes to htacess file
+
+[33mcommit 76d929f9f84a384c273bc98b5289af25f942075a[m
+Merge: 414179c 1f9aef6
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu May 21 13:03:26 2020 -0700
+
+    Merge branch 'dev' of https://github.com/notyalcs/COMP-2800-Team-BBY-17-Healthy-Home into dev
+
+[33mcommit 414179cb44f6d5d583ea2802ab10d53e1c00c26c[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu May 21 13:03:14 2020 -0700
+
+    small changes for styling
+
+[33mcommit 1f9aef6aca580ca9db9dfd2854bc99f6237e1c8c[m
+Author: purugarg3003 <purugarg3003@gmail.com>
+Date:   Thu May 21 12:57:09 2020 -0700
+
+    adding .htaccess file
+
+[33mcommit dab96e58d8de3208ff72237e72ecdf23d19134bb[m
+Author: purugarg3003 <purugarg3003@gmail.com>
+Date:   Thu May 21 12:43:15 2020 -0700
+
+    made changes to the newresources page
+
+[33mcommit d2265c2cb57b79d571e90df33b78067a9878259a[m
+Merge: ca03bc6 1e02613
+Author: purugarg3003 <purugarg3003@gmail.com>
+Date:   Thu May 21 12:35:46 2020 -0700
+
+    deleted newResources to fix merge conflict
+
+[33mcommit ca03bc64fa26f226f2eec96251a9c77f66878b57[m
+Author: purugarg3003 <purugarg3003@gmail.com>
+Date:   Thu May 21 12:33:34 2020 -0700
+
+    html and css for 404 added
+
+[33mcommit 1e02613c1c335ff00ea3c405a7de2158d4114dc2[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu May 21 12:26:07 2020 -0700
+
+    made a change to the README
+
+[33mcommit cd9954965c6773a8b211e1cbc17baa95f068eeca[m
+Merge: d6b6561 e5232c7
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu May 21 12:22:25 2020 -0700
+
+    Merge branch 'dev' of https://github.com/notyalcs/COMP-2800-Team-BBY-17-Healthy-Home into dev
+
+[33mcommit d6b65613c037c30c723b49c244913fe675e9a64f[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu May 21 12:22:11 2020 -0700
+
+    created a readme file
+
+[33mcommit e5232c76b78b9ec9eab4c14fab6802120f710cec[m
+Merge: 7042719 7903b62
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Thu May 21 12:12:39 2020 -0700
+
+    Merge branch 'dev' of https://github.com/notyalcs/COMP_2800_Team_BBY-17_Healthy_Home into dev
+
+[33mcommit 7042719c881debdfa300f48ce41599803976030c[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Thu May 21 12:12:29 2020 -0700
+
+    minor styling errors fixed
+
+[33mcommit 7903b62bb655214819938105e5591ec643318d5a[m
+Merge: 39ed029 2554286
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Thu May 21 11:42:20 2020 -0700
+
+    Merge branch 'dev' of https://github.com/notyalcs/COMP_2800_Team_BBY-17_Healthy_Home into dev
+
+[33mcommit 39ed02928c0dd147178c14e22353fb058f1b888f[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Thu May 21 11:42:09 2020 -0700
+
+    made resource page and user Remidners pages mobile friendly
+
+[33mcommit 255428663537feb0617973f37c0b657c0ced4879[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Thu May 21 10:16:12 2020 -0700
+
+    commented code and deleted some useless code
+
+[33mcommit 138927e0f1e07aff54abd91e9170dc488e8ba128[m
+Merge: 3c8242f 2f9da85
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Wed May 20 22:53:41 2020 -0700
+
+    Merge branch 'dev' of https://github.com/notyalcs/COMP_2800_Team_BBY-17_Healthy_Home into dev
+
+[33mcommit 3c8242fb02ab09f19e268debfecfdc131d47df00[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Wed May 20 22:53:26 2020 -0700
+
+    populated resources with information and tips
+
+[33mcommit 2f9da85054c8fb9dc928040b64daace75502f6c3[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Wed May 20 20:48:00 2020 -0700
+
+    some more style changed to some shtuff
+
+[33mcommit e6e5dfe5f95b548c6bf0b74986e5c07f5c98e0dc[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Wed May 20 20:36:36 2020 -0700
+
+    added links to a few pages to other pages. mostly notes. also changed user reminders to have different coloured buttons
+
+[33mcommit 46dca6626843afb20d95287ccb8fe539463d82d9[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Wed May 20 19:22:46 2020 -0700
+
+    Revised comments and structure of all of my (Chris) JavaScript files
+
+[33mcommit 40b019313338dab3a2aa697ebd7ac9537cbbbbb4[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Wed May 20 15:22:29 2020 -0700
+
+    added header to edit reminder
+
+[33mcommit 6f2a576207bdb60bac28af7bd87283e6135cd6d5[m
+Merge: f706a4e 4ed81c5
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Wed May 20 15:15:23 2020 -0700
+
+    Merge branch 'dev' of https://github.com/notyalcs/COMP-2800-Team-BBY-17-Healthy-Home into dev
+
+[33mcommit f706a4ebcb94f0143e2a13a26f21eb4bb4c1d4c2[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Wed May 20 15:15:19 2020 -0700
+
+    commenting and cleaning
+
+[33mcommit 4ed81c51967bb957b7ec58adc8b5290d39c18a23[m
+Merge: 1112cf9 075bb67
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Wed May 20 15:08:39 2020 -0700
+
+    Merge branch 'dev' of https://github.com/notyalcs/COMP_2800_Team_BBY-17_Healthy_Home into dev
+
+[33mcommit 1112cf9d91c0c0b66003f635762209c7ce053c61[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Wed May 20 15:08:21 2020 -0700
+
+    active timers are displayed and disabled, edit timer page has been styled, notes has been styled
+
+[33mcommit 075bb67162f49b1ac29d7f824222031ce3b2467d[m
+Merge: 41577f4 95da99f
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Wed May 20 11:52:44 2020 -0700
+
+    Merge branch 'dev' of https://github.com/notyalcs/COMP_2800_Team_BBY-17_Healthy_Home into dev
+
+[33mcommit 41577f4b233254aba7b460094e8dd78fae42a008[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Wed May 20 11:52:29 2020 -0700
+
+    changed input values
+
+[33mcommit 95da99fb80d124e1c6be34449bf17b646a9ad745[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Wed May 20 11:50:37 2020 -0700
+
+    fixed header on custom routine page
+
+[33mcommit 7b8e53a30a4acf1b0bd1f2d38805663bd9563082[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Wed May 20 11:48:20 2020 -0700
+
+    changed some styling on custom routine page
+
+[33mcommit dbd0d2ec84fc7ab8112b47035a7ad782448b96f2[m
+Merge: bebc6f5 c5c2c31
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Wed May 20 11:42:01 2020 -0700
+
+    Merge branch 'dev' of https://github.com/notyalcs/COMP-2800-Team-BBY-17-Healthy-Home into dev
+
+[33mcommit bebc6f5a0ce2563a8a65309ab8ae382b1f4941d3[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Wed May 20 11:41:56 2020 -0700
+
+    styled new resource page, changed target of cardio links
+
+[33mcommit c5c2c31e8239075e17bf0f5ef26d77945d7bbab5[m
+Merge: dfb8cd9 8d14ba9
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Wed May 20 10:45:40 2020 -0700
+
+    fixed quick image bug
+
+[33mcommit 8d14ba97aea0ea04109d978a21f7a69c872d86af[m[33m ([m[1;31morigin/Daniil_Exercise_Header[m[33m, [m[1;32mDaniil_Exercise_Header[m[33m)[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Wed May 20 10:39:36 2020 -0700
+
+    changed redirection and description generation
+
+[33mcommit dfb8cd9437b0ef1b5d188fb1da60032a38d81992[m
+Merge: 6bcf982 ac3c67b
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Wed May 20 10:16:43 2020 -0700
+
+    Merge branch 'dev' of https://github.com/notyalcs/COMP_2800_Team_BBY-17_Healthy_Home into dev
+
+[33mcommit 6bcf98280425bfaeee5f2775dfdce1eb8e2efdcf[m
+Merge: e2e57d5 12a6bf0
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Wed May 20 10:16:29 2020 -0700
+
+    merging to dev
+
+[33mcommit ac3c67b68d10bcf42c5555fcab4899d8533f535a[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Wed May 20 10:14:44 2020 -0700
+
+    deleted old resource files, added header to new resource page.
+
+[33mcommit 4d42cf3fb300cce0f9b48b8ea20c32c482b71132[m
+Merge: 1d22e9d 12a6bf0
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Tue May 19 21:21:06 2020 -0700
+
+    Lots of bugs and styling fixed
+
+[33mcommit 12a6bf074d77ddfed4dfd4b949fea15f733aba42[m[33m ([m[1;31morigin/CS_Routine[m[33m, [m[1;32mCS_Routine[m[33m)[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Tue May 19 18:31:23 2020 -0700
+
+    made pictures load from db and added strestches to the routines page
+
+[33mcommit 1d22e9de97d2de83629fa462305ef413d0a0c792[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Tue May 19 18:30:53 2020 -0700
+
+    Can't add duplicate routines
+
+[33mcommit 8fc5f1b66a778f8f6933135c72a411e0fdd76c29[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Tue May 19 17:45:15 2020 -0700
+
+    fixed some minor styling
+
+[33mcommit 27ad3ff528bb241c64f8fc3b0fe7dcd6c0b38f83[m
+Merge: 3bea82b e2e57d5
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Tue May 19 17:38:33 2020 -0700
+
+    Merge branch 'dev' into Daniil_Exercise_Header
+
+[33mcommit 3bea82b9c8e501ca0d2d1da5aa045a7dc8cf624a[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Tue May 19 17:37:25 2020 -0700
+
+    Edited description page
+
+[33mcommit a5245e685f3a31714642eafc951e5e77ea551b56[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Tue May 19 16:54:21 2020 -0700
+
+    added save and custom routine compatibility
+
+[33mcommit e2e57d547e343f6559ff3059f9df3453a435f9c0[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Tue May 19 15:36:19 2020 -0700
+
+    changed redirect on main to proper resource page
+
+[33mcommit e91f30cbae79b1e407002c0d902a812965ecaa8d[m
+Merge: a63c526 96adb5f
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Tue May 19 15:24:07 2020 -0700
+
+    merged CS_styling and fixed merge conflicts
+
+[33mcommit a63c5263912a9e8fc38d1721fbcdee67223f5b2e[m
+Merge: c3ad562 e84140a
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Tue May 19 15:21:50 2020 -0700
+
+    merged CS_Cardio to dev and fixed conflicts
+
+[33mcommit e1360b0455c8bd73211111c31f41c2db4ac8c5f9[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Tue May 19 15:14:57 2020 -0700
+
+    minor styling fix
+
+[33mcommit 686b4f0dc2054a4c9d51478ef5b3c11f0e086205[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Tue May 19 15:06:48 2020 -0700
+
+    changed some styling and fixed save routine bug
+
+[33mcommit c3ad5627b28e6bf497ccb705038427bd3d67cd0d[m[33m ([m[1;31morigin/Sean_Clayton_style[m[33m)[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Tue May 19 14:19:28 2020 -0700
+
+    Font changed and some colour changes to all pages
+
+[33mcommit e84140a53419f562cd4f2518eee4d847f39efc56[m[33m ([m[1;31morigin/CS_Cardio[m[33m)[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Tue May 19 14:07:35 2020 -0700
+
+    changed z-index of map
+
+[33mcommit 48f4231cb5188328d8f2a67e264b9b43151a6505[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Tue May 19 14:04:43 2020 -0700
+
+    changed a bunch of fonts and some colour and stuff
+
+[33mcommit 6068c6f09a736cc117d614a82401a7156c70fe1e[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Tue May 19 14:02:05 2020 -0700
+
+    added save routine compatability
+
+[33mcommit 3a90e5cc90e481d0cb1c9a5f8a265028a30fc18a[m[33m ([m[1;32m0a[m[33m)[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Tue May 19 13:55:38 2020 -0700
+
+    rebuilt routine page
+
+[33mcommit eb1c953d4173789813cfa96b58f6a3f5477a34d5[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Tue May 19 13:02:20 2020 -0700
+
+    fist commit
+
+[33mcommit 96adb5f92004d346c839b81539bd81279760c590[m[33m ([m[1;31morigin/CS_styling[m[33m)[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Tue May 19 12:39:50 2020 -0700
+
+    rebuilt resources page to reduce unnecessary html pages
+
+[33mcommit 313a3fa7dcbd70a50ab775c453a866b94a6d914f[m[33m ([m[1;31morigin/Sean_Clayton_social[m[33m)[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Tue May 19 12:12:26 2020 -0700
+
+    brief styling of main and added twitter and facebook link
+
+[33mcommit 40c9035b1ee687e9274b5daa189617b463882d9e[m[33m ([m[1;32mCS_styling[m[33m)[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Mon May 18 17:51:11 2020 -0700
+
+    added delete functionality on existing list items (doesn't work on newly created items yet)
+
+[33mcommit 1d5c1fe631e25bc84b71e2cf73bc81b028545161[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Mon May 18 15:53:21 2020 -0700
+
+    made reminder name, items, and duration customizable
+
+[33mcommit 60a4d54c4e8b5d726812ba58a508385ad1b01da3[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Sun May 17 19:39:19 2020 -0700
+
+    made page update on delete button being pressed
+
+[33mcommit e6abae22445d81092c3daccf21b51f2e8326d6cd[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Sun May 17 19:19:59 2020 -0700
+
+    made timers load onto the Your Reminders page, added delete timer functionality, and did some styling
+
+[33mcommit e181632f5ece5939e34103edb46d0ac7eed2a4ed[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Sun May 17 16:13:42 2020 -0700
+
+    pushing again so I can change branches
+
+[33mcommit 3de4e79c73c28a9232d00ed199116b8a194e26a3[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Sun May 17 13:25:34 2020 -0700
+
+    populated the pages with information and added cards/ styling
+
+[33mcommit fb092a7ed63d3cc7fdc6e32dab892eda6fadcbba[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Fri May 15 17:26:03 2020 -0700
+
+    audio in easter egg now works
+
+[33mcommit 166b43732f21fcc9cde97cde6758dc13650feb8c[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Fri May 15 17:03:21 2020 -0700
+
+    added confetti and tried for sound
+
+[33mcommit 3c329ca91bb926bed9cacd0672027f4405135a8e[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Fri May 15 16:19:33 2020 -0700
+
+    connected notes to main page
+
+[33mcommit 83a46eaabafa77b3c29c560a38c391bad17adb5a[m
+Merge: bbc1ad5 7a22eb5
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Fri May 15 16:15:27 2020 -0700
+
+    Merge branch 'CS_Notes' into dev
+
+[33mcommit bbc1ad584cf80bd1d98b7641f1617a5714e039df[m
+Merge: 5d75531 f5669b1
+Author: purugarg3003 <purugarg3003@gmail.com>
+Date:   Fri May 15 16:10:26 2020 -0700
+
+    Merge branch 'dev' of https://github.com/notyalcs/COMP_2800_Team_BBY-17_Healthy_Home into dev
+
+[33mcommit 7a22eb50b8d659f28f9141f296690a1f0c9ed661[m[33m ([m[1;31morigin/CS_Notes[m[33m)[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Fri May 15 16:10:06 2020 -0700
+
+    fixed styling issues and improved redirect on note creation
+
+[33mcommit f5669b1379f9046151a815251bc6c8c2dc1420ba[m
+Merge: afb2746 f222614
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Fri May 15 16:07:19 2020 -0700
+
+    Merge branch 'dev' of https://github.com/notyalcs/COMP-2800-Team-BBY-17-Healthy-Home into dev
+
+[33mcommit afb27468189b33cfd7b2a5108f9306a5202c5a53[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Fri May 15 16:07:01 2020 -0700
+
+    merged cardio page style with header
+
+[33mcommit 5d755315ae9b3a043200236f4e1fed2d17bff12d[m
+Author: purugarg3003 <purugarg3003@gmail.com>
+Date:   Fri May 15 16:03:18 2020 -0700
+
+    sleep and hydration added
+
+[33mcommit f222614b0a7b58f09c0185d5af4003ce26cb9303[m
+Merge: 8ea5d7c 5500505
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Fri May 15 15:41:32 2020 -0700
+
+    Merge branch 'Daniil_Exercise_Header' into dev
+
+[33mcommit 8ea5d7c0dafa48882985d95a78f429dd0e878425[m
+Merge: 71e6d0f c1d03f5
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Fri May 15 15:37:51 2020 -0700
+
+    merge resolution on timer.js
+
+[33mcommit 305ac72113e1733449ff38a22df9239d1e69a3e2[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Fri May 15 15:30:38 2020 -0700
+
+    fixed some small styling issues
+
+[33mcommit ae0f0974a06578fdc99b79ceed822da50b40ca52[m[33m ([m[1;32mCS_Notes[m[33m)[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Fri May 15 13:45:32 2020 -0700
+
+    centered section before I forget
+
+[33mcommit 8cdaee6189598e67759339790ddd81ee0185f97c[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Fri May 15 13:44:37 2020 -0700
+
+    fixed notes styling
+
+[33mcommit 022a3e331de62c62842faae247a005bfceac0440[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Fri May 15 13:39:40 2020 -0700
+
+    made notes dynamically load from the database in chronological order
+
+[33mcommit c2f68bdf3ee939975bd825654aad2e66b4863458[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Fri May 15 13:08:42 2020 -0700
+
+    added notes page and some scripts
+
+[33mcommit 6328f16fde0c4a9e6e01e3f6eaf8448c3eacd875[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Fri May 15 12:40:20 2020 -0700
+
+    testing branch
+
+[33mcommit 71e6d0f0e897f9de84cec60e0ad025839496110e[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Fri May 15 12:26:48 2020 -0700
+
+    added cardio page with google maps api and made custom timer dynamically load from database
+
+[33mcommit 5500505c8c5462a70013a9f2dc74d5d0896ee3ca[m
+Author: purugarg3003 <purugarg3003@gmail.com>
+Date:   Thu May 14 22:28:59 2020 -0700
+
+    Images added to the database
+
+[33mcommit 187e6e84c7393646735d72fac7a6396079e9b361[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Thu May 14 20:42:12 2020 -0700
+
+    Styled everything and fixed bugs
+
+[33mcommit 0a9350c94c5a272b50c4fed01ed9950bb18aab62[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Thu May 14 17:44:43 2020 -0700
+
+    Fixed repitition bug
+
+[33mcommit 2b6c7538a59fd1929906df82f9b7316e92a3c121[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Thu May 14 17:22:43 2020 -0700
+
+    profile routines work with exercise/stretch
+
+[33mcommit 0a3e07cf45c94cc88f03b86447e331d13b54d3e5[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Thu May 14 15:55:21 2020 -0700
+
+    Edited lots of scripts and added custom routines + more interactions with profile
+
+[33mcommit c1d03f5aed04d657bdd6573a3f79f4781a256908[m[33m ([m[1;31morigin/Sean_Clayton_egg[m[33m)[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu May 14 12:10:58 2020 -0700
+
+    changed name display to not show John Doe
+
+[33mcommit 6294f37dae5d68974e2ae7b27b63c3e0c4d31534[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu May 14 11:53:44 2020 -0700
+
+    changed fonts of a few pages
+
+[33mcommit 09789badd30578ad1c516c9071f589daf4087297[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu May 14 11:32:24 2020 -0700
+
+    easter egg fully implemented
+
+[33mcommit 2c1e3bc34db641958532524613340815e035b882[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Wed May 13 13:35:10 2020 -0700
+
+    Can create custom routines
+
+[33mcommit e77236ef2a60a6a1b4cad42c168fd450ebf78435[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Mon May 11 16:46:55 2020 -0700
+
+    Users can save routines
+
+[33mcommit 5824f6e061de3170b9960f76cbae5d72a4a1e51d[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Fri May 8 16:12:50 2020 -0700
+
+    some merge fixes and header adjustments
+
+[33mcommit 0f801a09f7c7305b8aeb6cb3d6204d7a3d5c1cb6[m
+Merge: ac07d4f 8598da5
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Fri May 8 15:52:29 2020 -0700
+
+    Merge branch 'dev' of https://github.com/notyalcs/COMP-2800-Team-BBY-17-Healthy-Home into dev
+
+[33mcommit 8598da585434adf5460cf7e62329549729e5a0e2[m
+Merge: 720b5e8 d540c7b
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Fri May 8 15:52:05 2020 -0700
+
+    merged timer1a with the dev branch and fixed a conflict in main
+
+[33mcommit d540c7b9e303316af3347cdd0a5e16c4ea3b0b7d[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Fri May 8 15:48:41 2020 -0700
+
+    updated timer and create timer functionality
+
+[33mcommit ac07d4faee2905ab709468b192ec1d7e78eaa3e3[m
+Merge: 123e91f 720b5e8
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Fri May 8 15:21:40 2020 -0700
+
+    Merge branch 'dev' of https://github.com/notyalcs/COMP-2800-Team-BBY-17-Healthy-Home into dev
+
+[33mcommit 720b5e8f9a22145fa5490ea7e9608e8e13931492[m
+Merge: 1b89bcc fee2014
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Fri May 8 15:04:18 2020 -0700
+
+    Merge branch 'Daniil_Exercise_Header' into dev
+
+[33mcommit 123e91ffe19b8e153eda6164fea46435420d9e3b[m
+Merge: 1b89bcc a18e579
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Fri May 8 14:06:34 2020 -0700
+
+    Merge branch 'Sean_Clayton_about' into dev
+
+[33mcommit a18e57900b8cb5536283afdaa85d5a825a589abd[m[33m ([m[1;31morigin/Sean_Clayton_about[m[33m)[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Fri May 8 14:06:05 2020 -0700
+
+    rewrote the about us para
+
+[33mcommit fee2014d13c9448af624c930a1e4a4f73f4783d8[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Fri May 8 13:54:29 2020 -0700
+
+    changed some styling
+
+[33mcommit 1b89bccf0a2838e2053baf3898f7710be72f93bc[m
+Merge: c9d3136 50ed018
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Fri May 8 13:50:54 2020 -0700
+
+    merge resolved
+
+[33mcommit 50ed018f481e56bf786e0ac835e36365d9b750a6[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Fri May 8 13:48:21 2020 -0700
+
+    added images and more mobile friendliness
+
+[33mcommit fe1af26a905d7ad87bac459df8deb90ef77bbb26[m
+Merge: 57990d7 7090d68
+Author: purugarg3003 <purugarg3003@gmail.com>
+Date:   Fri May 8 13:36:52 2020 -0700
+
+    Added the next resource page html and css. Also added the mobile version of both the resource pages.
+
+[33mcommit 57990d7a7d740ba93f9d19b68283c3ffd4bebb71[m
+Author: purugarg3003 <purugarg3003@gmail.com>
+Date:   Fri May 8 13:29:18 2020 -0700
+
+    Added the next resource page html and css. Also added the mobile version of both the resource pages.
+
+[33mcommit 7090d6846fb5a5eb934bcfdda09bc3005b8e029d[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Fri May 8 12:54:16 2020 -0700
+
+    Routine pages are responsive
+
+[33mcommit 6f9aafc7f68142b587a5ef1da5379e4d0a49a506[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Fri May 8 09:52:42 2020 -0700
+
+    changed indentation of code
+
+[33mcommit 8749f1a50c19af1078d0fda3fee5e44c96392944[m
+Author: purugarg3003 <purugarg3003@gmail.com>
+Date:   Thu May 7 21:20:11 2020 -0700
+
+    Added resource html and css
+
+[33mcommit 7b4488494ec10b3aae81da35d41163bc7f1c521a[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Thu May 7 15:53:37 2020 -0700
+
+    Stretch information is now obtained from database + routine choice page added
+
+[33mcommit 58b83683ebc53b320f209a1393729c69c5c1c93b[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu May 7 13:39:25 2020 -0700
+
+    put my photo into folder
+
+[33mcommit c9d31365a710728878abe2a2d28b3c8b79330c12[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu May 7 13:12:32 2020 -0700
+
+    merged and linked files and styles
+
+[33mcommit 022c2f1cf3724294081270849b66bcc873398a7a[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu May 7 12:57:28 2020 -0700
+
+    merge actually resolved now
+
+[33mcommit 6134d63cc99fb73156a117699da8e909e62e502a[m
+Merge: 819e89e f78fe07
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu May 7 12:56:01 2020 -0700
+
+    merge conflict resolved
+
+[33mcommit a77b52450271833826235780e51d55ed2641fab3[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu May 7 12:52:11 2020 -0700
+
+    work on about us page
+
+[33mcommit 819e89e4394dabbe27e2cf3330750411b3149060[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu May 7 12:08:21 2020 -0700
+
+    merged to make header universal
+
+[33mcommit eeb84d3f3d260098524c55ee022b862367113f81[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu May 7 11:48:13 2020 -0700
+
+    deleted old css file
+
+[33mcommit bd51c26c51c452e125e89c9c5e591165483be5f2[m
+Merge: 103d065 788824a
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu May 7 11:45:50 2020 -0700
+
+    Merge branch 'Sean_Clayton_profile' into dev
+
+[33mcommit 103d065cdbd50e93cc3522a2533943cbdba8cf9b[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu May 7 11:44:52 2020 -0700
+
+    deleted old js file
+
+[33mcommit 433eb42654c28f48571e83ff4d4b323534010ed9[m
+Merge: 1620b9a 8efa0ee
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu May 7 11:43:57 2020 -0700
+
+    Merge branch 'dev' of https://github.com/notyalcs/COMP-2800-Team-BBY-17-Healthy-Home into dev
+
+[33mcommit 8efa0eee0882f7f07aa8dd7b5fce9f8e6fa7d786[m
+Merge: 1262323 3539687
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Thu May 7 11:43:47 2020 -0700
+
+    Merge branch 'Daniil_Exercise_Header' into dev
+
+[33mcommit 353968709298576fc47e14fe22ab4772bd75ba9d[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Thu May 7 11:41:26 2020 -0700
+
+    Got the rest of the workouts working
+
+[33mcommit f78fe07c4225dc686ad5f9c4ebc66132653fde15[m[33m ([m[1;31morigin/Christopher_spooner_Timer[m[33m)[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Thu May 7 11:39:37 2020 -0700
+
+    created timer and create timer pages
+
+[33mcommit 788824a71005fd72c9485fcfce248b99fb1ce822[m[33m ([m[1;31morigin/Sean_Clayton_profile[m[33m)[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu May 7 11:16:16 2020 -0700
+
+    minor changes to style
+
+[33mcommit 1620b9ace8fe08330e7cee44b17ddcf766de067a[m
+Merge: 1262323 293ee60
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Wed May 6 18:42:57 2020 -0700
+
+    Merge branch 'Sean_Clayton_profile' into dev
+
+[33mcommit 12623230ce0185ca31a56071e05a6e42371bad73[m
+Merge: f43046b 17125bc
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Wed May 6 18:35:48 2020 -0700
+
+    Merge branch 'Daniil_Exercise_Header' into dev
+
+[33mcommit 293ee60ae74172161ed4a807d847b34245fc16f9[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Wed May 6 18:33:15 2020 -0700
+
+    a bunch of profile stuff, along with more placeholder files.
+
+[33mcommit 17125bc7078f92e9dfa757b0870bcfbfd453134f[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Wed May 6 18:29:26 2020 -0700
+
+    Added database functionality
+
+[33mcommit f43046bab823f5b49a49bffb0ab5e03960459b9c[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Wed May 6 16:45:38 2020 -0700
+
+    created new header. located in profile.html and profile.css
+
+[33mcommit 877a42f7b36b22d77b7bc236539e834b059ca453[m[33m ([m[1;31morigin/Sean_Clayton_main_page[m[33m)[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Wed May 6 15:29:24 2020 -0700
+
+    main page basically done
+
+[33mcommit b624999bea4e894baf8e1a475837b9a4c6961beb[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Tue May 5 17:58:40 2020 -0700
+
+    took header html
+
+[33mcommit 02a39fd8f6025c69e3f70e10f606738c6299c328[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Tue May 5 17:52:09 2020 -0700
+
+    started main page
+
+[33mcommit ff7b99abb8e9f8b527071308295016b235d7e7e0[m[33m ([m[1;31morigin/Sean_Clayton_favicon[m[33m)[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Tue May 5 15:27:41 2020 -0700
+
+    Added favicon image to folder and put the line in only index.html
+
+[33mcommit 18821a4a8f43abf0c0f3b36969ff4d175311ac6b[m
+Author: purugarg3003 <purugarg3003@gmail.com>
+Date:   Tue May 5 14:00:11 2020 -0700
+
+    Donkey kick added
+
+[33mcommit f3534e5e0ec2a43c5f25acb5001ee64730d08ad2[m[33m ([m[1;31morigin/Sean_Clayton_Cleanup[m[33m)[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Tue May 5 13:50:00 2020 -0700
+
+    Deleted useless txt files
+
+[33mcommit 50113b905edf19f269cb99bed60f58c60e9af1d6[m
+Author: purugarg3003 <purugarg3003@gmail.com>
+Date:   Tue May 5 13:41:19 2020 -0700
+
+    added pike press up
+
+[33mcommit 48f060558a109b1348f560b02d42735927a3a695[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Tue May 5 13:07:23 2020 -0700
+
+    Added html/css for routines
+
+[33mcommit 87f71744820ba1d0ec0921ec1545645b552241ad[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Mon May 4 13:13:54 2020 -0700
+
+    Renamed and fixed some bugs
+
+[33mcommit 058548e5a6657399d3572a754481ecc2714b4362[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Mon May 4 11:26:43 2020 -0700
+
+    exercise/stretch routine skeleton
+
+[33mcommit cfa61aa3f6d6c2d72aa052c796d5ea0363352924[m[33m ([m[1;33mtag: Sprint_1_Deliverable[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: 7b4d33e 5161fdd
+Author: notyalcs <60751522+notyalcs@users.noreply.github.com>
+Date:   Thu Apr 30 16:08:25 2020 -0700
+
+    Merge pull request #1 from notyalcs/dev
+    
+    Integration complete, time to request pull
+
+[33mcommit 5161fddb265f5aec63096b5216ae2008d56faa71[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu Apr 30 15:58:56 2020 -0700
+
+    Integration complete, time to request pull
+
+[33mcommit 7b4d33e5581bc099297786a8f705eceac8cb3b5a[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu Apr 30 15:32:43 2020 -0700
+
+    dev implementation complete.
+
+[33mcommit 5fd1bbcc6044a23bcba254d294464f4a29e07644[m
+Merge: 05a6b3d 157a11e
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Thu Apr 30 15:30:26 2020 -0700
+
+    Merge branch 'dev' of https://github.com/notyalcs/COMP_2800_Team_BBY-17_Healthy_Home into dev
+
+[33mcommit 05a6b3d43b0bd35ff092f5bc0c9207f40f18e76d[m
+Merge: a7e7a63 88ee3e6
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Thu Apr 30 15:29:20 2020 -0700
+
+    Merge branch 'dev' of https://github.com/notyalcs/COMP_2800_Team_BBY-17_Healthy_Home into dev
+
+[33mcommit 157a11e906f85a445ee5bd3925e89cbc28fd503e[m
+Merge: 06f52de 88ee3e6
+Author: purugarg3003 <purugarg3003@gmail.com>
+Date:   Thu Apr 30 15:29:20 2020 -0700
+
+    Merge branch 'dev' of https://github.com/notyalcs/COMP_2800_Team_BBY-17_Healthy_Home into dev
+
+[33mcommit 88ee3e64a6d413c1cfa6b678b40cf3f7e6790663[m
+Merge: 6e32f48 7aea23e
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu Apr 30 15:29:04 2020 -0700
+
+    Merge branch 'dev' of https://github.com/notyalcs/COMP-2800-Team-BBY-17-Healthy-Home into dev
+
+[33mcommit 06f52de0d7ab9f75da05f42e7b93988ef6963d2f[m[33m ([m[1;31morigin/Puru_Garg_Sprint1[m[33m)[m
+Author: purugarg3003 <purugarg3003@gmail.com>
+Date:   Thu Apr 30 15:26:20 2020 -0700
+
+    Puru.txt was added
+
+[33mcommit a7e7a63b2677c426d96aa9e3e3896f49af5daf13[m[33m ([m[1;31morigin/Christopher_Spooner_Sprint1[m[33m)[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Thu Apr 30 15:25:59 2020 -0700
+
+    Added the Chris.txt file for testing purposes.
+
+[33mcommit 7aea23eecb1266f7d62ab2f950e684a02f292dd2[m[33m ([m[1;31morigin/Daniil_Molchanov_Sprint1[m[33m)[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Thu Apr 30 15:25:05 2020 -0700
+
+    added daniil.txt
+
+[33mcommit 6e32f4863c788c7e7e5de9ed4c751ab375cc310f[m[33m ([m[1;31morigin/Sean_Clayton_sprint1[m[33m)[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Thu Apr 30 15:24:47 2020 -0700
+
+    Initial commit
+
+[33mcommit 961124bf49a44e5031dec0e0d16af4e92251fd6d[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Tue Apr 28 17:55:40 2020 -0700
+
+    Added loginStyle.css as external stylesheet.
+
+[33mcommit cee6485eceecc080f392f1f7f5091cd60e61bade[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Tue Apr 28 17:49:22 2020 -0700
+
+    fixed paths
+
+[33mcommit 1f9b88c2d19591f224029caa2b2f566fe8bffc63[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Tue Apr 28 17:46:05 2020 -0700
+
+    fixed path directory problem
+
+[33mcommit 9c8249fca3d22a2d14656d1bc73becd3fec56552[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Tue Apr 28 17:35:59 2020 -0700
+
+    rename some things and checked code
+
+[33mcommit d31986611ad2d95326bc6eb932d35ca48f657818[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Tue Apr 28 17:30:42 2020 -0700
+
+    looking at file paths
+
+[33mcommit 4bcaf1e25326d79c7f9933d5605e6f9fcf536c85[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Tue Apr 28 16:42:41 2020 -0700
+
+    created folder structure
+
+[33mcommit 1eb887a9842a2f1ae6b5bbd52a78578b16c92308[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Tue Apr 28 16:21:27 2020 -0700
+
+    Start of dev branch
+
+[33mcommit 38f755633978c85f05f19198475e1fc4b2aedb6d[m
+Author: purugarg3003 <purugarg3003@gmail.com>
+Date:   Mon Apr 27 11:13:15 2020 -0700
+
+    hey
+
+[33mcommit 2f3b6adaf7aa226f97e9fc8ef952fa409db195b6[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Mon Apr 27 11:06:36 2020 -0700
+
+    added git steps to text doc
+
+[33mcommit ed61c081da911a9c586ef1334bb9969f98c5a5c4[m
+Author: Christopher Spooner <Christopher.Spooner97@gmail.com>
+Date:   Mon Apr 27 10:58:17 2020 -0700
+
+    Added my name to the helloTeam document to test github functionality
+
+[33mcommit a7620ae388a64329795b00ce9cf7813f96d828da[m
+Author: daniilmol <daniilmik@gmail.com>
+Date:   Mon Apr 27 10:32:40 2020 -0700
+
+    added name
+
+[33mcommit 5d01e8cd6e9c4e467f6182227b4f07de39c8168a[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Mon Apr 27 09:45:21 2020 -0700
+
+    sean was here
+
+[33mcommit f44828f37c1a2680f02376a68e52590dea8bce18[m
+Author: Sean Clayton <sean.clayto@gmail.com>
+Date:   Mon Apr 27 09:33:57 2020 -0700
+
+    GIT Created!
