@@ -14,7 +14,7 @@ $("#btn1").click(function () {
 
         window.alert(document.getElementById("rem1").textContent);
         document.getElementById("btn1a").disabled = false;
-    }, 1000)
+    }, 900000)
 })
 
 //makes the button disabled for the duration of the timer and sends an alert when completed (triggered onclick)
@@ -29,7 +29,7 @@ $("#btn2").click(function () {
 
         window.alert(document.getElementById("rem2").textContent);
         document.getElementById("btn2a").disabled = false;
-    }, 2000)
+    }, 3600000)
 })
 
 //makes the button disabled for the duration of the timer and sends an alert when completed (triggered onclick)
@@ -44,7 +44,7 @@ $("#btn3").click(function () {
 
         window.alert(document.getElementById("rem3").textContent);
         document.getElementById("btn3a").disabled = false;
-    }, 3000)
+    }, 7200000)
 })
 
 //makes the button disabled for the duration of the timer and sends an alert when completed (triggered onclick)
@@ -57,7 +57,7 @@ $("#btn4").click(function () {
         $('#btn4a').css('background-color','');
         window.alert(document.getElementById("rem4").textContent);
         document.getElementById("btn4a").disabled = false;
-    }, 4000)
+    }, 14400000)
 })
 
 window.onload = update;
