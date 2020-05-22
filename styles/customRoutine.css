@@ -124,8 +124,8 @@ aside button{
 #descDiv3,
 #descDiv4 {
     margin: 2vh 1vw 0vh 1vw;
-    display:flex;
-    width:40%;
+    display:block;
+    width:90%;
 }
 
 /* The dropdown buttons */
