@@ -1,5 +1,6 @@
-let itemArr = [];
-let timerLen;
+//variable declarations
+var itemArr = [];
+var timerLen;
 var input = document.getElementById("tasks");
 var slider = document.getElementById("myRange");
 var output = document.getElementById("minutes");
@@ -35,9 +36,9 @@ input.addEventListener("keyup", function (event) {
     }
 });
 
+//gets user ID and data
 firebase.auth().onAuthStateChanged(function (user) {
     console.log(user.uid);
-
     db.collection("users")
         .doc(user.uid)
         .get()

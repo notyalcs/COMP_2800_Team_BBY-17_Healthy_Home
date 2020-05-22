@@ -1,5 +1,10 @@
 window.onload = update;
 
+/**
+ * Checks if the user has met the easter egg requirements.
+ * If yes then trigger easter egg.
+ * Either yes or no, reset the trackers.
+ */
 function update() {
     firebase.auth().onAuthStateChanged(function(user) {
         db.collection("users")
@@ -28,21 +33,44 @@ function update() {
     })
 }
 
+/**
+ * Play the Easter egg audio.
+ */
+function playAudio() {
+    let audio = new Audio("./audio/egg.mp3");
+    audio.play();
+}
+
+/**
+ * Get a random x coordinate for an egg to move to.
+ * @returns String
+ */
 function getXLocation() {
     return Math.random() * (document.body.scrollWidth - 100) + "px";
 }
+/**
+ * Get a random y coordinate for an egg to move to.
+ * @returns String
+ */
 function getYLocation() {
     return Math.random() * (document.body.scrollHeight - 100) + "px";
 }
 
+/**
+ * Trigger easter egg if conditions were met.
+ */
 function easterEgg() {
     console.log("CONGRATULATIONS!");
     document.body.style.backgroundImage = "url('./images/confetti.gif')";
+    document.getElementById("groupName").onclick = playAudio;
     createEgg();
     createEgg();
     createEgg();
 }
 
+/**
+ * Class to create eggs from.
+ */
 function egg() {
     this.egg = document.createElement("img");
     this.egg.src = "./images/egg.png";
@@ -60,12 +88,19 @@ function egg() {
     }
 }
 
+/**
+ * Starts an interval timer for a given egg to continue to move.
+ * @param {Object} egg 
+ */
 function startMoving(egg) {
     setInterval(function () {
         egg.move();
     }, 3000);
 }
 
+/**
+ * Creates an egg and starts it moving.
+ */
 function createEgg() {
     startMoving(new egg);
 }

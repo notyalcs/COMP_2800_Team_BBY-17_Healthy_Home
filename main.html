@@ -21,6 +21,9 @@
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"></script>
+
     <div id="allContent">
         <header class="header">
             <figure class="figureHeader"><img class="imageHeader" src="./images/logo_transparent.png" alt="logo">
@@ -45,11 +48,15 @@
                 <button onclick="location.href='./profile.html'">Profile</button>
             </div>
             <div id="resources">
-                <button onclick="location.href='./resources.html'">Resources</button>
+                <button onclick="location.href='./newResources.html'">Health Tips</button>
             </div>
             <div id="about">
                 <button onclick="location.href='./about.html'">About Us</button>
             </div>
+        </div>
+        <div id="social">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="I&#39;m working on creating a Healthy Home! Come try it out!" data-url="http://www.healthyhome.digital" data-hashtags="healthyhome" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div class="fb-share-button" data-href="http://www.healthyhome.digital" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.healthyhome.digital%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
         </div>
     </div>
     <script src="./scripts/main.js"></script>

@@ -1,18 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+    font-family: Poppins, sans-serif;
+}
 /* Sizes the body and lays out the gridpane*/
 body {
     height: 100%;
     width: 100%;
     margin: 0%;
-    font-family: 'open sans', arial, sans-serif;
     display: grid;
     grid-template-columns: 2fr 1.5fr;
+    background-color:lightgray;
     grid-template-areas:
         "header header"
         "cardioTitle mapTitle"
         "cardioInfo map"
-        "cardioResourceTitle map"
-        "cardioResource map"
-        "filler map";
+        "cardioResourceTitle cardioResourceTitle"
+        "cardioResource cardioResource"
+        "filler filler";
 }
 
 /*~~~~~~~~ Start of Header Styling ~~~~~~~~*/
@@ -25,19 +29,14 @@ body {
     grid-template-areas: 
         "logo logo logo"
         "home reminders profile";
-
-    /* Comment these 2 lines out to make it not sticky. */
     position: sticky;
     top: 0;
-    /*--------------------------------------------------*/
-
     background-color: white;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 #universalHeader > * {
-    padding: 10px;
-    margin: 5px;
+    margin: 0 5px 5px 5px;
 }
 #universalHeader > button {
     background-color: #ff7f50;
@@ -75,8 +74,9 @@ img#imageHeader {
 /*header for the cardio information */
 #cardioTitle {
     grid-area: cardioTitle;
-    padding: 1%;
-
+    padding: 0%;
+    margin:auto;
+    padding: 3% 0% 0% 0%;
 }
 
 /*cardio information */
@@ -88,28 +88,49 @@ img#imageHeader {
 /*header for the cardio resource information */        
 #cardioResourceTitle {
     grid-area: cardioResourceTitle;
-    padding: 1%;
+    padding: 0% 1%;
+}
+
+.tile{
+    border-radius: 10px;
+    background-color: white;
+    padding:1vw;
+    margin:1%;
+    border: 1px solid grey;
+}
+
+.tileResource {
+    border-radius: 10px;
+    background-color: white;
+    padding:1vw;
+    margin:0% 1% 1% 1%;
+    border: 1px solid grey;
 }
 /*cardio resource information */
 #cardioResource {
     grid-area: cardioResource;
-    padding: 1%;
+    padding: 0%;
 }
 /*Header for the map.
 placed above the map on the gridpane */
 #mapTitle {
     grid-area: mapTitle;
+    padding: 3% 0% 0% 0%;
+
 }
 
 /* map
 explicitly stated height and width is required (overrules gridpane) */
 #map {
     width: 42vw;
-    height: 80vh;
+    height:70vh;
     background-color: grey;
     grid-area: map;
     margin:auto;
-
+    z-index: -1;
+}
+h3 {
+    color:teal;
 }
 
 /*Makes the content tablet and mobile friendly when the screen width is 900px or less*/
@@ -129,13 +150,22 @@ explicitly stated height and width is required (overrules gridpane) */
     /*resizes and centers the map */
     #map {
         width:90vw;
+        height:70vh;
         margin:auto;
     }
     #mapTitle {
         text-align:center;
     }
+    .tile{
+        border-radius: 10px;
+        background-color: white;
+        padding:1vw;
+        margin:3%;
+        border: 1px solid grey;
+    }
 }
 
+/* Extra alterations for mobile on the header. */
 @media only screen and (max-width: 450px) {
     #universalHeader {
         grid-template-columns: repeat(2, 1fr);

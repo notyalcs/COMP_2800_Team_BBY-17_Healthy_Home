@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/logo_favicon.png">    
     <link rel="stylesheet" type="text/css" href="styles/userReminders.css">
     <link rel="shortcut icon" type="image/png" href="images/logo_favicon.png">
+
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+
+    <!-- Relevant firebase script imports -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" id="css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <!-- Our app's firebase configuration -->
+    <script src="./scripts/firebaseConfig.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
     <title>Your Reminders</title>
 </head>
 <body>  
@@ -20,8 +36,14 @@
             <div id="nameBar">
                 <span id="contentTitle">Your Reminders</span>
             </div>
-        </div> 
-    </div>
+            <div id='reminderList'>
+            </div>
+        </div>
 
+    </div>
+    <center>
+    <input type="button" value="Create New Reminder" id="newTimer">
+    </center>
+    <script src='scripts/userReminders.js'></script>
 </body>
 </html>

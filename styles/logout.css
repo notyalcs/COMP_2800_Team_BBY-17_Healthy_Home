@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+    font-family: Poppins, sans-serif;
+}
 body {
     margin: 0;
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: thistle;
+    background-color: #eeeeff;
 }
 #universalHeader {
     width: 100%;
@@ -24,8 +28,7 @@ body {
     border-bottom-right-radius: 10px;
 }
 #universalHeader > * {
-    padding: 10px;
-    margin: 5px;
+    margin: 0 5px 5px 5px;
 }
 #universalHeader > button {
     /* width: 100%; */
@@ -67,11 +70,21 @@ img#imageHeader {
     }
 }
 
-
-div#pageContent button:hover {
-    background-color: #dddddd;
+button#yesBTN {
+    background-color: #5ddd61;
+}
+button#yesBTN:hover {
+    background-color: #4cba50;
     box-shadow: 3px 3px #999999;
 }
+button#noBTN {
+    background-color: #ed3434;
+}
+button#noBTN:hover {
+    background-color: #bb1f1f;
+    box-shadow: 3px 3px #999999;
+}
+
 div#mainContent {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -90,8 +103,9 @@ div#mainContent > * {
     justify-content: center;
     grid-area: title;
 }
-span#contentTitle {
-    font-size: 60px;
+p#contentTitle {
+    font-size: 40px;
+    text-align: center;
 }
 div#mainContent > button {
     border-radius: 10px;
@@ -101,7 +115,7 @@ div#mainContent > button {
     outline: none;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 900px) {
     div#mainContent {
         display: grid;
         grid-template-columns: 1fr;

@@ -1,5 +1,6 @@
 window.onload = update;
 
+//stores information in the database if the key for the easter egg is pressed
 function keyPressed() {
     document.getElementById("key").style.display = "none";
     firebase.auth().onAuthStateChanged(function(user) {
@@ -14,6 +15,7 @@ function keyPressed() {
     })
 }
 
+//generates the key and checks if the user has already found it before
 function update() {
     firebase.auth().onAuthStateChanged(function(user) {
         db.collection("users")

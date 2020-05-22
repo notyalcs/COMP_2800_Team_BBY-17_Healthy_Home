@@ -1,13 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+    font-family: Poppins, sans-serif;
+}
+.info {
+    display:none;
+}
 body {
+    background-color: #eeeeff;
     margin: 0;
+    padding: 0;
     position: absolute;
     height: 100%;
     width: 100%;
-    font-family: Poppins, sans-serif;
-    background-color: #eeeeff;
 }
-/*~~~~~~~~ Start of Header Styling ~~~~~~~~*/
 #universalHeader {
     width: 100%;
     display: grid;
@@ -16,7 +21,7 @@ body {
     grid-template-areas: 
         "logo logo logo"
         "home reminders profile";
-
+    z-index:100; 
     /* Comment these 2 lines out to make it not sticky. */
     position: sticky;
     top: 0;
@@ -30,7 +35,7 @@ body {
     margin: 0 5px 5px 5px;
 }
 #universalHeader > button {
-    font-family: Poppins, sans-serif;
+    /* width: 100%; */
     background-color: #ff7f50;
     border-radius: 10px;
     font-size: large;
@@ -60,67 +65,90 @@ img#imageHeader {
 #profileHead {
     grid-area: profile;
 }
-
 @media only screen and (max-width: 450px) {
     #universalHeader {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-            "logo logo"
-            "reminders profile";
     }
-    #universalHeader > button#homeHead {
+    #universalHeader > #profileHead {
         display: none;
     }
 }
-/*~~~~~~~~ End of Header Styling ~~~~~~~~*/
 
-/* Title */
-section{
+div#navBar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    font-size:50pt;
-    margin-top: 25px;
+    margin-top: 5px;
+    /* z-index: -1; */
 }
-/* div that contains the 3 buttons */
-#routines{
-    text-align: center;
-}
-/* The 3 buttons inside the div */
-#routines button{
+div#navBar > input[type="button"] {
+    position: relative;
+    left: 0;
+    font-size: 16px;
+    width: 125px;
+    height: 50px;
+    margin: 0 5px 5px 5px;
+    border-radius: 5px;
     outline: none;
     cursor: pointer;
-    /* padding: 2% 8%; */
-    font-size: 20pt;
-    font-family: Poppins, sans-serif;
-    margin: 5%;
+    background-color: #b0b0ff;
+    /* z-index: -1; */
+}
+.redirectDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.redirectButton {
+    position: relative;
+    left: 0;
+    font-size: 16px;
+    width: 25vw;
+    height: 6vh;
+    margin: 0 5px 5px 5px;
     border-radius: 5px;
-    width: 400px;
-    height: 150px;
+    outline: none;
+    cursor: pointer;
+    background-color: #b0b0ff;
 }
-.choice {
-    background-color: #ddddff;
-}
-.choice:hover {
+div#navBar > input[type="button"]:hover {
     background-color: #cccce9;
 }
-.custom {
-    background-color: #5ddd61;
-}
-.custom:hover {
-    background-color: #4cba50;
-}
-.notes {
+div#navBar > input[type="button"]:focus {
     background-color: #bbbbff;
 }
-.notes:hover {
-    background-color: #aaaae9;
+
+h3 {
+    margin:auto;
+    text-align: center;
+}
+p {
+    background-color:white;
+    padding:1%;
+    border-radius: 10px;
+    border: 1px solid grey;
+    margin:1vh 20vw;
 }
 
-@media only screen and (max-width:550px){
-    #routines button {
-        width: 300px;
+@media only screen and (max-width: 900px) {
+    div#navBar {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
     }
-    section{
-        font-size:35pt;
+    div#navBar > input[type="button"] {
+        font-size: 15px;
+        width: 45%;
+        height: 42px;
+        margin-top: 5px;
+    }
+    p {
+        margin: 2vw;
+    }
+    .redirectButton {
+        width: 80vw;
+        font-size:small;
     }
 }
-
